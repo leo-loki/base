@@ -22,7 +22,7 @@ a { text-decoration:none; outline:none; }
 	left: 50%; top: 50%;
 	margin-left: -50px; margin-top: -50px;
 	background-color: #FFF;
-	background-image: url(./img/mediabox-g/loading-wt.gif);
+	background-image: url(../img/bg/loading-wt.gif);
 	background-repeat: no-repeat;
 	background-position: center center;
 	text-align: center;
@@ -31,20 +31,20 @@ a { text-decoration:none; outline:none; }
 #overlay {
 	position: absolute;
 	left: 0; top: 0;
-	background-image: url(./img/bg/border-screen.png);
+	background-image: url(../img/bg/border-screen.png);
 	width: 100%; min-width: 100%;
 	height: auto; min-height: 100%;
 	display: block;
 }
 #overlay.dot {
-	background-image: url(./img/bg/dot-screen.png);
+	background-image: url(../img/bg/dot-screen.png);
 }
 
 #player_cover{}
 
 header {
 	position:absolute;
-	left:100px; top:35px;
+	left: 2em; top: 2em;
 }
 footer {
 	position:absolute; bottom:0;
@@ -54,5 +54,44 @@ footer {
 	display:block;
 }
 footer p {
-	padding:20px 40px;
+	padding:2em;
+}
+section {
+	position: absolute;
+	left: 0; top: 47.5%;
+	width: 100%;
+	margin: auto;
+	text-align: center;	vertical-align: middle;
+	display: table;
+} h2 {
+	color: #FFF;
+    text-align: center;
+	letter-spacing: 0.5em;
+} p { padding: 2em; }
+.grade-linear {
+    position: relative;
+	margin: 0 auto;	padding: 0 10em;
+    text-align: center;
+	text-shadow: 0 1px 1px #000;
+	display: table;
+	padding-right: 9.4em; /* テキストの字間を広げたための調整 */
+} .grade-linear::before, .grade-linear::after {
+	content: "";
+    position: absolute;
+	top: 50%;
+    width: 9.5em; height: 2px;
+    margin: 0; margin-top: -1px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+} .grade-linear::before {
+	left: 0;
+    text-align: center;
+    background-image: -webkit-linear-gradient(left, transparent, #FFF 100%, #FFF 0%, transparent);
+    background-image: linear-gradient(to right, transparent, #FFF 100%, #FFF 0%, transparent);
+} .grade-linear::after {
+	right: 0;
+    text-align: center;
+    background-image: -webkit-linear-gradient(left, transparent, #FFF 0%, #FFF 0%, transparent);
+    background-image: linear-gradient(to right, transparent, #FFF 0%, #FFF 0%, transparent);
 }
