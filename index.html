@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="ja"><![endif]-->
+<!--[if IE 7 ]> <html class="ie7" lang="ja"><![endif]-->
+<!--[if IE 8 ]> <html class="ie8" lang="ja"><![endif]-->
+<!--[if IE 9 ]> <html class="ie9" lang="ja"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="other" lang="ja" style="zoom: 1;"><!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="http://common.s1jp.com/css/lib/html5resetter.css">
+
+<title>背景動画にYouTUBE動画を読み込む</title>
+
+<!-- IE set HTML 5 tag -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!-- JS jQuery & lib Loading //-->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+ google.load("jquery", "1");
+ google.load("jqueryui", "1");
+ google.load("feeds", "1");
+</script>
+
+<script type="text/javascript" src="js/youloader.js">
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+ <div id="loader"><p>now loading...</p></div>
+ <div id="player"></div>
+ <div id="overlay" class="dot"></div>
+ <div id="player_cover"></div>
+
+<header>
+<h1><img src="img/logo.svg" alt="Sample site Design"></h1>
+</header>
+
+<nav class="toggle">
+<label for="mainMenu">NAVI</label>
+<input type="checkbox" id="mainMenu" class="on-off">
+
+<ul class="menu1">
+<li><a href="#">MENU 1</a></li>
+<li><a href="#">MENU 2</a></li>
+<li><a href="#">MENU 3</a></li>
+<li><a href="#">MENU 4</a></li>
+<li><a href="#">MENU 5</a></li>
+</ul>
+</nav>
+
+<footer>
+<p>&copy; Design office IRUYA.</p>
+</footer>
+
+</div>
+<!--[if lt IE 7 ]><div class="msg">-IE 6</div><![endif]-->
+<!--[if IE 7 ]><div class="msg">IE 7</div><![endif]-->
+<!--[if IE 8 ]><div class="msg">IE 8</div><![endif]-->
+<!--[if IE 9 ]><div class="msg">IE 9</div><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><div class="msg">IE 9+</div><!--<![endif]-->
+</body>
+</html>
