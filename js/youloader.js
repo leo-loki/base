@@ -1,5 +1,6 @@
 $(function() {
-	var vid ='K_xTet06SUo';
+	var vid ='NsPNlEUPRU8';
+	/* var vid ='K_xTet06SUo'; */
     var player;
     
     $('body').append('<script src="https://www.youtube.com/iframe_api">');

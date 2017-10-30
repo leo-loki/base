@@ -4,43 +4,72 @@
 <!--[if IE 8 ]> <html class="ie8" lang="ja"><![endif]-->
 <!--[if IE 9 ]> <html class="ie9" lang="ja"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-<html class="other" lang="ja" style="zoom: 1;"><!--<![endif]-->
+<html class="other" lang="ja" style="zoom: 1;" data-text-lang="jp" itemscope itemtype="http://schema.org/CreativeWork"><!--<![endif]-->
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Design office IRUYA</title>
+
+<meta name="Robots" content="index, follow">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="東京・岡山で活動するグラフィックデザイナー・Webクリエイターのデザイン事務所">
+<meta name="Keywords" content="今のSEO対策に必要なのかな？取りあえずいるのか？">
+
 <link rel="stylesheet" type="text/css" href="css/lib/html5resetter.css">
-
-<title>背景動画にYouTUBE動画を読み込む</title>
-
 <!-- IE set HTML 5 tag -->
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/lib/youloader.css">
 
 <!-- JS jQuery & lib Loading //-->
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript">
- google.load("jquery", "1");
- google.load("jqueryui", "1");
- google.load("feeds", "1");
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/youloader.js"></script>
 
-<script type="text/javascript" src="js/youloader.js">
-</script>
+<!-- ogp -->
+<meta property="og:title" content="Design office IRUYA"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://iruya.net/"/>
+<meta property="og:locale" content="ja_JP"/>
+<meta property="og:image" content="https://farm5.staticflickr.com/4491/24174462188_73bcd74e93_o.jpg"/>
+<meta property="og:site_name" content="Design office IRUYA"/>
+<meta property="og:description" content="東京・岡山で活動するグラフィックデザイナー・Webクリエイターのデザイン事務所" />
+<meta property="fb:app_id" content="204914726212388"/>
+<!-- twitter card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Diruya" />
+<meta name="twitter:title" content="Design office IRUYA" />
+<meta name="twitter:description" content="東京・岡山で活動するグラフィックデザイナー・Webクリエイターのデザイン事務所" />
+<meta name="twitter:image" content="https://farm5.staticflickr.com/4491/24174462188_73bcd74e93_o.jpg" />
+<meta name="twitter:url" content="http://iruya.net/">
+
+<!-- favorite icons (PC and other) -->
+<link rel="shortcut icon" href="/img/icons/favicon.ico">
+<link rel="icon" href="/img/icons/favicon.ico" sizes="16x16 32x32 48x48">
+
+<!-- mobile setting (Android) -->
+<meta itemprop="headline" content="モバイル用の見出し">
+<meta itemprop="description" content="モバイル用の説明文">
+<meta itemprop="image" content="https://farm5.staticflickr.com/4491/24174462188_73bcd74e93_o.jpg">
+<meta name="theme-color" content="#5533BB">
+<meta content="yes" name="mobile-web-app-capable">
+<link rel="icon" href="/img/icons/android-chrome192.png" sizes="192x192">
+
+<!-- iPhone iPad setting -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="iPhone/iPad用の見出し">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/apple-touch-icon152.png">
 
 </head>
 
 <body>
 
-<div id="wrapper">
-
- <div id="loader"><p>now loading...</p></div>
- <div id="player"></div>
- <div id="overlay" class="dot"></div>
- <div id="player_cover"></div>
+<div id="wrap">
 
 <header id="common-header">
 <h1 id="logo"><a href="https://i-studio.jp/">
@@ -118,7 +147,15 @@
 </a></h1>
 </header>
 
-<section id="contents">
+<div class="mc-wrap">
+
+ <div id="loader"><p>now loading...</p></div>
+ <div id="player"></div>
+ <div id="overlay" class="dot"></div>
+ <div id="player_cover"></div>
+
+<div class="container">
+<section class="contents">
   <h2 class="grade-linear">Catch copy</h2>
 
 <p>
@@ -131,11 +168,44 @@
 
 </section>
 
-<footer>
-<p>&copy; i creative studio.</p>
+</div><!-- /.container -->
+
+</div><!-- /.mc-wrap -->
+
+<main>
+	<div class="container">
+<section class="contents">
+  <h2 class="grade-linear">Catch copy</h2>
+
+<p>
+なるべく最新のブラウザでご覧ください。
+</p>
+
+</section>
+
+</div><!-- /.container -->
+</main>
+
+<footer id="common-footer" class="flexbox">
+<small><span class="copy-mark">&copy;</span> Design office IRUYA. / movie : <span class="copy-mark">&copy;</span> YouTUBE (Panasonic)</small>
+<nav class="sns">
+	<ul>
+		<li><a href="#">facebook</a></li>
+		<li><a href="#">facebook</a></li>
+		<li><a href="#">facebook</a></li>
+	</ul>
+</nav>
 </footer>
 
 </div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1694458-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-1694458-1');
+</script>
 </body>
 </html>
