@@ -31,11 +31,26 @@ a { text-decoration:none; outline:none; }
     transparent
   );
 	z-index: 1;
+	opacity: 0.9;
+	-webkit-transition: all 1s; -moz-transition: all 1s;
+	-o-transition: all 1s; -ms-transition: all 1s;
+	transition: all 1s;
 } #common-header #logo {
 	padding: 2em; padding-top: 1em;
 } #common-header #logo a {
 	display: inline-block;
-}
+} #common-header #logo svg {
+	min-width: 4em; width: 8vw; max-width: 128px;
+	height: auto;
+} #logo svg path#ar { fill:#bf607f;
+} #logo svg path#a1, #logo svg path#a2, #logo svg path#a3, #logo svg path#a4 { fill:#FFF;
+	-webkit-transition: all 1s; -moz-transition: all 1s;
+	-o-transition: all 1s; -ms-transition: all 1s;
+	transition: all 1s;
+} #logo svg path#a1 { opacity: 0.9;
+} #logo svg path#a2 { opacity: 0.75;
+} #logo svg path#a3 { opacity: 0.6;
+} #logo svg path#a4 { opacity: 0.45; }
 #common-footer {
 	position:fixed;
 	left: 0; bottom:0;
@@ -63,6 +78,10 @@ main {
 	width: 100%;
 	min-height: 100vh; height: auto;
 	display: block;
+	background-image: url(../img/ruler.svg);
+	background-position: left top;
+	background-repeat: repeat;
+	background-size: 3200px auto;
 }
 .container {
   position: absolute;
