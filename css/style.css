@@ -54,31 +54,34 @@ a { text-decoration:none; outline:none; }
 #common-footer {
 	position:fixed;
 	left: 0; bottom:0;
-	padding: 2em 0;
+	padding: 3.5vw 6.25%;
 	background-color:rgba(0,0,0,0.6);
-	width:100%;
+	width:87.5%;
 	font-size: 0.8em;
 	color:#999;
 } #common-footer a {
 	color:#FFF;
 } #common-footer small {
-	margin-left: 2em; margin-right: auto;
+	margin-left: 40px; margin-right: auto;
 	display: inline-block;
 } #common-footer small .copy-mark {
 	font-size: 1.8em;
 	vertical-align: -0.16em;
 } #common-footer nav {
-	margin-left: auto; margin-right: 2em;
+	margin-left: auto; margin-right: 40px;
+	display: inline-block;
+} #common-footer nav ul li {
 	display: inline-block;
 }
 
 /* contents */
 main {
 	position: relative;
-	width: 100%;
+	width: 87.5%; margin: 0 6.25%;
 	min-height: 100vh; height: auto;
+	background-color: #FFF; color: #333;
 	display: block;
-	background-image: url(../img/ruler.svg);
+	background-image: url(../img/bg/ruler.svg);
 	background-position: left top;
 	background-repeat: repeat;
 	background-size: 3200px auto;
@@ -89,7 +92,7 @@ main {
 	top: 0; bottom: 0;
 	margin: auto;
   width: 100%;
-  min-height: 100%; height: auto;
+  min-height: 100%; height: 100vh;
   display: table;
 } .contents {
   text-align: center;
@@ -100,16 +103,62 @@ main {
 	letter-spacing: 0.5em;
 } .contents p { padding: 2em; }
 
+.golden {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+} .golden.ratio {
+	background-image: url(../img/bg/golden-ratio.svg);
+} .golden.spiral {
+	background-image: url(../img/bg/golden-spiral.svg);
+} .golden.five-star {
+	background-image: url(../img/bg/five-star.svg);
+}
+.reflect, .reflect .contents {
+	-webkit-transform: scale(-1, 1); -moz-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1); -ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+.rotate90, .rotate-90 {
+	width: 100vh; min-height: 100vw; height: auto;
+} .rotate90, .rotate-90 .contents {
+	-webkit-transform: rotate(90deg); -moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg); -ms-transform: rotate(90deg);
+	transform: rotate(90deg) scale();
+} .rotate180, .rotate180 .contents {
+	-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg); -ms-transform: rotate(180deg);
+	transform: rotate(180deg) scale();
+} .rotate-90, .rotate90 .contents {
+	-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg); -ms-transform: rotate(-90deg);
+	transform: rotate(-90deg) scale();
+}
+.reflect.rotate90, .reflect.rotate90 .contents {
+	-webkit-transform: scale(-1, 1) rotate(90deg); -moz-transform: scale(-1, 1) rotate(90deg);
+	-o-transform: scale(-1, 1) rotate(90deg); -ms-transform: scale(-1, 1) rotate(90deg);
+	transform: scale(-1, 1) rotate(90deg);
+} .reflect.rotate180, .reflect.rotate180 .contents {
+	-webkit-transform: scale(-1, 1) rotate(180deg); -moz-transform: scale(-1, 1) rotate(180deg);
+	-o-transform: rotate(180deg); -ms-transform: rotate(180deg);
+	transform: scale(-1, 1) rotate(180deg);
+} .reflect.rotate-90, .reflect.rotate-90 .contents {
+	-webkit-transform: scale(-1, 1) rotate(-90deg); -moz-transform: scale(-1, 1) rotate(-90deg);
+	-o-transform: scale(-1, 1) rotate(-90deg); -ms-transform: scale(-1, 1) rotate(-90deg);
+	transform: scale(-1, 1) rotate(-90deg);
+}
 /* other class */
 
 .flexbox { display: flex; }
 .grade-linear {
-    position: relative;
+	position: relative;
 	margin: 0 auto;	padding: 0 10em;
-    text-align: center;
-	text-shadow: 0 1px 1px #000;
+	text-align: center;
+	text-shadow: 0 1px 1px #FFF;
 	display: table;
 	padding-right: 9.4em; /* テキストの字間を広げたための調整 */
+} .grade-linear.wt {
+	text-shadow: 0 1px 1px #000;
 } .grade-linear::before, .grade-linear::after {
 	content: "";
     position: absolute;
@@ -122,10 +171,18 @@ main {
 } .grade-linear::before {
 	left: 0;
     text-align: center;
-    background-image: -webkit-linear-gradient(left, transparent, #FFF 100%, #FFF 0%, transparent);
-    background-image: linear-gradient(to right, transparent, #FFF 100%, #FFF 0%, transparent);
+    background-image: -webkit-linear-gradient(left, transparent, #333 100%, #333 0%, transparent);
+    background-image: linear-gradient(to right, transparent, #333 100%, #333 0%, transparent);
 } .grade-linear::after {
 	right: 0;
+    text-align: center;
+    background-image: -webkit-linear-gradient(left, transparent, #333 0%, #333 0%, transparent);
+    background-image: linear-gradient(to right, transparent, #333 0%, #333 0%, transparent);
+} .grade-linear.wt::before {
+    text-align: center;
+    background-image: -webkit-linear-gradient(left, transparent, #FFF 100%, #FFF 0%, transparent);
+    background-image: linear-gradient(to right, transparent, #FFF 100%, #FFF 0%, transparent);
+} .grade-linear.wt::after {
     text-align: center;
     background-image: -webkit-linear-gradient(left, transparent, #FFF 0%, #FFF 0%, transparent);
     background-image: linear-gradient(to right, transparent, #FFF 0%, #FFF 0%, transparent);

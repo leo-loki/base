@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1200" style="enable-background:new 0 0 1920 1200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#808080;}
+	.st1{fill:none;stroke:#808080;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#808080;stroke-width:4;stroke-miterlimit:10;}
+</style>
+<g id="guide1">
+	<g>
+		<path class="st0" d="M1919,1v1198H1V1H1919 M1920,0H0v1200h1920V0L1920,0z"/>
+	</g>
+	<g>
+		<path class="st0" d="M1799,81v1038H121V81H1799 M1800,80H120v1040h1680V80L1800,80z"/>
+	</g>
+	<g>
+		<line class="st1" x1="120" y1="80" x2="1800" y2="1120"/>
+	</g>
+	<g>
+		<line class="st1" x1="1797.1" y1="80" x2="120" y2="1120"/>
+	</g>
+</g>
+<g id="guide2">
+	<line class="st1" x1="1170" y1="80" x2="1800" y2="1120"/>
+	<line class="st1" x1="120" y1="704" x2="1800" y2="1120"/>
+	<line class="st1" x1="120" y1="496" x2="1800" y2="1120"/>
+	<path class="st1" d="M120,1120"/>
+	<path class="st1" d="M1170,80"/>
+	<line class="st1" x1="750" y1="80" x2="120" y2="1120"/>
+	<line class="st1" x1="1800" y1="704" x2="120" y2="1120"/>
+	<line class="st1" x1="1800" y1="496" x2="120" y2="1120"/>
+	<line class="st1" x1="1170" y1="1120" x2="1800" y2="80"/>
+	<line class="st1" x1="120" y1="496" x2="1800" y2="80"/>
+	<line class="st1" x1="120" y1="704" x2="1800" y2="80"/>
+	<line class="st1" x1="1170" y1="1120" x2="750" y2="80"/>
+	<path class="st1" d="M121,80"/>
+	<path class="st1" d="M1170,1120"/>
+	<line class="st1" x1="750" y1="1120" x2="120" y2="80"/>
+	<line class="st1" x1="1800" y1="496" x2="120" y2="80"/>
+	<line class="st1" x1="1800" y1="704" x2="120" y2="80"/>
+	<line class="st1" x1="750" y1="1120" x2="1170" y2="80"/>
+	<line class="st1" x1="120" y1="704" x2="1800" y2="496"/>
+	<line class="st1" x1="120" y1="496" x2="1800" y2="704"/>
+</g>
+<g id="guide3">
+	<line class="st1" x1="1170" y1="80" x2="1800" y2="704"/>
+	<line class="st1" x1="1170" y1="80" x2="120" y2="1120"/>
+	<line class="st1" x1="750" y1="80" x2="120" y2="704"/>
+	<line class="st1" x1="750" y1="80" x2="1800" y2="1120"/>
+	<line class="st1" x1="1170" y1="1120" x2="1800" y2="496"/>
+	<line class="st1" x1="1170" y1="1120" x2="120" y2="80"/>
+	<line class="st1" x1="750" y1="1120" x2="120" y2="496"/>
+	<line class="st1" x1="750" y1="1120" x2="1800" y2="80"/>
+</g>
+<g id="guide4_1_">
+	<line class="st1" x1="1170" y1="80" x2="1800" y2="496"/>
+	<line class="st1" x1="1170" y1="80" x2="120" y2="704"/>
+	<line class="st1" x1="1170" y1="80" x2="120" y2="496"/>
+	<line class="st1" x1="750" y1="80" x2="120" y2="496"/>
+	<line class="st1" x1="750" y1="80" x2="1800" y2="704"/>
+	<line class="st1" x1="750" y1="80" x2="1800" y2="496"/>
+	<line class="st1" x1="1170" y1="1120" x2="1800" y2="705"/>
+	<line class="st1" x1="1170" y1="1120" x2="120" y2="496"/>
+	<line class="st1" x1="1170" y1="1120" x2="120" y2="704"/>
+	<line class="st1" x1="750" y1="1120" x2="120" y2="704"/>
+	<line class="st1" x1="750" y1="1120" x2="1800" y2="496"/>
+	<line class="st1" x1="750" y1="1120" x2="1800" y2="704"/>
+</g>
+<g id="division">
+	<line class="st2" x1="1170" y1="80" x2="1170" y2="1120"/>
+	<line class="st2" x1="750" y1="80" x2="750" y2="1120"/>
+	<line class="st2" x1="120" y1="704" x2="1800" y2="704"/>
+	<line class="st2" x1="120" y1="496" x2="1800" y2="496"/>
+</g>
+</svg>
