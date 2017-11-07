@@ -3,34 +3,33 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1920 1200" style="enable-background:new 0 0 1920 1200;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#808080;}
-	.st1{fill:none;stroke:#808080;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#808080;stroke-miterlimit:10;}
+	.st1{fill:#808080;}
 	.st2{fill:none;stroke:#808080;stroke-width:4;stroke-miterlimit:10;}
 </style>
 <g id="guide">
+	<rect x="118.6" y="80" class="st0" width="1682.7" height="1040"/>
+	<rect x="1158.6" y="80" class="st0" width="642.7" height="1040"/>
+	<rect x="1158.6" y="722.7" class="st0" width="642.7" height="397.3"/>
+	<rect x="1158.6" y="722.7" class="st0" width="245.4" height="397.3"/>
+	<rect x="1158.6" y="722.7" class="st0" width="245.4" height="151.8"/>
+	<rect x="1310.5" y="722.7" class="st0" width="93.6" height="151.8"/>
+	<rect x="1310.5" y="816.3" class="st0" width="93.6" height="58.2"/>
+	<rect x="1310.5" y="816.3" class="st0" width="35.4" height="58.2"/>
+	<rect x="1310.5" y="816.3" class="st0" width="35.4" height="22.9"/>
 	<g>
-		<path class="st0" d="M1919,1v1198H1V1H1919 M1920,0H0v1200h1920V0L1920,0z"/>
+		<path class="st1" d="M1919,1v1198H1V1H1919 M1920,0H0v1200h1920V0L1920,0z"/>
 	</g>
 	<g>
-		<path class="st0" d="M1799,81v1038H121V81H1799 M1800,80H120v1040h1680V80L1800,80z"/>
+		<line class="st0" x1="118.6" y1="80" x2="1801.4" y2="1120"/>
 	</g>
 	<g>
-		<line class="st1" x1="120" y1="80" x2="1800" y2="1120"/>
+		<line class="st0" x1="1801.4" y1="80" x2="118.6" y2="1120"/>
 	</g>
-	<g>
-		<line class="st1" x1="1797.1" y1="80" x2="120" y2="1120"/>
-	</g>
-	<rect x="120" y="80" class="st1" width="1050" height="1040"/>
-	<rect x="1170" y="80" class="st1" width="630" height="624"/>
-	<rect x="1380" y="704" class="st1" width="420" height="416"/>
-	<rect x="1170" y="911" class="st1" width="211" height="209"/>
 </g>
 <g id="spiral">
-	<g>
-		<path class="st2" d="M120,1120C120,545.6,590.1,80,1170,80"/>
-		<path class="st2" d="M1170,80c347.9,0,630,279.4,630,624"/>
-		<path class="st2" d="M1800,704c0,229.8-188,416-420,416"/>
-		<path class="st2" d="M1380,1120c-116,0-210-93.1-210-208s94-208,210-208"/>
-	</g>
+	<path class="st2" d="M118.6,1120c0-574.4,465.6-1040,1040-1040c355,0,642.7,287.8,642.7,642.7c0,219.4-177.8,397.2-397.2,397.2
+		c-135.6,0-245.5-109.9-245.5-245.5c0-83.8,67.9-151.7,151.7-151.7c51.8,0,93.8,42,93.8,93.8c0,32-25.9,57.9-57.9,57.9
+		c-19.8,0-35.8-16-35.8-35.8"/>
 </g>
 </svg>
