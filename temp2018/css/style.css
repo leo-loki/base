@@ -88,9 +88,6 @@ main {
 	position: relative;
 	width: 100%;
 	min-height: 100vh; height: auto;
-} .container#sec02 {
-	background-color: #FFF;
-	color: #333;
 }
 .inner {
   position: absolute;
@@ -109,69 +106,11 @@ main {
 	text-align: center;
 	letter-spacing: 0.5em;
 } .contents p { padding: 2em; }
-
-.golden {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-} .golden.ratio {
-	background-image: url(../img/bg/golden-ratio.svg);
-} .golden.five-star {
-	background-image: url(../img/bg/five-star.svg);
-} .golden.spiral {
-	background-image: url(../img/bg/golden-spiral.svg);
-} .golden.spiral.rotate90 {
-	background-image: url(../img/bg/golden-spiral_90.svg);
-} .golden.spiral.rotate-90 {
-	background-image: url(../img/bg/golden-spiral-90.svg);
-} .golden.spiral.rotate180 {
-	background-image: url(../img/bg/golden-spiral_180.svg);
-} .golden.spiral.reflect {
-	background-image: url(../img/bg/golden-spiral_rf.svg);
-} .golden.spiral.reflect.rotate90 {
-	background-image: url(../img/bg/golden-spiral_90rf.svg);
-} .golden.spiral.reflect.rotate-90 {
-	background-image: url(../img/bg/golden-spiral-90rf.svg);
-} .golden.spiral.reflect.rotate180 {
-	background-image: url(../img/bg/golden-spiral_180rf.svg);
-}
 /* other class */
 
 .flexbox { display: flex; }
-.grade-linear {
-	position: relative;
-	margin: 0 auto;	padding: 0 10em;
-	text-align: center;
-	text-shadow: 0 1px 1px #FFF;
-	display: table;
-	padding-right: 9.4em; /* テキストの字間を広げたための調整 */
-} .grade-linear.wt {
-	text-shadow: 0 1px 1px #000;
-} .grade-linear::before, .grade-linear::after {
-	content: "";
-    position: absolute;
-	top: 50%;
-    width: 9.5em; height: 2px;
-    margin: 0; margin-top: -1px;
-    text-align: center;
-    background-position: center;
-    background-repeat: no-repeat;
-} .grade-linear::before {
-	left: 0;
-    text-align: center;
-    background-image: -webkit-linear-gradient(left, transparent, #333 100%, #333 0%, transparent);
-    background-image: linear-gradient(to right, transparent, #333 100%, #333 0%, transparent);
-} .grade-linear::after {
-	right: 0;
-    text-align: center;
-    background-image: -webkit-linear-gradient(left, transparent, #333 0%, #333 0%, transparent);
-    background-image: linear-gradient(to right, transparent, #333 0%, #333 0%, transparent);
-} .grade-linear.wt::before {
-    text-align: center;
-    background-image: -webkit-linear-gradient(left, transparent, #FFF 100%, #FFF 0%, transparent);
-    background-image: linear-gradient(to right, transparent, #FFF 100%, #FFF 0%, transparent);
-} .grade-linear.wt::after {
-    text-align: center;
-    background-image: -webkit-linear-gradient(left, transparent, #FFF 0%, #FFF 0%, transparent);
-    background-image: linear-gradient(to right, transparent, #FFF 0%, #FFF 0%, transparent);
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
 }
