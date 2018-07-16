@@ -1,15 +1,10 @@
 $(function() {
 	var vid ='VReqmcLhESE'; /* var vid ='K_xTet06SUo'; */
 	var player;
-	var player;
-	var win = $(window);
-	var area = $('#player');
-	var cover = $('#player_cover');
-	var loader = $('#loader');
-	$('body').append('<script src="https://www.youtube.com/iframe_api">');
+	$('body').append('<script src="https://www.youtube.com/iframe_api"></script>');
 
 	function resizeMovie () {
-		var $w = win,
+		var $w = $(window),
 				bw = 1200,
 				bh = (bw/16) * 9,
 				w = $w.width(),
@@ -20,7 +15,7 @@ $(function() {
 			mh = h;
 			mw = Math.round(bw * (mh/bh));
 		}
-		area.css({
+		$('#player').css({
 			width: mw,
 			height: mh,
 			marginTop: (h - mh)/2,
@@ -30,9 +25,9 @@ $(function() {
 
 	resizeMovie();
 
-	win.resize(resizeMovie);
+	$(window).resize(resizeMovie);
 
-	cover.click(function() {
+	$('#player_cover').click(function() {
 		switch(player.getPlayerState()) {
 			case 1:
 				player.pauseVideo();
@@ -41,7 +36,7 @@ $(function() {
 				player.playVideo();
 		}
 	});
-	win.blur(function(){ // Pause if not focus
+	$(window).blur(function(){ // Pause if not focus
 		player.getPlayerState();
 		player.pauseVideo();
 		console.log("Pause");
@@ -52,7 +47,7 @@ $(function() {
 	});
 
 	function onPlayerReady(event) {
-		loader.delay(2500).animate({"opacity":0}, 800, "swing", function() {
+		$('#loader').delay(2500).animate({"opacity":0}, 800, "swing", function() {
 			$(this).css('display', 'none');
 		});
 		event.target.mute();
