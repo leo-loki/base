@@ -1,7 +1,7 @@
 $(function() {
 	var vid ='VReqmcLhESE'; /* var vid ='K_xTet06SUo'; */
 	var player;
-	$('body').append('<script src="https://www.youtube.com/iframe_api"></script>');
+	$('body').append('<script src="https://www.youtube.com/iframe_api">');
 
 	function resizeMovie () {
 		var $w = $(window),
