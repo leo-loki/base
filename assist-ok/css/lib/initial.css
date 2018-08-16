@@ -6,15 +6,13 @@ html body {
 	font-size:100%;	line-height:1.6em; color:#999; text-align:center;
 }
 body {
-	width: 100%;
-	display: table;
+	min-height: 50em; height: auto; max-height: 100%;
+	display: -webkit-flex; display: flex;
+	-webkit-align-items: center; align-items: center;
+	-webkit-justify-content: center; justify-content: center;
 	-webkit-animation: fadeIn 2s ease 0s 1 normal;
 	animation: fadeIn 2s ease 0s 1 normal;
-} .inner {
-	height: 50em; height: 50rem;
-	display: table-cell;
-	vertical-align: middle;
-}
+} .inner {}
 
 h1, h2, h3, h4, h5, h6 { margin:10px 0; color:#E07; }
 h1, h2, h3 {
