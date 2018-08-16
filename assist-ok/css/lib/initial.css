@@ -6,7 +6,7 @@ html body {
 	font-size:100%;	line-height:1.6em; color:#999; text-align:center;
 }
 body {
-	display: table; width: 100%; height: 22.5em;
+	display: table; width: 100%; height: 23em;
 	-webkit-animation: fadeIn 2s ease 0s 1 normal;
 	animation: fadeIn 2s ease 0s 1 normal;
 } .inner {
@@ -44,3 +44,11 @@ ul, ol { margin:0; padding:0; list-style:none; }
  0% { opacity: 0; }
  100% { opacity: 1; }
 }
+
+@media screen and (min-width: 820px) {
+	html body { height: 48em; }
+}
+ /* portrait view */
+@media screen and (orientation: portrait) {
+	html body { height: 45em; }
+} /* /- portrait view */
