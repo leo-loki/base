@@ -6,12 +6,10 @@ html body {
 	font-size:100%;	line-height:1.6em; color:#999; text-align:center;
 }
 body {
-	padding-top: 25em;
-	-webkit-align-items: center; align-items: center;
-	-webkit-justify-content: center; justify-content: center;
+	padding-top: 20%;
 	-webkit-animation: fadeIn 2s ease 0s 1 normal;
 	animation: fadeIn 2s ease 0s 1 normal;
-} .inner { margin-top: -5em }
+} .inner {}
 
 h1, h2, h3, h4, h5, h6 { margin:10px 0; color:#E07; }
 h1, h2, h3 {
