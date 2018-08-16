@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* Responsive CSS */
+
+@media screen and (max-width: 768px) {
+	#common-header {
+		background: -webkit-linear-gradient(
+			bottom,
+			transparent,
+			#FFF 100%,
+			#FFF 0%,
+			transparent
+		);
+		background-image: linear-gradient(
+			to top,
+			transparent,
+			#FFF 100%,
+			#FFF 0%,
+			transparent
+		);
+		opacity: 0.6;
+		-webkit-transition: all 1s; -moz-transition: all 1s;
+		-o-transition: all 1s; -ms-transition: all 1s;
+		transition: all 1s;
+	}
+	#logo svg path#a1, #logo svg path#a2, #logo svg path#a3, #logo svg path#a4 { fill:#333;
+		-webkit-transition: all 1s; -moz-transition: all 1s;
+		-o-transition: all 1s; -ms-transition: all 1s;
+		transition: all 1s;
+	}
+	.mc-wrap #overlay, .mc-wrap .inner {
+		opacity: 0; display: none; visibility: hidden;
+	}
+}
+ /* portrait view */
+@media screen and (orientation: portrait) {
+	.mc-wrap {
+		opacity: 0; display: none; visibility: hidden;
+	}
+	.golden.ratio {
+		background-image: url(../img/bg/golden-ratio-portrait.svg);
+	} .golden.spiral {
+		background-image: url(../img/bg/golden-spiral_90.svg);
+	} .golden.five-star {
+		background-image: url(../img/bg/five-star-portrait.svg);
+	}
+} /* /- portrait view */

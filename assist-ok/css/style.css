@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* Global CSS */
+
+html, body { /* theme-color: #5533BB; */ }
+
+body { background-color: #000; }
+
+h1, h2, h3 { color:#806F66; }
+p { line-height:1.8em; padding:0.5em 1em; }
+ul, ol { list-style:none; }
+a { color:#806F66; text-decoration:none; outline:none; }
+a:hover { color:#B55; }
+
+#wrap {}
+
+#common-header {
+	position: relative;
+	width: 100%;
+	background-color: rgba(0,0,0,.75);
+	z-index: 1;
+	opacity: 0.9;
+	-webkit-transition: all 1s; -moz-transition: all 1s;
+	-o-transition: all 1s; -ms-transition: all 1s;
+	transition: all 1s;
+} #common-header #logo {
+	padding: 2em; padding-top: 1em;
+} #common-header #logo a {
+	display: inline-block;
+} #common-header #logo svg {
+	min-width: 4em; width: 8vw; max-width: 100px;
+	height: auto;
+} #logo svg path#ar { fill:#bf607f;
+} #logo svg path#a1, #logo svg path#a2, #logo svg path#a3, #logo svg path#a4 { fill:#FFF;
+	-webkit-transition: all 1s; -moz-transition: all 1s;
+	-o-transition: all 1s; -ms-transition: all 1s;
+	transition: all 1s;
+} #logo svg path#a1 { opacity: 0.9;
+} #logo svg path#a2 { opacity: 0.75;
+} #logo svg path#a3 { opacity: 0.6;
+} #logo svg path#a4 { opacity: 0.45; }
+#common-footer {
+	padding: 3.5vw 6.25%;
+	background-color:rgba(0,0,0,0.6);
+	width:87.5%;
+	font-size: 0.8em;
+	color:#999;
+} #common-footer a {
+	color:#FFF;
+} #common-footer small {
+	margin-left: 40px; margin-right: auto;
+	display: inline-block;
+} #common-footer small .copy-mark,
+#common-footer .sns a.fa::before {
+	font-size: 1.8em;
+	vertical-align: -0.16em;
+} #common-footer nav {
+	margin-left: auto; margin-right: 40px;
+	display: inline-block;
+} #common-footer nav ul li {
+	display: inline-block;
+}
+
+/* contents */
+main {
+	display: block;
+} main .container {
+}
+.container {
+	position: relative;
+  margin:0 auto;
+  min-width: 950px; width: 74.2em;
+  background-color: rgba(255,255,255,.75); color:#333;
+}
+.contents { width:70%; }
+.side { width:30%; color:#EEE; background-color: #806F66; } .side a { color:#CBA; } .side a:hover { color:#C99; }
+section { padding:2em; border-left:6px solid #CDB1A3; }
+aside { padding:1em;
+  font-size: 2em;
+  font-weight: bold; line-height:2em;
+}
+/* other class */
+
+.flexbox { display: flex; }
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+}
+.center {
+  align-item: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
