@@ -12,17 +12,19 @@ body {
  animation: fadeIn 2s ease 0s 1 normal;
 }
 
-h1, h2, h3, h4, h5, h6 { margin:10px 0; color:#777; }
-h1 {
-	color:#C96;
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size:16px;	font-weight:normal;
-	letter-spacing:0.8em;
+h1, h2, h3, h4, h5, h6 { margin:10px 0; color:#E07; }
+h1, h2 {
+	font-family:"ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	font-weight:normal;
 	text-shadow: 1px 1px 0px #EEE, 2px 2px 2px #777;
 }
-h1 span {	color:#999; }
+h1 { font-size:1em; letter-spacing:0.4em; }
+h2 { font-size:0.9em; letter-spacing:0.8em; }
+.small { font-size: 0.75em; }
+.org { color:#E70; }
+.grn { color:#6B5; }
 
-section p { text-align:center; }
+p { font-size:0.9em; text-align:center; }
 
 footer { font-size:80%; padding:20px 0; color:#CCC; }
 
