@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TEST</title>
+</head>
+<body>
+
+<script>
+var now = new Date(); /* 現在の日時を取得 */
+var hh = now.getHours(); /* 現在の日時から時刻を取得 */
+
+document.write("このコンピュータの日時とタイムゾーンは「" + now.toString() + "」です。<br>");
+
+ if(5<=hh && hh<10){ /* もし時刻が5時〜9時なら以下を実行 */
+  document.write("おはようございます！");
+ } else if(10<=hh && hh<18){ /* もし時刻が10時〜17時なら以下を実行 */
+  document.write("こんにちは！");
+ } else { /* それ以外は以下を実行 */
+  document.write("こんばんは！");
+ }
+</script>
+
+</body>
+</html>
