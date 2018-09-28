@@ -7,7 +7,7 @@
 
 <body>
 <?php
- phpinfo();
+ echo "これはPHPのサンプルです";
 ?>
 </body>
 </html>
