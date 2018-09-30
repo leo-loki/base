@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* =========================================
+*  フォーム用 CSS
+*  ＊ご自由に変更してお使いください。
+* ========================================= */
+
+* { margin: 0; padding: 0; }
+
+form { padding: 2em; }
+fieldset { padding: 0.25em 1em 0.75em; border: 1px solid #999; }
+fieldset legend { color: #999; }
+label { font-size:0.9em; color:#555;	text-align:right; white-space: nowrap; }
+input { margin:0.25em 0; }
+input[type="text"], input[type="password"], textarea {
+ border: solid #EEE 3px;
+ padding: 0.25em 0.5em;
+}
+input[type="radio"], input[type="checkbox"] {
+ margin-left: 2em;
+}
+form p { margin: 1em; font-size: 0.9em;	text-align: justify; }
+form .submit { margin:1em; text-align:center; }
+
+/* other class */
+.back, .back p { text-align:center; }
+.button {
+ -moz-border-radius: 0.5em 0.5em 0.5em 0.5em;
+ -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+ background: #000;
+ background: -webkit-gradient(linear, left top, left bottom, from(#E07), to(#000));
+ background: -moz-linear-gradient(center top , #E07, #000) repeat scroll 0 0 transparent;
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#EE0077', endColorstr='#000000');
+ border: 1px solid #333333;
+ color: #D7D7D7;
+ cursor: pointer;
+ display: inline-block;
+ font: 14px/100% "Lucida Sans Unicode","Lucida Grande",Arial,Helvetica,"ヒラギノ丸ゴ Pro W4",HiraMaruPro-W4,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,Osaka,sans-serif;
+ outline: medium none;
+ padding: 0.5em 2em 0.55em;
+ text-align: center;
+ text-decoration: none;
+ text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+} .button:hover {
+ text-decoration: none;
+ background: #900;
+ background: -webkit-gradient(linear, left top, left bottom, from(#900), to(#E07));
+ background: -moz-linear-gradient(top, #900, #E07);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#EE0077');
+} .button:active, .buttonRed:active, .buttonSlv:active {
+ position: relative;
+ top: 1px;
+ color: #FFF;
+	background:#E07;
+ background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#E07));
+ background: -moz-linear-gradient(top, #000, #E07);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#EE0077');
+}
+.buttonRed {
+ -moz-border-radius: 0.5em 0.5em 0.5em 0.5em;
+ -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	background:#E07;
+ background: -webkit-gradient(linear, left top, left bottom, from(#E07), to(#000));
+ background: -moz-linear-gradient(center top , #E07, #000) repeat scroll 0 0 transparent;
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#EE0077', endColorstr='#000000');
+ border: 1px solid #E07;
+ color: #FFF;
+ cursor: pointer;
+ display: inline-block;
+ font: 14px/100% "Lucida Sans Unicode","Lucida Grande",Arial,Helvetica,"ヒラギノ丸ゴ Pro W4",HiraMaruPro-W4,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,Osaka,sans-serif;
+ outline: medium none;
+ padding: 0.5em 2em 0.55em;
+ text-align: center;
+ text-decoration: none;
+ text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+} .buttonRed:hover {
+ text-decoration: none;
+ background: #000;
+ background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#E07));
+ background: -moz-linear-gradient(top, #000, #E07);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#EE0077');
+}
+.buttonSlv {
+ -moz-border-radius: 0.5em 0.5em 0.5em 0.5em;
+ -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	background:#CCC;
+ background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));
+ background: -moz-linear-gradient(center top , #FFF, #CCC) repeat scroll 0 0 transparent;
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CCCCCC');
+ border: 1px solid #999;
+ color: #555;
+ cursor: pointer;
+ display: inline-block;
+ font: 14px/100% "Lucida Sans Unicode","Lucida Grande",Arial,Helvetica,"ヒラギノ丸ゴ Pro W4",HiraMaruPro-W4,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,Osaka,sans-serif;
+ outline: medium none;
+ padding: 0.5em 2em 0.55em;
+ text-align: center;
+ text-decoration: none;
+ text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+} .buttonSlv:hover {
+ text-decoration: none;
+ background: #CCC;
+ background: -webkit-gradient(linear, left top, left bottom, from(#CCC), to(#FFF));
+ background: -moz-linear-gradient(top, #CCC, #FFF);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCCCC', endColorstr='#FFFFFF');
+}
