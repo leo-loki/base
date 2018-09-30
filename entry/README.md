@@ -1,10 +1,10 @@
 /* ++++++++++ PHP form system ++++++++++ */
 
-// Original PHP form system Ver.2.1.1
+ Original PHP form system Ver.2.1.1
 
-// author :  Design ofiice IRUYA.
-// website : https://iruya.jp/
-// contact : info@iruya.jp
+ author :  Design ofiice IRUYA.
+ website : https://iruya.jp/
+ contact : info@iruya.jp
 
 /* ++++++++++++++++++++++++++++++++++++++ */
 
@@ -15,20 +15,14 @@
 
 【梱包内容】
 
-　・index.php    = インデクスページです。他ページからはここへアクセスさせてください。（リンク指定はフォルダ名のみでOK）
-　　　　　　　　　　　ほとんどの調整はこの中を修正することで完了します。
-
-　・form.php     = 最初にインデクスページに読み込まれるフォーム項目のファイルです。
-
-　・check.php    = 入力した内容を確認するファイルです。
-
-　・sendmail.php = 送信用のファイルです。（送信されるメール文はこの中に設定されています）
-
-　・readme.txt   = このテキストファイルです。
-
-　・ [ css ]     = 入力フォームや必須項目のチャッカー「exValidation」のスタイルシートなどが入っています。
-
-　・ [  js ]     = 「exValidation」のプログラムやjQueryなどが入っています。
+  ・index.php  = インデクスページです。他ページからはここへアクセスさせてください。（リンク指定はフォルダ名のみでOK）
+              ほとんどの調整はこの中を修正することで完了します。
+  ・form.php   = 最初にインデクスページに読み込まれるフォーム項目のファイルです。
+  ・check.php  = 入力した内容を確認するファイルです。
+・sendmail.php = 送信用のファイルです。（送信されるメール文はこの中に設定されています）
+  ・readme.md  = このテキストファイルです。
+  ・ [ css ]   = 入力フォームや必須項目のチャッカー「exValidation」のスタイルシートなどが入っています。
+  ・ [  js ]   = 「exValidation」のプログラムやjQueryなどが入っています。
 
 
 【設置方法】
