@@ -1,14 +1,11 @@
 /* ++++++++++ PHP form system ++++++++++ */
 
-//
-
 // Original PHP form system Ver.2.1.1
 
-//
 // author :  Design ofiice IRUYA.
 // website : https://iruya.jp/
 // contact : info@iruya.jp
-//
+
 /* ++++++++++++++++++++++++++++++++++++++ */
 
 
