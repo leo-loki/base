@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## /* ++++++++++ PHP form system ++++++++++ */
 
 # Original PHP form system Ver.2.1.1
@@ -10,17 +9,6 @@
 // contact : info@iruya.jp
 
 ***
-=======
-/* ++++++++++ PHP form system ++++++++++ */
-
- Original PHP form system Ver.2.1.1
-
- author :  Design ofiice IRUYA.
- website : https://iruya.jp/
- contact : info@iruya.jp
-
-/* ++++++++++++++++++++++++++++++++++++++ */
->>>>>>> origin/master
 
 
 このプログラムはPHPを利用した簡易メール送信フォームです。
@@ -29,7 +17,6 @@
 
 ### 【梱包内容】
 
-<<<<<<< HEAD
  ・index.php = インデクスページです。他ページからはここへアクセスさせてください。（リンク指定はフォルダ名のみでOK）
    ほとんどの調整はこの中を修正することで完了します。
 
@@ -44,16 +31,6 @@
  ・ [ css ] = 入力フォームや必須項目のチャッカー「exValidation」のスタイルシートなどが入っています。
 
  ・ [  js ] = 「exValidation」のプログラムやjQueryなどが入っています。
-=======
-  ・index.php  = インデクスページです。他ページからはここへアクセスさせてください。（リンク指定はフォルダ名のみでOK）
-              ほとんどの調整はこの中を修正することで完了します。
-  ・form.php   = 最初にインデクスページに読み込まれるフォーム項目のファイルです。
-  ・check.php  = 入力した内容を確認するファイルです。
-・sendmail.php = 送信用のファイルです。（送信されるメール文はこの中に設定されています）
-  ・readme.md  = このテキストファイルです。
-  ・ [ css ]   = 入力フォームや必須項目のチャッカー「exValidation」のスタイルシートなどが入っています。
-  ・ [  js ]   = 「exValidation」のプログラムやjQueryなどが入っています。
->>>>>>> origin/master
 
 
 ### 【設置方法】
