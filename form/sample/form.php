@@ -1,20 +1,20 @@
 <?php
 /* ++++++++++ PHP form system ++++++++++ */
 //
-// Original PHP form system Ver.2.1.1
-//
-// author :  Design ofiice IRUYA.
-// website : https://iruya.jp/
-// contact : info@iruya.jp
+// include file - form division.
 //
 /* ++++++++++++++++++++++++++++++++++++++ */
 ?>
 <!-- Ubinbango JS Loading -->
 <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
-<!-- Form Check (exValidation) setting -->
+<!-- jQuery UI Datepicker japanese set Loading -->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<!-- Form Check (exValidation) and Calender (Datepicker) setting -->
 <script type="text/javascript">
 $(function(){
- $("form").exValidation({
+ /* exValidation setting */
+ var validation = $("#form1");
+ validation.exValidation({
   rules: {
   name: "required",
   kana: "required katakana",
@@ -24,17 +24,19 @@ $(function(){
   tel: "required min10 max18",
   pass: "chkrequired chkmin6 chkmax12",
   repass: "chkrequired chkretype-pass",
-  texts: "required",
+  days: "required min8 max10",
   rb: "radio",
-  cb: "checkbox"
+  cb: "checkbox",
+  texts: "required"
   }
  });
- /*$("input.tipped").formtips({tippedClass:"tipped"});*/
-});
-</script>
-<script type="text/javascript">
-$(function(){
-	var validation = $("#form1").exValidation();
+ /* Datepicker setting */
+ var days = $("#days"); //カレンダーを表示したい入力項目のIDを設定
+ days.datepicker();
+ days.datepicker("option", "dateFormat", 'yy-mm-dd'); /* カレンダーから入力される日付フォーマットを指定 */
+ // 'yy/mm/dd' => 2018/01/25（日本語化した場合の初期設定）// 'y/m/d' => 18/1/25 // 'yy-mm-dd' => 2018-01-25
+ /* 予め入力項目に日付を指定して表示させたい場合は、以下コメント記号「//」を外して日付を指定する（但し、上で指定した日付フォーマットに合わせる） */
+ // days.datepicker("setDate","2020-01-25");
 });
 </script>
 <h3><?=$pageTitle?></h3>
@@ -42,8 +44,8 @@ $(function(){
 <p>
 <fieldset>
 <legend>お名前</legend>
-<input type="text" id="name" name="name" size="25" value="" autofocus placeholder="（例）鈴木花子" class="tipped" title="（例）鈴木一郎" style="ime-mode: active;"><br>
-<label for="kana">フリガナ：</label><input type="text" id="kana" name="kana" size="30" value="" placeholder="（例）スズキハナコ" class="tipped" title="空白は入れないでください" style="ime-mode: active;">
+<input type="text" id="name" name="name" size="25" value="" autofocus placeholder="（例）鈴木一郎" title="（例）鈴木一郎" style="ime-mode: active;"><br>
+<label for="kana">フリガナ：</label><input type="text" id="kana" name="kana" size="30" value="" placeholder="（例）スズキイチロー" title="苗字と名前の間に空白は入れないでください" style="ime-mode: active;">
 </fieldset>
 </p>
 <p>
@@ -70,7 +72,7 @@ $(function(){
 </span>
 <input type="hidden" name="address[]" value=" ">
 <label for="add">ご住所：</label>
-<input type="text" id="add" name="address[]" size="40" class="tipped p-region p-locality p-street-address p-extended-address" placeholder="郵便番号を入力すると候補が表示されます" title="郵便番号から検索されます" style="ime-mode: active;">
+<input type="text" id="add" name="address[]" size="40" class="p-region p-locality p-street-address p-extended-address" placeholder="郵便番号を入力すると候補が表示されます" title="郵便番号から検索されます" style="ime-mode: active;">
 </fieldset>
 </p>
 <p>
@@ -85,6 +87,12 @@ $(function(){
 <legend>ご希望のパスワード</legend>
 <label for="pass">※半角英数字（6〜12文字まで）</label><input name="pw" id="pass" type="password">&nbsp;
 <label for="repass">再入力：<input name="pw" id="repass" type="password"></label>
+</fieldset>
+</p>
+<p>
+<fieldset>
+<legend>参加希望日</legend>
+<input type="text" id="days" name="days" size="20" placeholder="（例）2020-01-01" title="クリックするとカレンダーが開きます。" style="ime-mode: disabled;">
 </fieldset>
 </p>
 <p>

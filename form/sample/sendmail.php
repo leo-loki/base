@@ -1,11 +1,7 @@
 <?php
 /* ++++++++++ PHP form system ++++++++++ */
 //
-// Send form system Ver.3.1.1
-//
-// author :  Design ofiice IRUYA.
-// website : https://iruya.jp/
-// contact : info@iruya.jp
+// include file - Sendmail division.
 //
 /* ++++++++++++++++++++++++++++++++++++++ */
 

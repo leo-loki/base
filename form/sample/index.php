@@ -1,11 +1,10 @@
 <?php
 /* ++++++++++ PHP form system ++++++++++ */
 //
-// Original PHP form system Ver.2.1.1
+// Original PHP form system Ver.2.1.2
 //
 // author :  Design ofiice IRUYA.
 // website : https://iruya.jp/
-// contact : info@iruya.jp
 //
 /* ++++++++++++++++++++++++++++++++++++++ */
 
@@ -36,11 +35,11 @@ $site_mail = "info@iruya.jp"; // メールフッタに記載されるサイト�
  $site_url = "https://www.iruya.jp/"; // メールフッタに記載される運営者のWebサイトURL
 
 // フォームのチェックページおよび利用者への確認メールで表示させたい項目を配列に設定
-      $label_name = array("お名前","e-mail","ご住所","ご連絡先","ご希望コース","カテゴリー","連絡事項"); // この（カッコ）内に確認ページで表示させたい入力項目の「見出し」を「,（カンマ）」で区切って順番に記述。
-       $post_name = array("name","email","address","tel","course","cat","texts"); // この（カッコ）内に確認ページで表示させたい入力項目の「name属性の値」を「,（カンマ）」で区切って順番に記述（上の見出しと順番を合わせる）。
+      $label_name = array("お名前","e-mail","ご住所","ご連絡先","参加希望日","ご希望コース","カテゴリー","連絡事項"); // この（カッコ）内に確認ページで表示させたい入力項目の「見出し」を「,（カンマ）」で区切って順番に記述。
+       $post_name = array("name","email","address","tel","days","course","cat","texts"); // この（カッコ）内に確認ページで表示させたい入力項目の「name属性の値」を「,（カンマ）」で区切って順番に記述（上の見出しと順番を合わせる）。
 // 運営者への受信メールで表示させたいフォーム項目を配列に設定
-$admin_label_name = array("お名前","フリガナ","e-mail","ご住所","ご連絡先","パスワード","ご希望コース","カテゴリー","連絡事項"); // この（カッコ）内に入力項目の「見出し」を「,（カンマ）」で区切って順番に全て記述。
- $admin_post_name = array("name","kana","email","address","tel","pw","course","cat","texts"); // この（カッコ）内に入力項目の「name属性の値」を「,（カンマ）」で区切って順番に全て記述（上の見出しと順番を合わせる）。
+$admin_label_name = array("お名前","フリガナ","e-mail","ご住所","ご連絡先","パスワード","参加希望日","ご希望コース","カテゴリー","連絡事項"); // この（カッコ）内に入力項目の「見出し」を「,（カンマ）」で区切って順番に全て記述。
+ $admin_post_name = array("name","kana","email","address","tel","pw","days","course","cat","texts"); // この（カッコ）内に入力項目の「name属性の値」を「,（カンマ）」で区切って順番に全て記述（上の見出しと順番を合わせる）。
 
 /* /FORM DETAIL SETUP */
 
@@ -67,17 +66,24 @@ if($_POST){
 <head>
 <meta charset="UTF-8">
 <title><?=$pageTitle?></title>
-<link rel="stylesheet" type="text/css" href="./css/style.css?id=mod20180101">
-<link rel="stylesheet" type="text/css" href="./css/exvalidation.css">
-	<!-- JS jQuery & lib Loading //-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<!-- form Javascript file Loading //-->
-	<script type="text/javascript" src="./js/jquery.easing.js"></script>
+<!-- CSS Loading //-->
+<link rel="stylesheet" type="text/css" href="./css/style.css?id=mod20181001"><!-- form custom css -->
+<link rel="stylesheet" type="text/css" href="./css/exvalidation.css"><!-- exValidation css -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"><!-- jQuery UI css -->
+<!-- /CSS Loading //-->
+<!-- jQuery & JS library Loading //-->
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+<!-- exValidation js -->
 	<script type="text/javascript" src="./js/exvalidation.js"></script>
 	<script type="text/javascript" src="./js/exchecker-ja.js"></script>
-	<script type="text/javascript" src="./js/jquery-ui-1.8.4.custom.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.ui.datepicker-ja.js"></script>
-<!-- /form Javascript file Loading //-->
+<!-- /jQuery & JS library Loading //-->
 </head>
 
 <body>
