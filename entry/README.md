@@ -1,12 +1,10 @@
 ## /* ++++++++++ PHP form system ++++++++++ */
 
-# Original PHP form system Ver.2.1.1
+# Original PHP form system (ver.2.1.1)
 
 // author :  Design ofiice IRUYA.
 
 // website : https://iruya.jp/
-
-// contact : info@iruya.jp
 
 ***
 
@@ -17,20 +15,21 @@
 
 ### 【梱包内容】
 
- ・index.php = インデクスページです。他ページからはここへアクセスさせてください。（リンク指定はフォルダ名のみでOK）  
-   ほとんどの調整はこの中を修正することで完了します。
+ ・index.php    = インデクスページです。他ページからはここへアクセスさせてください。  
+                 （リンク指定はフォルダ名のみでOK）  
+                  ほとんどの調整はこの中を修正することで完了します。
 
- ・form.php = 最初にインデクスページに読み込まれるフォーム項目のファイルです。
+ ・form.php     = 最初にインデクスページに読み込まれるフォーム項目のファイルです。
 
- ・check.php = 入力した内容を確認するファイルです。
+ ・check.php    = 入力した内容を確認するファイルです。
 
  ・sendmail.php = 送信用のファイルです。（送信されるメール文はこの中に設定されています）
 
- ・readme.txt = このテキストファイルです。
+ ・README.md    = このテキストファイルです。
 
- ・ [ css ] = 入力フォームや必須項目のチャッカー「exValidation」のスタイルシートなどが入っています。
+ ・ [ css ]     = 入力フォームや必須項目のチャッカー「exValidation」のスタイルシートなどが入っています。
 
- ・ [  js ] = 「exValidation」のプログラムやjQueryなどが入っています。
+ ・ [  js ]     = 「exValidation」のプログラムやjQueryなどが入っています。
 
 
 ### 【設置方法】
@@ -50,12 +49,12 @@
 　　　その際、最後の行末に「,（カンマ）」があれば削除してください。
 
  （例）
-    radio: "radio",
-    texts: "required",
+     radio: "radio",
+     texts: "required",
     }
-     ↓
-    radio: "radio",
-    texts: "required"
+       ↓
+     radio: "radio",
+     texts: "required"
     }
 
 《※フォームの入力チェック（exValidation）について》  
@@ -97,7 +96,7 @@
 
 ### 【更新履歴】
 
-2018.10.01 : ver.2.1.1　このテキストファイルや各ファイルのコメントなどを修正。
+2018.10.01 : ver.2.1.1　このマークダウンや各ファイルのコメントなどを修正。
 
 2018.09.27 : ver.2.1.0　$_POSTメゾット値を自動で取得するように変更。
 
