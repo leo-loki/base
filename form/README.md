@@ -1,6 +1,6 @@
 ## /* ++++++++++ PHP form system ++++++++++ */
 
-# Original PHP form system (ver.2.1.2)
+# Original PHP form system (ver.2.1.3)
 
 // author :  Design ofiice IRUYA.
 
@@ -23,7 +23,7 @@
 
  ・sendmail.php = 送信用のファイルです。（送信されるメール文はこの中に設定されています）
 
- ・README.txt   = 設定方法と取扱注意事項のテキストです。
+ ・README.txt   = プログラムと制作者情報のテキスト。
 
  ・[ css ]      = 入力フォームや必須項目のチャッカー「exValidation」のスタイルシートなどが入っています。
 
@@ -98,6 +98,8 @@
 
 
 ### 【更新履歴】
+
+2018.10.05 : ver.2.1.3　PHP7以降のエラーを修正。
 
 2018.10.01 : ver.2.1.2　jQueryのバージョンアップと整理。
 

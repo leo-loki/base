@@ -1,6 +1,6 @@
 ## /* ++++++++++ PHP form system ++++++++++ */
 
-# Original PHP form system (ver.2.1.2)
+# Original PHP form system (ver.2.1.3)
 
 // author  : Loki.（https://github.com/leo-loki）
 

@@ -6,13 +6,17 @@
 /* ++++++++++++++++++++++++++++++++++++++ */
 
 if(isset($post_method)){
+
+if (is_array($post_method)) { $limit = count($post_method);
+} else { $limit = 1; }
+
 ?>
 <form method="post" action="./?mode=send">
 <fieldset>
 <legend>送信内容のご確認</legend>
 <?php
   $msg = ""; $admin_msg = "";
-  for($i=0; $i<count($post_method); $i++){
+  for($i=0; $i<$limit; $i++){
    if((isset($admin_label_name[$i]))&&(isset($admin_post_name[$i]))){
     if($admin_post_name[$i]==="texts"){
      $admin_msg .= "●".$admin_label_name[$i]."：\n".$post_method["$admin_post_name[$i]"]."\n";

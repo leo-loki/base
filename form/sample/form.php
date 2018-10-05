@@ -39,16 +39,17 @@ $(function(){
  // days.datepicker("setDate","2020-01-25");
 });
 </script>
+
 <h3><?=$pageTitle?></h3>
+
 <form id="form1" class="h-adr" method="post" action="./?mode=check">
-<p>
+
 <fieldset>
 <legend>お名前</legend>
 <input type="text" id="name" name="name" size="25" value="" autofocus placeholder="（例）鈴木一郎" title="（例）鈴木一郎" style="ime-mode: active;"><br>
 <label for="kana">フリガナ：</label><input type="text" id="kana" name="kana" size="30" value="" placeholder="（例）スズキイチロー" title="苗字と名前の間に空白は入れないでください" style="ime-mode: active;">
 </fieldset>
-</p>
-<p>
+
 <fieldset>
 <legend>e-mail</legend>
 <span id="email">
@@ -57,9 +58,7 @@ $(function(){
 <input type="text" id="email2" name="email[]" value="" style="ime-mode: disabled;">
 </span>
 </fieldset>
-</p>
 
-<p>
 <fieldset>
 <legend>ご住所</legend>
 <span class="p-country-name" style="display:none;">Japan</span>
@@ -74,28 +73,24 @@ $(function(){
 <label for="add">ご住所：</label>
 <input type="text" id="add" name="address[]" size="40" class="p-region p-locality p-street-address p-extended-address" placeholder="郵便番号を入力すると候補が表示されます" title="郵便番号から検索されます" style="ime-mode: active;">
 </fieldset>
-</p>
-<p>
+
 <fieldset>
 <legend>ご連絡先</legend>
 <label for="tel">電話番号（携帯可）：</label>
 <input type="text" id="tel" name="tel" size="20" style="ime-mode: disabled;">
 </fieldset>
-</p>
-<p>
+
 <fieldset>
 <legend>ご希望のパスワード</legend>
 <label for="pass">※半角英数字（6〜12文字まで）</label><input name="pw" id="pass" type="password">&nbsp;
 <label for="repass">再入力：<input name="pw" id="repass" type="password"></label>
 </fieldset>
-</p>
-<p>
+
 <fieldset>
 <legend>参加希望日</legend>
 <input type="text" id="days" name="days" size="20" placeholder="（例）2020-01-01" title="クリックするとカレンダーが開きます。" style="ime-mode: disabled;">
 </fieldset>
-</p>
-<p>
+
 <fieldset>
 <legend>ラジオボタン</legend>
 <span id="rb">
@@ -104,10 +99,10 @@ $(function(){
 <label for="rb03"><input type="radio" id="rb03" name="course" value="・Cコース"> Cコース</label>
 </span>
 </fieldset>
-</p>
-<p>
+
 <fieldset>
 <legend>チェックボックス（複数選択可）</legend>
+<input type="hidden" id="cat01" name="cat[]" value="">
 <span id="cb">
 <label for="cat01"><input type="checkbox" id="cat01" name="cat[]" value="・カテゴリ01"> カテゴリ01</label>
 <label for="cat02"><input type="checkbox" id="cat02" name="cat[]" value="・カテゴリ02"> カテゴリ02</label>
@@ -119,13 +114,11 @@ $(function(){
 <label for="cat08"><input type="checkbox" id="cat08" name="cat[]" value="・カテゴリ08"> カテゴリ08</label>
 </span>
 </fieldset>
-</p>
-<p>
+
 <fieldset>
 <legend>連絡事項</legend>
 <textarea id="texts" name="texts" cols="40" rows="5" style="ime-mode: active;" placeholder="ご意見・ご質問などございましたらお書き下さい。"></textarea>
 </fieldset>
-</p>
 <input type="hidden" name="mode" value="check">
 <p><button type="submit" class="button buttonSlv">確　認</button></p>
 </form>

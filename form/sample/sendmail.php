@@ -9,8 +9,10 @@
 
 if((isset($_POST['name']))&&(isset($_POST['email']))&&(isset($_POST['msg']))&&(isset($_POST['admin_msg']))&&($_POST['mode']==="send")){
 
+$success = false;
+
 /* ===== 文字コード環境の設定 ===== */
-if($langFlag){
+if(isset($langFlag)){
 	mb_language("en");
 	$inchr = "UTF-8";
 	$outchr = "UTF-8";
@@ -33,7 +35,7 @@ $admin_msg = "".$_POST['admin_msg'];
 /* ===== mail setup ===== */
 
 /* subject setup */
-if($langFlag){
+if(isset($langFlag)){
 	$mail_subject = 'Confirmation of '.$subject;
  $add_subject = "[Caution]".$subject;
 } else {
@@ -50,7 +52,7 @@ $add_subject = mb_convert_encoding($add_subject, $outchr, $inchr);
 
 /* ----- 利用者への確認メール文（ここから） ----- */
 
-if($langFlag){
+if(isset($langFlag)){
 	$body = 'Dear '.$name.' - '.date('j.n.Y')."\r\n";
 } else {
 	$body = $name.' 様　'.date('Y年n月j日')."\r\n";
@@ -64,7 +66,7 @@ $site_name.'へ'.$subject.'いただき誠に有り難うございます。' . "
 
 $body .= '--------------------------------------------------' . "\r\n".
 "\r\n";
-if($langFlag){
+if(isset($langFlag)){
 $body .= '[ SEND MAIL INFORMATION ]'. "\r\n";
 } else {
 $body .= '【受信内容】'. "\r\n";
@@ -89,7 +91,7 @@ $body .= 'URL : '.$site_url. "\r\n".
 
 /* ----- 運営者への受信メール文（ここから） ----- */
 
-if($langFlag){
+if(isset($langFlag)){
 	$add_body = 'Dear Administrator.' . "\r\n";
 } else {
 	$add_body = '担当者 様' . "\r\n";
@@ -102,7 +104,7 @@ $name.' 様より'.$subject.'を頂きました。' . "\r\n".
 "\r\n";
 $add_body .= '--------------------------------------------------' . "\r\n".
 "\r\n";
-if($langFlag){
+if(isset($langFlag)){
 $add_body .= '[ SEND MAIL INFORMATION ]'. "\r\n";
 } else {
 $add_body .= '【受信内容】'. "\r\n";
@@ -124,10 +126,10 @@ function send_mail($send_mail, $site_mail, $email, $mail_subject, $body, $send_n
  //X-Mailerをphpversition等で指定するとHotMailでは迷惑メールとして扱われる
  $send_name = mb_convert_encoding($send_name, $outchr, $inchr);
  $body = mb_convert_encoding($body, $outchr, $inchr);
- if($mail_subject){ $mail_subject = mime_enc($mail_subject); }
+ if(isset($mail_subject)){ $mail_subject = mime_enc($mail_subject); }
  $body = str_replace("\r\n", "\n", $body);
  $body = str_replace("\r" , "\n", $body);
- if($send_name){
+ if(isset($send_name)){
   $head .= 'From: "'.mime_enc($send_name).'" <'.$send_mail.'>'."\n";
  }else{
   $head .= 'From: "'.$send_mail.'" <'.$send_mail.'>'."\n";
@@ -136,7 +138,7 @@ function send_mail($send_mail, $site_mail, $email, $mail_subject, $body, $send_n
  $head.= "X-Originating-Email: [{$send_mail}]\n";
  $head.= "X-Sender: {$send_mail}\n";
  $head.= "Mime-Version: 1.0\n";
- if($langFlag){
+ if(isset($langFlag)){
   $head.= "Content-Type: text/plain; charset=iso-8859-1\n";
  } else {
   $head.= "Content-Type: text/plain;charset=ISO-2022-JP\n";
@@ -152,11 +154,12 @@ function send_mail($send_mail, $site_mail, $email, $mail_subject, $body, $send_n
 
 function add_send_mail($send_mail, $name, $email, $get_mail, $add_subject, $add_body, $bcc_mail, $inchr, $outchr){
  //X-Mailerをphpversition等で指定するとHotMailでは迷惑メールとして扱われる
+ $add_head = "";
  $add_body = mb_convert_encoding($add_body, $outchr, $inchr);
- if($add_subject){ $add_subject = mime_enc($add_subject); }
+ if(isset($add_subject)){ $add_subject = mime_enc($add_subject); }
  $add_body = str_replace("\r\n", "\n", $add_body);
  $add_body = str_replace("\r" , "\n", $add_body);
- if($name){
+ if(isset($name)){
   $add_head .= 'From: "'.mime_enc($name).'" <'.$email.'>'."\n";
  }else{
   $add_head .= 'From: "'.$email.'" <'.$email.'>'."\n";
@@ -165,12 +168,12 @@ function add_send_mail($send_mail, $name, $email, $get_mail, $add_subject, $add_
  $add_head.= "X-Originating-Email: [{$send_mail}]\n";
  $add_head.= "X-Sender: {$email}\n";
  $add_head.= "Mime-Version: 1.0\n";
- if($langFlag){
+ if(isset($langFlag)){
   $add_head.= "Content-Type: text/plain; charset=iso-8859-1\n";
  } else {
   $add_head.= "Content-Type: text/plain;charset=ISO-2022-JP\n";
  }
- if($bcc_mail){ $add_head .= 'Bcc: '.$bcc_mail.'' . "\n"; }
+ if(isset($bcc_mail)){ $add_head .= 'Bcc: '.$bcc_mail.'' . "\n"; }
  $add_head .= 'Reply-To: '.$email.'' . "\n";
   #$head.= "X-Mailer: PHP/".phpversion();
   if(!mail($get_mail, $add_subject, $add_body, $add_head)) return FALSE; else return TRUE;
@@ -197,20 +200,25 @@ function mime_enc($str){
 if(add_send_mail($send_mail, $name, $email, $get_mail, $add_subject, $add_body, $bcc_mail, $inchr, $outchr)){
  echo "<h2 class=\"send\">";
 	if(send_mail($send_mail, $site_mail, $email, $mail_subject, $body, $send_name, $inchr, $outchr)){
-  if($langFlag){ print("Transmission completion."); } else { print("送信が完了しました。"); }
+  if(isset($langFlag)){ print("Transmission completion."); } else { $success = true; print("送信が完了しました。"); }
 	} else {
-	 if($langFlag){ print("ERROR : Send Mail Incomplete."); } else { print("エラー：確認メールの送信失敗"); }
+	 if(isset($langFlag)){ print("ERROR : Send Mail Incomplete."); } else { print("エラー：確認メールの送信失敗"); }
 	}
  echo "</h2>";
 }else{
  echo "<h2 class=\"send\">";
-	if($langFlag){ print("ERROR : Send Mail Incomplete."); } else { print("エラー：送信に失敗しました"); }
+	if(isset($langFlag)){ print("ERROR : Send Mail Incomplete."); }
+	else { print("エラー：送信に失敗しました"); }
  echo "</h2>";
 }
 
 ?>
 </fieldset>
+<?php if(isset($success)){ ?>
 <p><button type="button" onclick="location.href = '<?=$back_url?>';" class="button buttonSlv">フォームTOPへ戻る</button></p>
+<?php } else { ?>
+<p><button type="button" onclick="javascript:history.back();" class="button buttonSlv">前画面へ戻る</button></p>
+<?php } ?>
 </form>
 <!-- /form.back -->
 
@@ -225,8 +233,8 @@ if(add_send_mail($send_mail, $name, $email, $get_mail, $add_subject, $add_body, 
 <form action="<?=$back_url?>" class="back">
 <fieldset>
 <legend>フォーム送信処理</legend>
-<h2 class="send"><?php	if($langFlag){ print("ERROR : Send Mail Incomplete."); } else { print("エラー：送信失敗"); } ?></h2>
-<p><em><?php if($langFlag){ print("Please input a necessary matter to the form."); } else { print("各フォームより必要事項を入力してお送りください。"); } ?></em></p>
+<h2 class="send"><?php	if(isset($langFlag)){ print("ERROR : Send Mail Incomplete."); } else { print("エラー：送信失敗"); } ?></h2>
+<p><em><?php if(isset($langFlag)){ print("Please input a necessary matter to the form."); } else { print("各フォームより必要事項を入力してお送りください。"); } ?></em></p>
 </fieldset>
 <p><button type="button" onclick="javascript:history.back();" class="button buttonSlv">前画面へ戻る</button></p>
 </form>

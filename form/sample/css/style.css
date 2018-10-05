@@ -5,10 +5,14 @@
 *  ＊ご自由に変更してお使いください。
 * ========================================= */
 
-* { margin: 0; padding: 0; }
+.wrap {
+ min-width: 320px; width: auto; max-width: 960px;
+ margin: 0 auto; padding: 2em 1em;
+ background: #FFF;
+}
 
 form { padding: 2em; }
-fieldset { padding: 0.25em 1em 0.75em; border: 1px solid #999; }
+fieldset { margin-bottom: 2em; padding: 0.25em 1em 0.75em; border: 1px solid #999; }
 fieldset legend { color: #999; }
 label { font-size:0.9em; color:#555;	text-align:right; white-space: nowrap; }
 input { margin:0.25em 0; }
@@ -19,7 +23,7 @@ input[type="text"], input[type="password"], textarea {
 input[type="radio"], input[type="checkbox"] {
  margin-left: 2em;
 }
-form p { margin: 1em; font-size: 0.9em;	text-align: justify; }
+form p { font-size: 0.9em;	text-align: justify; }
 form .submit { margin:1em; text-align:center; }
 
 /* other class */
