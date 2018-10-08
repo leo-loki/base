@@ -57,9 +57,8 @@
 
 《※フォームの入力チェック（exValidation）について》  
 　このフォームでは入力チェックに「exValidation」を利用しています。  
-　この「exValidation」につきましては、制作者のサイトがすでに閉鎖されていますので、  
-　詳しい利用方法は下記の参考サイトなどをご覧ください。  
-　・参考サイト：https://qiita.com/seihowlow24/items/83b2adbb4986d7079d19  
+　「exValidation」の詳細は下記の提供元サイトをご覧ください。  
+　・提供元：https://github.com/5509/exValidation
 
 《※住所自動入力（yubinbango）について》  
 　このフォームでは郵便番号->住所自動入力に「yubinbango」を利用しています。  
