@@ -20,6 +20,7 @@ $acnt-color: #79865E;
 /* TAG */
 html, body { margin: 0; padding: 0; }
 body {
+	position: relative;
  color: #333;
  background-color: #FFF;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
@@ -35,6 +36,14 @@ section { padding:2em; border-left:6px solid $sub1-color; }
 aside { padding:1em;
   font-size: 2em;
   font-weight: bold; line-height:2em;
+}
+video {
+ position: fixed;
+	top: 50%; left: 50%;
+	z-index: 1;
+	transform: translate(-50%,-50%);
+	max-width: 90%;
+	max-height: 80%;
 }
 
 /* Common ID & Class */

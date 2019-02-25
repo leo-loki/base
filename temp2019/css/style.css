@@ -11,6 +11,7 @@ html, body {
   padding: 0; }
 
 body {
+  position: relative;
   color: #333;
   background-color: #FFF;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif"; }
@@ -42,6 +43,15 @@ aside {
   font-size: 2em;
   font-weight: bold;
   line-height: 2em; }
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 80%; }
 
 /* Common ID & Class */
 #common-header {
