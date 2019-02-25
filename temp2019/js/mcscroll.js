@@ -36,8 +36,7 @@ skrollr.init({
       animFrame(seek);
     }
 
-    $('video[data-time]').on('loadedmetadata', function(e)
-                             {
-      // Launch first animation
-      animFrame(seek);
-    });
+ $('video[data-time]').on('loadedmetadata',function(e){
+		// Launch first animation
+		animFrame(seek);
+	});
