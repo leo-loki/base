@@ -1,0 +1,50 @@
+/* Transform Rotate 3D */
+
+  $val000: -1,1,0,0deg;
+  $val025: -1,1,0,90deg;
+  $val050: -1,1,0,180deg;
+  $val075: -1,1,0,270deg;
+  $val100: -1,1,0,360deg;
+$z-rotate: -36deg;
+   $anime: 1.6s linear 0s infinite;
+  $prefix: ("-webkit-", "-moz-");
+    $rate: ("0%", "25%", "50%", "75%", "100%");
+     $deg: ($val000, $val025, $val050, $val075, $val100);
+// keyframes mixin
+@mixin keyframes($name, $prefix, $rate, $deg) {
+	$lt: length($prefix);
+	@for $i from 1 through $lt {
+		$p: nth($prefix, $i);
+		@-webkit-keyframes #{$name} {
+			$limit: length($rate);
+			@for $j from 1 through $limit {
+				$r: nth($rate, $j); $d: nth($deg, $j);
+				#{$r} { #{$p}transform: rotate3d($d); transform: rotate3d($d); }
+			}
+	 }
+ }
+ @keyframes #{$name} {
+		$limit: length($rate);
+		@for $i from 1 through $limit {
+			$r: nth($rate, $i); $d: nth($deg, $i);
+			#{$r} { -webkit-transform: rotate3d($d); -moz-transform: rotate3d($d); transform: rotate3d($d); }
+		}
+ }
+}
+
+// use of keyframes mixin
+@include keyframes(rotate3d, $prefix, $rate, $deg);
+
+.card {
+ width: 240px;
+ margin: 3em auto;
+ -webkit-transform: rotateZ($z-rotate);
+	-moz-transform: rotateZ($z-rotate);
+	transform: rotateZ($z-rotate);
+	display: table;
+ svg {
+  -webkit-animation:rotate3d $anime;
+	 -moz-animation:rotate3d $anime;
+	 animation:rotate3d $anime;
+ }
+}

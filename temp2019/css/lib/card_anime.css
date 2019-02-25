@@ -1,0 +1,65 @@
+/* Transform Rotate 3D */
+@-webkit-keyframes rotate3d {
+  0% {
+    -webkit-transform: rotate3d(-1, 1, 0, 0deg);
+    transform: rotate3d(-1, 1, 0, 0deg); }
+  25% {
+    -webkit-transform: rotate3d(-1, 1, 0, 90deg);
+    transform: rotate3d(-1, 1, 0, 90deg); }
+  50% {
+    -webkit-transform: rotate3d(-1, 1, 0, 180deg);
+    transform: rotate3d(-1, 1, 0, 180deg); }
+  75% {
+    -webkit-transform: rotate3d(-1, 1, 0, 270deg);
+    transform: rotate3d(-1, 1, 0, 270deg); }
+  100% {
+    -webkit-transform: rotate3d(-1, 1, 0, 360deg);
+    transform: rotate3d(-1, 1, 0, 360deg); } }
+@-webkit-keyframes rotate3d {
+  0% {
+    -moz-transform: rotate3d(-1, 1, 0, 0deg);
+    transform: rotate3d(-1, 1, 0, 0deg); }
+  25% {
+    -moz-transform: rotate3d(-1, 1, 0, 90deg);
+    transform: rotate3d(-1, 1, 0, 90deg); }
+  50% {
+    -moz-transform: rotate3d(-1, 1, 0, 180deg);
+    transform: rotate3d(-1, 1, 0, 180deg); }
+  75% {
+    -moz-transform: rotate3d(-1, 1, 0, 270deg);
+    transform: rotate3d(-1, 1, 0, 270deg); }
+  100% {
+    -moz-transform: rotate3d(-1, 1, 0, 360deg);
+    transform: rotate3d(-1, 1, 0, 360deg); } }
+@keyframes rotate3d {
+  0% {
+    -webkit-transform: rotate3d(-1, 1, 0, 0deg);
+    -moz-transform: rotate3d(-1, 1, 0, 0deg);
+    transform: rotate3d(-1, 1, 0, 0deg); }
+  25% {
+    -webkit-transform: rotate3d(-1, 1, 0, 90deg);
+    -moz-transform: rotate3d(-1, 1, 0, 90deg);
+    transform: rotate3d(-1, 1, 0, 90deg); }
+  50% {
+    -webkit-transform: rotate3d(-1, 1, 0, 180deg);
+    -moz-transform: rotate3d(-1, 1, 0, 180deg);
+    transform: rotate3d(-1, 1, 0, 180deg); }
+  75% {
+    -webkit-transform: rotate3d(-1, 1, 0, 270deg);
+    -moz-transform: rotate3d(-1, 1, 0, 270deg);
+    transform: rotate3d(-1, 1, 0, 270deg); }
+  100% {
+    -webkit-transform: rotate3d(-1, 1, 0, 360deg);
+    -moz-transform: rotate3d(-1, 1, 0, 360deg);
+    transform: rotate3d(-1, 1, 0, 360deg); } }
+.card {
+  width: 240px;
+  margin: 3em auto;
+  -webkit-transform: rotateZ(-36deg);
+  -moz-transform: rotateZ(-36deg);
+  transform: rotateZ(-36deg);
+  display: table; }
+  .card svg {
+    -webkit-animation: rotate3d 1.6s linear 0s infinite;
+    -moz-animation: rotate3d 1.6s linear 0s infinite;
+    animation: rotate3d 1.6s linear 0s infinite; }

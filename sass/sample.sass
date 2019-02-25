@@ -1,0 +1,26 @@
+/* SASS Document */
+
+$base_color: #E00
+
+.box
+	background-color: grayscale($base_color)
+	width: 10em
+	height: 10em
+	font-size: 1.4em
+	margin: 0 0 1em
+	&:hover
+		background-color: rgba(grayscale($base_color), 0.2)
+.red
+	@extend .box
+	background-color: adjust-hue($base_color, 45deg)
+	&:hover
+		background-color: rgba(complement($base_color), 0.3)
+
+.bigbox
+	@extend .box
+	width: 20em
+	height: 20em
+.bigred
+	@extend .red
+	width: 20em
+	height: 20em
