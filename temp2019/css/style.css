@@ -19,11 +19,23 @@ h1, h2, h3 {
   color: #B77E75; }
 
 p {
+  padding: 0.5em 1em;
   line-height: 1.8em;
-  padding: 0.5em 1em; }
+  text-align: justify; }
+
+p {
+  padding: 0.5em 1em;
+  line-height: 1.8em;
+  text-align: justify; }
 
 ul, ol {
-  list-style: none; }
+  padding-bottom: 1em;
+  list-style: none;
+  line-height: 1.6em; }
+
+dl {
+  padding-bottom: 1em;
+  line-height: 1.6em; }
 
 a {
   color: #79865E;

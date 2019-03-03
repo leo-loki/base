@@ -27,8 +27,10 @@ body {
 h1, h2, h3 {
  color: $main-color;
 }
-p { line-height:1.8em; padding:0.5em 1em; }
-ul, ol { list-style:none; }
+p { padding:0.5em 1em; line-height:1.8em; text-align: justify; }
+p { padding:0.5em 1em; line-height:1.8em; text-align: justify; }
+ul, ol { padding-bottom: 1em; list-style:none; line-height: 1.6em; }
+dl { padding-bottom: 1em; line-height: 1.6em; }
 a { color: $acnt-color; text-decoration:none; outline:none; }
 a:hover { color: $sub2-color; }
 section { padding:2em; border-left:6px solid $sub1-color; }
