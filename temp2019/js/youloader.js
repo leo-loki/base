@@ -1,5 +1,5 @@
 $(function() {
-	var vid ='Ld0YE9WXpbA';
+	var vid ='mATF00ORugU';
 	/* var vid ='K_xTet06SUo'; */
     var player;
     
