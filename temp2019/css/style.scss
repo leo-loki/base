@@ -32,9 +32,9 @@ ul, ol { list-style:none; }
 a { color: $acnt-color; text-decoration:none; outline:none; }
 a:hover { color: $sub2-color; }
 section { padding:2em; border-left:6px solid $sub1-color; }
-aside { padding:1em;
-  font-size: 2em;
-  font-weight: bold; line-height:2em;
+aside {
+ padding:1em;
+ font-weight: bold; line-height:2em;
 }
 
 /* Common ID & Class */
