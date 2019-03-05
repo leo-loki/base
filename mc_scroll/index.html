@@ -14,18 +14,20 @@
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="../css/lib/html5resetter.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- JS jQuery & lib Loading //-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="../js/func.js"></script>
 </head>
 
 <body>
 
-<h1>スクロールすると動画が動きます。</h1>
+<h1 id="top">スクロールすると動画が動きます。</h1>
 
 <video preload data-start="@data-time: 0" data-end="@data-time: 1">
 	<source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="mc/sample_mc.mp4">
 </video>
 
-<footer>Scroll End. &copy; Design office IRUYA.</footer>
+<footer>Scroll End. &copy; Design office IRUYA. <a href="#top">TOP</a></footer>
 
 <script src='js/mc_scroll.js'></script>
 </body>
