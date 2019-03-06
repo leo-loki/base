@@ -1,17 +1,17 @@
 /* SASS Document */
 .box, .red, .bigred, .bigbox {
-  background-color: #777777;
+  background-color: gray;
   width: 10em;
   height: 10em;
-  font-size: 1.4em;
+  font-size: 1.6em;
   margin: 0 0 1em; }
   .box:hover, .red:hover, .bigred:hover, .bigbox:hover {
-    background-color: rgba(119, 119, 119, 0.2); }
+    background-color: rgba(128, 128, 128, 0.2); }
 
 .red, .bigred {
-  background-color: #eeb300; }
+  background-color: #ffbf00; }
   .red:hover, .bigred:hover {
-    background-color: rgba(0, 238, 238, 0.3); }
+    background-color: rgba(0, 255, 255, 0.3); }
 
 .bigbox {
   width: 20em;
