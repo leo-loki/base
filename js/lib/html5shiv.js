@@ -967,7 +967,7 @@
       </tr>
       <tr>
         <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
-        <td id="LC7" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">var</span> version <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>3.7.3<span class="pl-pds">&#39;</span></span>;</td>
+        <td id="LC7" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">var</span> version <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>3.7.3<span class="pl-pds">'</span></span>;</td>
       </tr>
       <tr>
         <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
@@ -993,7 +993,7 @@
       </tr>
       <tr>
         <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="LC13" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">var</span> reSkip <span class="pl-k">=</span><span class="pl-sr"> <span class="pl-pds">/</span><span class="pl-k">^</span>&lt;<span class="pl-k">|</span><span class="pl-k">^</span>(?:button<span class="pl-k">|</span>map<span class="pl-k">|</span>select<span class="pl-k">|</span>textarea<span class="pl-k">|</span>object<span class="pl-k">|</span>iframe<span class="pl-k">|</span>option<span class="pl-k">|</span>optgroup)<span class="pl-k">$</span><span class="pl-pds">/</span>i</span>;</td>
+        <td id="LC13" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">var</span> reSkip <span class="pl-k">=</span><span class="pl-sr"> <span class="pl-pds">/</span><span class="pl-k">^</span><<span class="pl-k">|</span><span class="pl-k">^</span>(?:button<span class="pl-k">|</span>map<span class="pl-k">|</span>select<span class="pl-k">|</span>textarea<span class="pl-k">|</span>object<span class="pl-k">|</span>iframe<span class="pl-k">|</span>option<span class="pl-k">|</span>optgroup)<span class="pl-k">$</span><span class="pl-pds">/</span>i</span>;</td>
       </tr>
       <tr>
         <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
@@ -1032,7 +1032,7 @@
       </tr>
       <tr>
         <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
-        <td id="LC22" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">var</span> expando <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>_html5shiv<span class="pl-pds">&#39;</span></span>;</td>
+        <td id="LC22" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">var</span> expando <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>_html5shiv<span class="pl-pds">'</span></span>;</td>
       </tr>
       <tr>
         <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
@@ -1088,11 +1088,11 @@
       </tr>
       <tr>
         <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
-        <td id="LC35" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">var</span> a <span class="pl-k">=</span> <span class="pl-c1">document</span>.<span class="pl-c1">createElement</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>a<span class="pl-pds">&#39;</span></span>);</td>
+        <td id="LC35" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">var</span> a <span class="pl-k">=</span> <span class="pl-c1">document</span>.<span class="pl-c1">createElement</span>(<span class="pl-s"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span>);</td>
       </tr>
       <tr>
         <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
-        <td id="LC36" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">a</span>.<span class="pl-smi">innerHTML</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>&lt;xyz&gt;&lt;/xyz&gt;<span class="pl-pds">&#39;</span></span>;</td>
+        <td id="LC36" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">a</span>.<span class="pl-smi">innerHTML</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span><xyz></xyz><span class="pl-pds">'</span></span>;</td>
       </tr>
       <tr>
         <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
@@ -1100,7 +1100,7 @@
       </tr>
       <tr>
         <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
-        <td id="LC38" class="blob-code blob-code-inner js-file-line">        supportsHtml5Styles <span class="pl-k">=</span> (<span class="pl-s"><span class="pl-pds">&#39;</span>hidden<span class="pl-pds">&#39;</span></span> <span class="pl-k">in</span> a);</td>
+        <td id="LC38" class="blob-code blob-code-inner js-file-line">        supportsHtml5Styles <span class="pl-k">=</span> (<span class="pl-s"><span class="pl-pds">'</span>hidden<span class="pl-pds">'</span></span> <span class="pl-k">in</span> a);</td>
       </tr>
       <tr>
         <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
@@ -1117,7 +1117,7 @@
       </tr>
       <tr>
         <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
-        <td id="LC42" class="blob-code blob-code-inner js-file-line">          (<span class="pl-c1">document</span>.<span class="pl-smi">createElement</span>)(<span class="pl-s"><span class="pl-pds">&#39;</span>a<span class="pl-pds">&#39;</span></span>);</td>
+        <td id="LC42" class="blob-code blob-code-inner js-file-line">          (<span class="pl-c1">document</span>.<span class="pl-smi">createElement</span>)(<span class="pl-s"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span>);</td>
       </tr>
       <tr>
         <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
@@ -1129,15 +1129,15 @@
       </tr>
       <tr>
         <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
-        <td id="LC45" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">typeof</span> <span class="pl-smi">frag</span>.<span class="pl-smi">cloneNode</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&#39;</span>undefined<span class="pl-pds">&#39;</span></span> <span class="pl-k">||</span></td>
+        <td id="LC45" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">typeof</span> <span class="pl-smi">frag</span>.<span class="pl-smi">cloneNode</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>undefined<span class="pl-pds">'</span></span> <span class="pl-k">||</span></td>
       </tr>
       <tr>
         <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
-        <td id="LC46" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">typeof</span> <span class="pl-smi">frag</span>.<span class="pl-smi">createDocumentFragment</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&#39;</span>undefined<span class="pl-pds">&#39;</span></span> <span class="pl-k">||</span></td>
+        <td id="LC46" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">typeof</span> <span class="pl-smi">frag</span>.<span class="pl-smi">createDocumentFragment</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>undefined<span class="pl-pds">'</span></span> <span class="pl-k">||</span></td>
       </tr>
       <tr>
         <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
-        <td id="LC47" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">typeof</span> <span class="pl-smi">frag</span>.<span class="pl-smi">createElement</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&#39;</span>undefined<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC47" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">typeof</span> <span class="pl-smi">frag</span>.<span class="pl-smi">createElement</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>undefined<span class="pl-pds">'</span></span></td>
       </tr>
       <tr>
         <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
@@ -1153,7 +1153,7 @@
       </tr>
       <tr>
         <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
-        <td id="LC51" class="blob-code blob-code-inner js-file-line">      <span class="pl-c"><span class="pl-c">//</span> assign a false positive if detection fails =&gt; unable to shiv</span></td>
+        <td id="LC51" class="blob-code blob-code-inner js-file-line">      <span class="pl-c"><span class="pl-c">//</span> assign a false positive if detection fails => unable to shiv</span></td>
       </tr>
       <tr>
         <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
@@ -1224,11 +1224,11 @@
       </tr>
       <tr>
         <td id="L68" class="blob-num js-line-number" data-line-number="68"></td>
-        <td id="LC68" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> p <span class="pl-k">=</span> <span class="pl-smi">ownerDocument</span>.<span class="pl-c1">createElement</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>p<span class="pl-pds">&#39;</span></span>),</td>
+        <td id="LC68" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> p <span class="pl-k">=</span> <span class="pl-smi">ownerDocument</span>.<span class="pl-c1">createElement</span>(<span class="pl-s"><span class="pl-pds">'</span>p<span class="pl-pds">'</span></span>),</td>
       </tr>
       <tr>
         <td id="L69" class="blob-num js-line-number" data-line-number="69"></td>
-        <td id="LC69" class="blob-code blob-code-inner js-file-line">        parent <span class="pl-k">=</span> <span class="pl-smi">ownerDocument</span>.<span class="pl-c1">getElementsByTagName</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>head<span class="pl-pds">&#39;</span></span>)[<span class="pl-c1">0</span>] <span class="pl-k">||</span> <span class="pl-smi">ownerDocument</span>.<span class="pl-c1">documentElement</span>;</td>
+        <td id="LC69" class="blob-code blob-code-inner js-file-line">        parent <span class="pl-k">=</span> <span class="pl-smi">ownerDocument</span>.<span class="pl-c1">getElementsByTagName</span>(<span class="pl-s"><span class="pl-pds">'</span>head<span class="pl-pds">'</span></span>)[<span class="pl-c1">0</span>] <span class="pl-k">||</span> <span class="pl-smi">ownerDocument</span>.<span class="pl-c1">documentElement</span>;</td>
       </tr>
       <tr>
         <td id="L70" class="blob-num js-line-number" data-line-number="70"></td>
@@ -1237,7 +1237,7 @@
       </tr>
       <tr>
         <td id="L71" class="blob-num js-line-number" data-line-number="71"></td>
-        <td id="LC71" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">p</span>.<span class="pl-smi">innerHTML</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>x&lt;style&gt;<span class="pl-pds">&#39;</span></span> <span class="pl-k">+</span> cssText <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&#39;</span>&lt;/style&gt;<span class="pl-pds">&#39;</span></span>;</td>
+        <td id="LC71" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">p</span>.<span class="pl-smi">innerHTML</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>x<style><span class="pl-pds">'</span></span> <span class="pl-k">+</span> cssText <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span></style><span class="pl-pds">'</span></span>;</td>
       </tr>
       <tr>
         <td id="L72" class="blob-num js-line-number" data-line-number="72"></td>
@@ -1282,7 +1282,7 @@
       </tr>
       <tr>
         <td id="L82" class="blob-num js-line-number" data-line-number="82"></td>
-        <td id="LC82" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> <span class="pl-k">typeof</span> elements <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&#39;</span>string<span class="pl-pds">&#39;</span></span> <span class="pl-k">?</span> <span class="pl-smi">elements</span>.<span class="pl-c1">split</span>(<span class="pl-s"><span class="pl-pds">&#39;</span> <span class="pl-pds">&#39;</span></span>) <span class="pl-k">:</span> elements;</td>
+        <td id="LC82" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> <span class="pl-k">typeof</span> elements <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>string<span class="pl-pds">'</span></span> <span class="pl-k">?</span> <span class="pl-smi">elements</span>.<span class="pl-c1">split</span>(<span class="pl-s"><span class="pl-pds">'</span> <span class="pl-pds">'</span></span>) <span class="pl-k">:</span> elements;</td>
       </tr>
       <tr>
         <td id="L83" class="blob-num js-line-number" data-line-number="83"></td>
@@ -1327,11 +1327,11 @@
       </tr>
       <tr>
         <td id="L93" class="blob-num js-line-number" data-line-number="93"></td>
-        <td id="LC93" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-k">typeof</span> elements <span class="pl-k">!=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>string<span class="pl-pds">&#39;</span></span>){</td>
+        <td id="LC93" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-k">typeof</span> elements <span class="pl-k">!=</span> <span class="pl-s"><span class="pl-pds">'</span>string<span class="pl-pds">'</span></span>){</td>
       </tr>
       <tr>
         <td id="L94" class="blob-num js-line-number" data-line-number="94"></td>
-        <td id="LC94" class="blob-code blob-code-inner js-file-line">      elements <span class="pl-k">=</span> <span class="pl-smi">elements</span>.<span class="pl-c1">join</span>(<span class="pl-s"><span class="pl-pds">&#39;</span> <span class="pl-pds">&#39;</span></span>);</td>
+        <td id="LC94" class="blob-code blob-code-inner js-file-line">      elements <span class="pl-k">=</span> <span class="pl-smi">elements</span>.<span class="pl-c1">join</span>(<span class="pl-s"><span class="pl-pds">'</span> <span class="pl-pds">'</span></span>);</td>
       </tr>
       <tr>
         <td id="L95" class="blob-num js-line-number" data-line-number="95"></td>
@@ -1339,11 +1339,11 @@
       </tr>
       <tr>
         <td id="L96" class="blob-num js-line-number" data-line-number="96"></td>
-        <td id="LC96" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-k">typeof</span> newElements <span class="pl-k">!=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>string<span class="pl-pds">&#39;</span></span>){</td>
+        <td id="LC96" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span>(<span class="pl-k">typeof</span> newElements <span class="pl-k">!=</span> <span class="pl-s"><span class="pl-pds">'</span>string<span class="pl-pds">'</span></span>){</td>
       </tr>
       <tr>
         <td id="L97" class="blob-num js-line-number" data-line-number="97"></td>
-        <td id="LC97" class="blob-code blob-code-inner js-file-line">      newElements <span class="pl-k">=</span> <span class="pl-smi">newElements</span>.<span class="pl-c1">join</span>(<span class="pl-s"><span class="pl-pds">&#39;</span> <span class="pl-pds">&#39;</span></span>);</td>
+        <td id="LC97" class="blob-code blob-code-inner js-file-line">      newElements <span class="pl-k">=</span> <span class="pl-smi">newElements</span>.<span class="pl-c1">join</span>(<span class="pl-s"><span class="pl-pds">'</span> <span class="pl-pds">'</span></span>);</td>
       </tr>
       <tr>
         <td id="L98" class="blob-num js-line-number" data-line-number="98"></td>
@@ -1351,7 +1351,7 @@
       </tr>
       <tr>
         <td id="L99" class="blob-num js-line-number" data-line-number="99"></td>
-        <td id="LC99" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">html5</span>.<span class="pl-c1">elements</span> <span class="pl-k">=</span> elements <span class="pl-k">+</span><span class="pl-s"><span class="pl-pds">&#39;</span> <span class="pl-pds">&#39;</span></span><span class="pl-k">+</span> newElements;</td>
+        <td id="LC99" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">html5</span>.<span class="pl-c1">elements</span> <span class="pl-k">=</span> elements <span class="pl-k">+</span><span class="pl-s"><span class="pl-pds">'</span> <span class="pl-pds">'</span></span><span class="pl-k">+</span> newElements;</td>
       </tr>
       <tr>
         <td id="L100" class="blob-num js-line-number" data-line-number="100"></td>
@@ -1547,7 +1547,7 @@
       </tr>
       <tr>
         <td id="L147" class="blob-num js-line-number" data-line-number="147"></td>
-        <td id="LC147" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">//</span> Avoid adding some elements to fragments in IE &lt; 9 because</span></td>
+        <td id="LC147" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">//</span> Avoid adding some elements to fragments in IE < 9 because</span></td>
       </tr>
       <tr>
         <td id="L148" class="blob-num js-line-number" data-line-number="148"></td>
@@ -1575,7 +1575,7 @@
       </tr>
       <tr>
         <td id="L154" class="blob-num js-line-number" data-line-number="154"></td>
-        <td id="LC154" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> <span class="pl-smi">node</span>.<span class="pl-smi">canHaveChildren</span> <span class="pl-k">&amp;&amp;</span> <span class="pl-k">!</span><span class="pl-smi">reSkip</span>.<span class="pl-c1">test</span>(nodeName) <span class="pl-k">&amp;&amp;</span> <span class="pl-k">!</span><span class="pl-smi">node</span>.<span class="pl-smi">tagUrn</span> <span class="pl-k">?</span> <span class="pl-smi">data</span>.<span class="pl-smi">frag</span>.<span class="pl-c1">appendChild</span>(node) <span class="pl-k">:</span> node;</td>
+        <td id="LC154" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> <span class="pl-smi">node</span>.<span class="pl-smi">canHaveChildren</span> <span class="pl-k">&&</span> <span class="pl-k">!</span><span class="pl-smi">reSkip</span>.<span class="pl-c1">test</span>(nodeName) <span class="pl-k">&&</span> <span class="pl-k">!</span><span class="pl-smi">node</span>.<span class="pl-smi">tagUrn</span> <span class="pl-k">?</span> <span class="pl-smi">data</span>.<span class="pl-smi">frag</span>.<span class="pl-c1">appendChild</span>(node) <span class="pl-k">:</span> node;</td>
       </tr>
       <tr>
         <td id="L155" class="blob-num js-line-number" data-line-number="155"></td>
@@ -1660,7 +1660,7 @@
       </tr>
       <tr>
         <td id="L175" class="blob-num js-line-number" data-line-number="175"></td>
-        <td id="LC175" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">for</span>(;i<span class="pl-k">&lt;</span>l;i<span class="pl-k">++</span>){</td>
+        <td id="LC175" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">for</span>(;i<span class="pl-k"><</span>l;i<span class="pl-k">++</span>){</td>
       </tr>
       <tr>
         <td id="L176" class="blob-num js-line-number" data-line-number="176"></td>
@@ -1780,15 +1780,15 @@
       </tr>
       <tr>
         <td id="L204" class="blob-num js-line-number" data-line-number="204"></td>
-        <td id="LC204" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ownerDocument</span>.<span class="pl-smi">createDocumentFragment</span> <span class="pl-k">=</span> <span class="pl-c1">Function</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>h,f<span class="pl-pds">&#39;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span>return function(){<span class="pl-pds">&#39;</span></span> <span class="pl-k">+</span></td>
+        <td id="LC204" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">ownerDocument</span>.<span class="pl-smi">createDocumentFragment</span> <span class="pl-k">=</span> <span class="pl-c1">Function</span>(<span class="pl-s"><span class="pl-pds">'</span>h,f<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>return function(){<span class="pl-pds">'</span></span> <span class="pl-k">+</span></td>
       </tr>
       <tr>
         <td id="L205" class="blob-num js-line-number" data-line-number="205"></td>
-        <td id="LC205" class="blob-code blob-code-inner js-file-line">      <span class="pl-s"><span class="pl-pds">&#39;</span>var n=f.cloneNode(),c=n.createElement;<span class="pl-pds">&#39;</span></span> <span class="pl-k">+</span></td>
+        <td id="LC205" class="blob-code blob-code-inner js-file-line">      <span class="pl-s"><span class="pl-pds">'</span>var n=f.cloneNode(),c=n.createElement;<span class="pl-pds">'</span></span> <span class="pl-k">+</span></td>
       </tr>
       <tr>
         <td id="L206" class="blob-num js-line-number" data-line-number="206"></td>
-        <td id="LC206" class="blob-code blob-code-inner js-file-line">      <span class="pl-s"><span class="pl-pds">&#39;</span>h.shivMethods&amp;&amp;(<span class="pl-pds">&#39;</span></span> <span class="pl-k">+</span></td>
+        <td id="LC206" class="blob-code blob-code-inner js-file-line">      <span class="pl-s"><span class="pl-pds">'</span>h.shivMethods&&(<span class="pl-pds">'</span></span> <span class="pl-k">+</span></td>
       </tr>
       <tr>
         <td id="L207" class="blob-num js-line-number" data-line-number="207"></td>
@@ -1808,7 +1808,7 @@
       </tr>
       <tr>
         <td id="L211" class="blob-num js-line-number" data-line-number="211"></td>
-        <td id="LC211" class="blob-code blob-code-inner js-file-line">          <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">&#39;</span>c(&quot;<span class="pl-pds">&#39;</span></span> <span class="pl-k">+</span> nodeName <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&#39;</span>&quot;)<span class="pl-pds">&#39;</span></span>;</td>
+        <td id="LC211" class="blob-code blob-code-inner js-file-line">          <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">'</span>c("<span class="pl-pds">'</span></span> <span class="pl-k">+</span> nodeName <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>")<span class="pl-pds">'</span></span>;</td>
       </tr>
       <tr>
         <td id="L212" class="blob-num js-line-number" data-line-number="212"></td>
@@ -1816,7 +1816,7 @@
       </tr>
       <tr>
         <td id="L213" class="blob-num js-line-number" data-line-number="213"></td>
-        <td id="LC213" class="blob-code blob-code-inner js-file-line">      <span class="pl-s"><span class="pl-pds">&#39;</span>);return n}<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC213" class="blob-code blob-code-inner js-file-line">      <span class="pl-s"><span class="pl-pds">'</span>);return n}<span class="pl-pds">'</span></span></td>
       </tr>
       <tr>
         <td id="L214" class="blob-num js-line-number" data-line-number="214"></td>
@@ -1891,7 +1891,7 @@
       </tr>
       <tr>
         <td id="L231" class="blob-num js-line-number" data-line-number="231"></td>
-        <td id="LC231" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> (<span class="pl-smi">html5</span>.<span class="pl-smi">shivCSS</span> <span class="pl-k">&amp;&amp;</span> <span class="pl-k">!</span>supportsHtml5Styles <span class="pl-k">&amp;&amp;</span> <span class="pl-k">!</span><span class="pl-smi">data</span>.<span class="pl-smi">hasCSS</span>) {</td>
+        <td id="LC231" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> (<span class="pl-smi">html5</span>.<span class="pl-smi">shivCSS</span> <span class="pl-k">&&</span> <span class="pl-k">!</span>supportsHtml5Styles <span class="pl-k">&&</span> <span class="pl-k">!</span><span class="pl-smi">data</span>.<span class="pl-smi">hasCSS</span>) {</td>
       </tr>
       <tr>
         <td id="L232" class="blob-num js-line-number" data-line-number="232"></td>
@@ -1903,7 +1903,7 @@
       </tr>
       <tr>
         <td id="L234" class="blob-num js-line-number" data-line-number="234"></td>
-        <td id="LC234" class="blob-code blob-code-inner js-file-line">        <span class="pl-s"><span class="pl-pds">&#39;</span>article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}<span class="pl-pds">&#39;</span></span> <span class="pl-k">+</span></td>
+        <td id="LC234" class="blob-code blob-code-inner js-file-line">        <span class="pl-s"><span class="pl-pds">'</span>article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}<span class="pl-pds">'</span></span> <span class="pl-k">+</span></td>
       </tr>
       <tr>
         <td id="L235" class="blob-num js-line-number" data-line-number="235"></td>
@@ -1911,7 +1911,7 @@
       </tr>
       <tr>
         <td id="L236" class="blob-num js-line-number" data-line-number="236"></td>
-        <td id="LC236" class="blob-code blob-code-inner js-file-line">        <span class="pl-s"><span class="pl-pds">&#39;</span>mark{background:#FF0;color:#000}<span class="pl-pds">&#39;</span></span> <span class="pl-k">+</span></td>
+        <td id="LC236" class="blob-code blob-code-inner js-file-line">        <span class="pl-s"><span class="pl-pds">'</span>mark{background:#FF0;color:#000}<span class="pl-pds">'</span></span> <span class="pl-k">+</span></td>
       </tr>
       <tr>
         <td id="L237" class="blob-num js-line-number" data-line-number="237"></td>
@@ -1919,7 +1919,7 @@
       </tr>
       <tr>
         <td id="L238" class="blob-num js-line-number" data-line-number="238"></td>
-        <td id="LC238" class="blob-code blob-code-inner js-file-line">        <span class="pl-s"><span class="pl-pds">&#39;</span>template{display:none}<span class="pl-pds">&#39;</span></span></td>
+        <td id="LC238" class="blob-code blob-code-inner js-file-line">        <span class="pl-s"><span class="pl-pds">'</span>template{display:none}<span class="pl-pds">'</span></span></td>
       </tr>
       <tr>
         <td id="L239" class="blob-num js-line-number" data-line-number="239"></td>
@@ -1993,7 +1993,7 @@
       </tr>
       <tr>
         <td id="L256" class="blob-num js-line-number" data-line-number="256"></td>
-        <td id="LC256" class="blob-code blob-code-inner js-file-line"><span class="pl-c">   * <span class="pl-s1">html5 <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">&#39;</span>elements<span class="pl-pds">&#39;</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">&#39;</span>mark section<span class="pl-pds">&#39;</span></span>, <span class="pl-s"><span class="pl-pds">&#39;</span>shivCSS<span class="pl-pds">&#39;</span></span><span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-s"><span class="pl-pds">&#39;</span>shivMethods<span class="pl-pds">&#39;</span></span><span class="pl-k">:</span> <span class="pl-c1">false</span> };</span></span></td>
+        <td id="LC256" class="blob-code blob-code-inner js-file-line"><span class="pl-c">   * <span class="pl-s1">html5 <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">'</span>elements<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>mark section<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>shivCSS<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-s"><span class="pl-pds">'</span>shivMethods<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-c1">false</span> };</span></span></td>
       </tr>
       <tr>
         <td id="L257" class="blob-num js-line-number" data-line-number="257"></td>
@@ -2030,7 +2030,7 @@
       </tr>
       <tr>
         <td id="L265" class="blob-num js-line-number" data-line-number="265"></td>
-        <td id="LC265" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">&#39;</span>elements<span class="pl-pds">&#39;</span></span><span class="pl-k">:</span> <span class="pl-smi">options</span>.<span class="pl-c1">elements</span> <span class="pl-k">||</span> <span class="pl-s"><span class="pl-pds">&#39;</span>abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video<span class="pl-pds">&#39;</span></span>,</td>
+        <td id="LC265" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">'</span>elements<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-smi">options</span>.<span class="pl-c1">elements</span> <span class="pl-k">||</span> <span class="pl-s"><span class="pl-pds">'</span>abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video<span class="pl-pds">'</span></span>,</td>
       </tr>
       <tr>
         <td id="L266" class="blob-num js-line-number" data-line-number="266"></td>
@@ -2051,7 +2051,7 @@
       </tr>
       <tr>
         <td id="L270" class="blob-num js-line-number" data-line-number="270"></td>
-        <td id="LC270" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">&#39;</span>version<span class="pl-pds">&#39;</span></span><span class="pl-k">:</span> version,</td>
+        <td id="LC270" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">'</span>version<span class="pl-pds">'</span></span><span class="pl-k">:</span> version,</td>
       </tr>
       <tr>
         <td id="L271" class="blob-num js-line-number" data-line-number="271"></td>
@@ -2080,7 +2080,7 @@
       </tr>
       <tr>
         <td id="L277" class="blob-num js-line-number" data-line-number="277"></td>
-        <td id="LC277" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">&#39;</span>shivCSS<span class="pl-pds">&#39;</span></span><span class="pl-k">:</span> (<span class="pl-smi">options</span>.<span class="pl-smi">shivCSS</span> <span class="pl-k">!==</span> <span class="pl-c1">false</span>),</td>
+        <td id="LC277" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">'</span>shivCSS<span class="pl-pds">'</span></span><span class="pl-k">:</span> (<span class="pl-smi">options</span>.<span class="pl-smi">shivCSS</span> <span class="pl-k">!==</span> <span class="pl-c1">false</span>),</td>
       </tr>
       <tr>
         <td id="L278" class="blob-num js-line-number" data-line-number="278"></td>
@@ -2109,7 +2109,7 @@
       </tr>
       <tr>
         <td id="L284" class="blob-num js-line-number" data-line-number="284"></td>
-        <td id="LC284" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">&#39;</span>supportsUnknownElements<span class="pl-pds">&#39;</span></span><span class="pl-k">:</span> supportsUnknownElements,</td>
+        <td id="LC284" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">'</span>supportsUnknownElements<span class="pl-pds">'</span></span><span class="pl-k">:</span> supportsUnknownElements,</td>
       </tr>
       <tr>
         <td id="L285" class="blob-num js-line-number" data-line-number="285"></td>
@@ -2122,7 +2122,7 @@
       </tr>
       <tr>
         <td id="L287" class="blob-num js-line-number" data-line-number="287"></td>
-        <td id="LC287" class="blob-code blob-code-inner js-file-line"><span class="pl-c">     * A flag to indicate that the document&#39;s `createElement` and `createDocumentFragment`</span></td>
+        <td id="LC287" class="blob-code blob-code-inner js-file-line"><span class="pl-c">     * A flag to indicate that the document's `createElement` and `createDocumentFragment`</span></td>
       </tr>
       <tr>
         <td id="L288" class="blob-num js-line-number" data-line-number="288"></td>
@@ -2142,7 +2142,7 @@
       </tr>
       <tr>
         <td id="L292" class="blob-num js-line-number" data-line-number="292"></td>
-        <td id="LC292" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">&#39;</span>shivMethods<span class="pl-pds">&#39;</span></span><span class="pl-k">:</span> (<span class="pl-smi">options</span>.<span class="pl-smi">shivMethods</span> <span class="pl-k">!==</span> <span class="pl-c1">false</span>),</td>
+        <td id="LC292" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">'</span>shivMethods<span class="pl-pds">'</span></span><span class="pl-k">:</span> (<span class="pl-smi">options</span>.<span class="pl-smi">shivMethods</span> <span class="pl-k">!==</span> <span class="pl-c1">false</span>),</td>
       </tr>
       <tr>
         <td id="L293" class="blob-num js-line-number" data-line-number="293"></td>
@@ -2155,7 +2155,7 @@
       </tr>
       <tr>
         <td id="L295" class="blob-num js-line-number" data-line-number="295"></td>
-        <td id="LC295" class="blob-code blob-code-inner js-file-line"><span class="pl-c">     * A string to describe the type of `html5` object (&quot;default&quot; or &quot;default print&quot;).</span></td>
+        <td id="LC295" class="blob-code blob-code-inner js-file-line"><span class="pl-c">     * A string to describe the type of `html5` object ("default" or "default print").</span></td>
       </tr>
       <tr>
         <td id="L296" class="blob-num js-line-number" data-line-number="296"></td>
@@ -2171,7 +2171,7 @@
       </tr>
       <tr>
         <td id="L299" class="blob-num js-line-number" data-line-number="299"></td>
-        <td id="LC299" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">&#39;</span>type<span class="pl-pds">&#39;</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">&#39;</span>default<span class="pl-pds">&#39;</span></span>,</td>
+        <td id="LC299" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">'</span>type<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>default<span class="pl-pds">'</span></span>,</td>
       </tr>
       <tr>
         <td id="L300" class="blob-num js-line-number" data-line-number="300"></td>
@@ -2184,7 +2184,7 @@
       </tr>
       <tr>
         <td id="L302" class="blob-num js-line-number" data-line-number="302"></td>
-        <td id="LC302" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">&#39;</span>shivDocument<span class="pl-pds">&#39;</span></span><span class="pl-k">:</span> shivDocument,</td>
+        <td id="LC302" class="blob-code blob-code-inner js-file-line">    <span class="pl-s"><span class="pl-pds">'</span>shivDocument<span class="pl-pds">'</span></span><span class="pl-k">:</span> shivDocument,</td>
       </tr>
       <tr>
         <td id="L303" class="blob-num js-line-number" data-line-number="303"></td>
@@ -2271,7 +2271,7 @@
       </tr>
       <tr>
         <td id="L322" class="blob-num js-line-number" data-line-number="322"></td>
-        <td id="LC322" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-k">typeof</span> <span class="pl-c1">module</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&#39;</span>object<span class="pl-pds">&#39;</span></span> <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">module</span>.<span class="pl-smi">exports</span>){</td>
+        <td id="LC322" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">if</span>(<span class="pl-k">typeof</span> <span class="pl-c1">module</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>object<span class="pl-pds">'</span></span> <span class="pl-k">&&</span> <span class="pl-c1">module</span>.<span class="pl-smi">exports</span>){</td>
       </tr>
       <tr>
         <td id="L323" class="blob-num js-line-number" data-line-number="323"></td>
@@ -2288,7 +2288,7 @@
       </tr>
       <tr>
         <td id="L326" class="blob-num js-line-number" data-line-number="326"></td>
-        <td id="LC326" class="blob-code blob-code-inner js-file-line">}(<span class="pl-k">typeof</span> <span class="pl-c1">window</span> <span class="pl-k">!==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>undefined<span class="pl-pds">&quot;</span></span> <span class="pl-k">?</span> <span class="pl-c1">window</span> <span class="pl-k">:</span> <span class="pl-c1">this</span>, <span class="pl-c1">document</span>));</td>
+        <td id="LC326" class="blob-code blob-code-inner js-file-line">}(<span class="pl-k">typeof</span> <span class="pl-c1">window</span> <span class="pl-k">!==</span> <span class="pl-s"><span class="pl-pds">"</span>undefined<span class="pl-pds">"</span></span> <span class="pl-k">?</span> <span class="pl-c1">window</span> <span class="pl-k">:</span> <span class="pl-c1">this</span>, <span class="pl-c1">document</span>));</td>
       </tr>
 </table>
 
@@ -2337,7 +2337,7 @@
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2019 <span title="0.26028s from unicorn-5d5cbbd5fb-5lbck">GitHub</span>, Inc.</li>
+      <li class="mr-3">© 2019 <span title="0.26028s from unicorn-5d5cbbd5fb-5lbck">GitHub</span>, Inc.</li>
         <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
         <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
         <li class="mr-3"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>

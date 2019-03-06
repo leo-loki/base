@@ -1,24 +1,27 @@
-@charset "UTF-8";
-/* YouTUBE Loader CSS */
-
+/* YouTUBE Background Loader CSS */
 html, body {
   width: 100%;
-  min-height: 100%; height: auto;
-}
+  min-height: 100%;
+  height: auto; }
+
 body {
-  background: #000; color: #FFF;
-  /*overflow: hidden;*/
-}
-.mc-wrap {
   position: relative;
+  background: #000;
+  color: #FFF;
+  /*overflow: hidden;*/ }
+
+.mc-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   min-height: 100%;
-}
+  z-index: -999; }
 
 #player {
   width: 100%;
-  height: auto;
-}
+  height: auto; }
+
 #loader {
   position: absolute;
   width: 100px;
@@ -32,8 +35,8 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   text-align: center;
-  display: none;
-}
+  display: none; }
+
 #overlay {
   position: absolute;
   left: 0;
@@ -43,7 +46,7 @@ body {
   min-width: 100%;
   height: auto;
   min-height: 100%;
-  display: block;
-} #overlay.dot {
-  background-image: url(../../img/bg/dot-screen.png);
-}
+  display: block; }
+
+#overlay.dot {
+  background-image: url(../../img/bg/dot-screen.png); }

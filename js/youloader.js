@@ -1,5 +1,7 @@
+/* Display YouTUBE videos as background. */
+
 $(function() {
-	var vid ='VReqmcLhESE'; /* var vid ='K_xTet06SUo'; */
+	var vid ='mATF00ORugU'; /* YouTUBE動画の共有リンクIDを設定。（https://youtu.be/XXXXXXXXXXX <=「XXXXXXXXXXX」の部分のみ）*/
 	var player;
 	$('body').append('<script src="https://www.youtube.com/iframe_api">');
 
