@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /* Responsive CSS */
 
+html, body {
+ width: 100%;
+ overflow-x: hidden;
+}
+
 #common-header {
 	background: -webkit-linear-gradient(
 		bottom,

@@ -1,4 +1,8 @@
 /* Responsive CSS */
+html, body {
+  width: 100%;
+  overflow-x: hidden; }
+
 #common-header {
   background: -webkit-linear-gradient(bottom, transparent, #FFF 100%, #FFF 0%, transparent);
   background-image: linear-gradient(to top, transparent, #FFF 100%, #FFF 0%, transparent);
