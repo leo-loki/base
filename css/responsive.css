@@ -23,6 +23,8 @@ html, body {
     opacity: 0.5; }
   #common-header #logo svg path#ar {
     opacity: 1; }
+  #common-header nav ul li a {
+    color: #FFF; }
 
 main .container {
   min-width: 320px;
