@@ -18,7 +18,11 @@ $acnt-color: #79865E;
 * { margin: 0; padding: 0; }
 
 /* TAG */
-html, body { margin: 0; padding: 0; }
+html, body {
+ margin: 0; padding: 0;
+ width: 100%;
+ overflow-x: hidden;
+}
 body {
  color: #333;
  background-color: #FFF;
