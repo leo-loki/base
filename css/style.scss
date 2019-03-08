@@ -8,32 +8,30 @@
 // ・ソース中に日本語（全角）の記述がないと「@charset・・・」が出力されない
 // 　コメントやフォントファミリー指定で日本語（全角）を記述すれば解決
 
-// 配色指定
-$main-color: #B77E75;
-$sub1-color: #B47388;
-$sub2-color: #B170A2;
-$acnt-color: #79865E;
-
-/* Universal selector */
-* { margin: 0; padding: 0; }
+@import "_setup";
 
 /* TAG */
 html, body { margin: 0; padding: 0; }
 body {
+ font-family: Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial, sans-serif;
  color: #333;
  background-color: #FFF;
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+ word-wrap: break-word;
+ @include prefix_set(hyphens, none);
 }
 h1, h2, h3 {
  color: $main-color;
 }
-p { padding:0.5em 1em; line-height:1.8em; text-align: justify; }
-p { padding:0.5em 1em; line-height:1.8em; text-align: justify; }
-ul, ol { padding-bottom: 1em; list-style:none; line-height: 1.6em; }
-dl { padding-bottom: 1em; line-height: 1.6em; }
+p { line-height:1.8em; @extend .just; }
+dl { line-height: 1.6em; }
+ul, ol { @extend dl; list-style: none; }
 a { color: $acnt-color; text-decoration:none; outline:none; }
 a:hover { color: $sub2-color; }
-section { padding:2em; border-left:6px solid $sub1-color; }
+section {
+ padding:2em; border-left:6px solid $sub1-color;
+ h3,h4,h5,h6 { margin: 1em 0 0.5em; }
+ p { padding: 0 1em 1em; }
+}
 aside {
  padding:1em;
  font-weight: bold; line-height:2em;
@@ -47,9 +45,7 @@ aside {
 	width: 100%;
 	background-color: rgba(255,255,255,.9);
 	z-index: 1;
-	-webkit-transition: all 1s; -moz-transition: all 1s;
-	-o-transition: all 1s; -ms-transition: all 1s;
-	transition: all 1s;
+ @include prefix_set(transition, all 1s);
 	#logo {
 		padding: 1em;
 		a {
@@ -61,9 +57,7 @@ aside {
 			path#ar { fill:#bf607f; }
 			path#a1, path#a2, path#a3, path#a4 {
 				fill:#000;
-				-webkit-transition: all 1s; -moz-transition: all 1s;
-				-o-transition: all 1s; -ms-transition: all 1s;
-				transition: all 1s;
+    @include prefix_set(transition, all 1s);
 			}
 			path#a1 { opacity: 0.8; }
 			path#a2 { opacity: 0.6; }
@@ -73,22 +67,24 @@ aside {
 		}
 	}
 }
-
 #common-footer {
 	padding: 3.5vw 6.25%;
 	background-color:rgba(0,0,0,0.75);
 	width:87.5%;
 	font-size: 0.8em;
-	color:#999;
-	a { color:#FFF; }
+	color: $footer-color;
+	a { color: $footer-a-color; }
 	small {
-		margin-left: 40px; margin-right: auto;
-		display: inline-block;
+  display: inline-block;
 	}
 	nav {
-		margin-left: auto; margin-right: 40px;
+  margin-left: 1em;
+  padding: 0 1em;
+  border-left: 1px solid $footer-color;
+  border-right: 1px solid $footer-color;
 		display: inline-block;
 		ul li {
+   margin: 0 0.25em;
 			display: inline-block;
 		}
 	}
@@ -96,7 +92,7 @@ aside {
 		font-size: 1.8em;
 		vertical-align: -0.16em;
 	}
-	.sns a.fa::before { @extend .copy-mark; }
+	.sns a.fa::before { margin-right: 0.2em; @extend .copy-mark; }
 }
 
 /* contents */
@@ -127,8 +123,14 @@ main {
   top:0;
 }
 .center {
-  align-item: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ text-align: center;
+}
+.just {
+ align-items: start;
+ justify-items: left;
+ flex-direction: column;
+ text-align: justify;
 }

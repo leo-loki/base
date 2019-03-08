@@ -1,41 +1,33 @@
 @charset "UTF-8";
 /* Global CSS */
-/* Universal selector */
-* {
-  margin: 0;
-  padding: 0; }
-
+/* Setup SCSS */
 /* TAG */
 html, body {
   margin: 0;
   padding: 0; }
 
 body {
+  font-family: Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial, sans-serif;
   color: #333;
   background-color: #FFF;
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif"; }
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none; }
 
 h1, h2, h3 {
   color: #B77E75; }
 
 p {
-  padding: 0.5em 1em;
-  line-height: 1.8em;
-  text-align: justify; }
+  line-height: 1.8em; }
 
-p {
-  padding: 0.5em 1em;
-  line-height: 1.8em;
-  text-align: justify; }
+dl, ul, ol {
+  line-height: 1.6em; }
 
 ul, ol {
-  padding-bottom: 1em;
-  list-style: none;
-  line-height: 1.6em; }
-
-dl {
-  padding-bottom: 1em;
-  line-height: 1.6em; }
+  list-style: none; }
 
 a {
   color: #79865E;
@@ -48,6 +40,10 @@ a:hover {
 section {
   padding: 2em;
   border-left: 6px solid #B47388; }
+  section h3, section h4, section h5, section h6 {
+    margin: 1em 0 0.5em; }
+  section p {
+    padding: 0 1em 1em; }
 
 aside {
   padding: 1em;
@@ -62,8 +58,8 @@ aside {
   z-index: 1;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
-  -o-transition: all 1s;
   -ms-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s; }
   #common-header #logo {
     padding: 1em; }
@@ -80,8 +76,8 @@ aside {
         fill: #000;
         -webkit-transition: all 1s;
         -moz-transition: all 1s;
-        -o-transition: all 1s;
         -ms-transition: all 1s;
+        -o-transition: all 1s;
         transition: all 1s; }
       #common-header #logo svg path#a1 {
         opacity: 0.8; }
@@ -103,18 +99,21 @@ aside {
   #common-footer a {
     color: #FFF; }
   #common-footer small {
-    margin-left: 40px;
-    margin-right: auto;
     display: inline-block; }
   #common-footer nav {
-    margin-left: auto;
-    margin-right: 40px;
+    margin-left: 1em;
+    padding: 0 1em;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
     display: inline-block; }
     #common-footer nav ul li {
+      margin: 0 0.25em;
       display: inline-block; }
   #common-footer .copy-mark, #common-footer .sns a.fa::before {
     font-size: 1.8em;
     vertical-align: -0.16em; }
+  #common-footer .sns a.fa::before {
+    margin-right: 0.2em; }
 
 /* contents */
 main {
@@ -147,7 +146,13 @@ main {
   top: 0; }
 
 .center {
-  align-item: center;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center; }
+
+.just, p {
+  align-items: start;
+  justify-items: left;
+  flex-direction: column;
+  text-align: justify; }

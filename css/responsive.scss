@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* Responsive CSS */
 
+@import "_setup";
+
 html, body {
  width: 100%;
  overflow-x: hidden;
@@ -22,16 +24,12 @@ html, body {
 		transparent
 	);
 	opacity: 0.6;
-	-webkit-transition: all 1s; -moz-transition: all 1s;
-	-o-transition: all 1s; -ms-transition: all 1s;
-	transition: all 1s;
+ @include prefix_set(transition, all 1s);
 	#logo {
 		svg {
 			path#ar, path#a1, path#a2, path#a3, path#a4 {
 				fill:#FFF;
-				-webkit-transition: all 1s; -moz-transition: all 1s;
-				-o-transition: all 1s; -ms-transition: all 1s;
-				transition: all 1s;
+    @include prefix_set(transition, all 1s);
 			}
 			path#a1, path#a2, path#a3, path#a4 { opacity: 0.5; }
 			path#ar { opacity: 1; }
@@ -57,6 +55,13 @@ main {
 
 /* portrait view */
 @media screen and (orientation: portrait) {
+ .pc { display: none; visibility: hidden; }
+ #common-footer{
+  text-align: center;
+  small { margin: 0 auto .75em; padding: 0; display: block; }
+  small.pc { display: none; }
+  nav { @extend small; border: none; }
+ }
 	.mc-wrap {
 	opacity: 0; display: none; visibility: hidden;
 	}

@@ -1,4 +1,5 @@
 /* Responsive CSS */
+/* Setup SCSS */
 html, body {
   width: 100%;
   overflow-x: hidden; }
@@ -9,15 +10,15 @@ html, body {
   opacity: 0.6;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
-  -o-transition: all 1s;
   -ms-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s; }
   #common-header #logo svg path#ar, #common-header #logo svg path#a1, #common-header #logo svg path#a2, #common-header #logo svg path#a3, #common-header #logo svg path#a4 {
     fill: #FFF;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
-    -o-transition: all 1s;
     -ms-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s; }
   #common-header #logo svg path#a1, #common-header #logo svg path#a2, #common-header #logo svg path#a3, #common-header #logo svg path#a4 {
     opacity: 0.5; }
@@ -48,6 +49,21 @@ main .container {
 
 /* portrait view */
 @media screen and (orientation: portrait) {
+  .pc {
+    display: none;
+    visibility: hidden; }
+
+  #common-footer {
+    text-align: center; }
+    #common-footer small, #common-footer nav {
+      margin: 0 auto .75em;
+      padding: 0;
+      display: block; }
+    #common-footer small.pc, #common-footer nav.pc {
+      display: none; }
+    #common-footer nav {
+      border: none; }
+
   .mc-wrap {
     opacity: 0;
     display: none;

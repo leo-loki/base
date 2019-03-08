@@ -1,11 +1,113 @@
 /* Navigation CSS */
+/* Setup SCSS */
 nav ul li {
   display: inline-block; }
-
-nav ul li a {
-  display: block;
+  nav ul li a {
+    color: #755;
+    text-decoration: none;
+    display: block; }
+nav#main {
+  width: 100%;
+  height: auto;
+  min-height: 5em;
+  background: -webkit-linear-gradient(#EEE, #B47388);
+  background: -moz-linear-gradient(#EEE, #B47388);
+  background: -ms-linear-gradient(#EEE, #B47388);
+  background: linear-gradient(#EEE, #B47388);
   color: #755;
-  text-decoration: none; }
+  font-size: 1vw;
+  text-align: center;
+  z-index: 999; }
+  nav#main * {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s; }
+  nav#main ul {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    display: flex; }
+    nav#main ul li {
+      flex: 1;
+      background-color: #333;
+      color: #FFF; }
+      nav#main ul li a {
+        background: -webkit-linear-gradient(-170deg, #EEE, #CDB1A3);
+        background: -moz-linear-gradient(-170deg, #EEE, #CDB1A3);
+        background: -ms-linear-gradient(-170deg, #EEE, #CDB1A3);
+        background: linear-gradient(-170deg, #EEE, #CDB1A3);
+        padding: 1em; }
+        nav#main ul li a:hover {
+          background: -webkit-linear-gradient(10deg, #EEE, #CDB1A3);
+          background: -moz-linear-gradient(10deg, #EEE, #CDB1A3);
+          background: -ms-linear-gradient(10deg, #EEE, #CDB1A3);
+          background: linear-gradient(10deg, #EEE, #CDB1A3);
+          color: #B55; }
+      nav#main ul li.home {
+        flex: 0.5;
+        background-color: #FFF; }
+        nav#main ul li.home a {
+          background: -webkit-linear-gradient(10deg, #FFF, #CDB1A3);
+          background: -moz-linear-gradient(10deg, #FFF, #CDB1A3);
+          background: -ms-linear-gradient(10deg, #FFF, #CDB1A3);
+          background: linear-gradient(10deg, #FFF, #CDB1A3); }
+          nav#main ul li.home a:hover {
+            background: -webkit-linear-gradient(0deg, #633, #000);
+            background: -moz-linear-gradient(0deg, #633, #000);
+            background: -ms-linear-gradient(0deg, #633, #000);
+            background: linear-gradient(0deg, #633, #000);
+            color: #FFF; }
+        nav#main ul li.home:hover {
+          background-color: #999; }
+      nav#main ul li.more {
+        position: relative;
+        padding: 1em 0;
+        background-color: #555;
+        display: none; }
+      nav#main ul li:hover > ul {
+        height: auto;
+        opacity: 1; }
+    nav#main ul ul {
+      padding-top: 6em;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      display: none; }
+      nav#main ul ul::before {
+        position: absolute;
+        left: 50%;
+        top: 5.25em;
+        margin-left: -0.6em;
+        width: 1.4em;
+        height: 1.4em;
+        background-color: #999;
+        content: "";
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
+      nav#main ul ul li {
+        position: relative;
+        width: 100%;
+        display: none;
+        background-color: #999; }
+        nav#main ul ul li a::before {
+          background-image: url("../img/logo.svg");
+          height: 24px; }
+        nav#main ul ul li a:hover {
+          background-color: #333; }
+        nav#main ul ul li:nth-child(1) {
+          height: 4px;
+          font-size: 0;
+          line-height: 0;
+          display: block; }
+        nav#main ul ul li:nth-child(even) {
+          background-color: #888; }
 
 header nav {
   position: absolute;
@@ -13,106 +115,12 @@ header nav {
   right: 0;
   margin-top: -0.5em;
   font-size: 0.8em; }
-
-header nav ul li {
-  padding: 0 1em;
-  border-left: 1px solid #CDB1A3; }
-
-nav#main {
-  width: 100%;
-  margin-bottom: 4em;
-  background: linear-gradient(#EEE, #CDB1A3);
-  color: #755;
-  font-size: 1vw;
-  text-align: center;
-  z-index: 999; }
-
-nav#main * {
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  transition: all 0.4s; }
-
-nav#main ul {
-  position: absolute;
-  /*left: 0; right: 0;*/
-  top: 0;
-  width: 100%;
-  text-align: center;
-  list-style: none;
-  display: flex; }
-
-nav#main ul li {
-  flex: 1;
-  background-color: #333;
-  color: #fff; }
-
-nav#main li a {
-  background: linear-gradient(-170deg, #EEE, #CDB1A3);
-  padding: 1em; }
-
-nav#main li a:hover {
-  background: linear-gradient(10deg, #EEE, #CDB1A3);
-  color: #B55; }
-
-nav#main ul li.home {
-  flex: 0.5;
-  background-color: #555; }
-
-nav#main ul li.more {
-  position: relative;
-  padding: 1em 0;
-  background-color: #555;
-  display: none; }
-
-nav#main ul ul {
-  padding-top: 6em;
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-  display: none; }
-
-nav#main ul ul::before {
-  position: absolute;
-  left: 50%;
-  top: 5.25em;
-  margin-left: -0.6em;
-  width: 1.4em;
-  height: 1.4em;
-  background-color: #999;
-  content: "";
-  transform: rotate(-45deg); }
-
-nav#main ul ul li {
-  position: relative;
-  width: 100%;
-  display: none;
-  background-color: #999; }
-
-nav#main ul ul li:nth-child(1) {
-  font-size: 0;
-  line-height: 0;
-  height: 4px;
-  display: block; }
-
-nav#main ul ul li:nth-child(even) {
-  background-color: #888; }
-
-nav#main ul li.home:hover,
-nav#main ul ul li {
-  background-color: #999; }
-
-nav#main ul ul a:hover {
-  background-color: #333; }
-
-nav#main ul li:hover > ul {
-  height: auto;
-  opacity: 1; }
+  header nav ul li {
+    padding: 0 1em;
+    border-left: 1px solid #CDB1A3; }
 
 .icons {
   position: relative;
-  background-color: #777;
   margin: 0 auto;
   padding: 0;
   width: 20px;
@@ -122,33 +130,29 @@ nav#main ul li:hover > ul {
 
 .toggle-icon {
   background-color: transparent; }
-
-.toggle-icon span {
-  position: absolute;
-  display: block;
-  background-color: #fff;
-  left: 50%;
-  margin-left: -10px;
-  font-size: 0;
-  line-height: 0;
-  width: 142%;
-  height: 2px; }
-
-.toggle-icon span:first-child {
-  top: 2px; }
-
-.toggle-icon span:nth-child(2) {
-  top: 50%;
-  margin-top: -1px; }
-
-.toggle-icon span:last-child {
-  bottom: 2px; }
+  .toggle-icon span {
+    position: absolute;
+    left: 50%;
+    width: 142%;
+    height: 2px;
+    margin-left: -10px;
+    background-color: #FFF;
+    font-size: 0;
+    line-height: 0;
+    display: block; }
+    .toggle-icon span:first-child {
+      top: 2px; }
+    .toggle-icon span:nth-child(2) {
+      top: 50%;
+      margin-top: -1px; }
+    .toggle-icon span:last-child {
+      bottom: 2px; }
 
 nav#main ul li.more:hover > .toggle-icon span:first-child {
   -webkit-transform: translateX(-4px) translateY(7px) rotate(-45deg);
   -moz-transform: translateX(-4px) translateY(7px) rotate(-45deg);
-  -o-transform: translateX(-4px) translateY(7px) rotate(-45deg);
   -ms-transform: translateX(-4px) translateY(7px) rotate(-45deg);
+  -o-transform: translateX(-4px) translateY(7px) rotate(-45deg);
   transform: translateX(-4px) translateY(7px) rotate(-45deg); }
 
 nav#main ul li.more:hover > .toggle-icon span:nth-child(2) {
@@ -157,8 +161,8 @@ nav#main ul li.more:hover > .toggle-icon span:nth-child(2) {
 nav#main ul li.more:hover > .toggle-icon span:last-child {
   -webkit-transform: translateX(-4px) translateY(-7px) rotate(45deg);
   -moz-transform: translateX(-4px) translateY(-7px) rotate(45deg);
-  -o-transform: translateX(-4px) translateY(-7px) rotate(45deg);
   -ms-transform: translateX(-4px) translateY(-7px) rotate(45deg);
+  -o-transform: translateX(-4px) translateY(-7px) rotate(45deg);
   transform: translateX(-4px) translateY(-7px) rotate(45deg); }
 
 /*------------------------------
@@ -166,17 +170,14 @@ nav#main ul li.more:hover > .toggle-icon span:last-child {
 ------------------------------*/
 @media screen and (max-width: 768px) {
   /* - Mobile Landscape & Tablet Portrait */
-  nav#main ul li:nth-child(6) {
-    display: none; }
-
   nav#main ul li.more {
     display: block; }
-
+  nav#main ul li:nth-child(6) {
+    display: none; }
   nav#main ul ul {
     display: block; }
-
-  nav#main ul ul li:nth-child(6) {
-    display: block; } }
+    nav#main ul ul li:nth-child(6) {
+      display: block; } }
 /* /- Mobile Landscape & Tablet portrait */
 @media screen and (max-width: 768px) and (orientation: landscape) {
   /* Mobile Landscape */ }
@@ -184,36 +185,29 @@ nav#main ul li.more:hover > .toggle-icon span:last-child {
 @media screen and (max-width: 560px) {
   nav#main ul li {
     width: 20%; }
-
-  nav#main ul li:nth-child(5) {
+  nav#main ul:nth-child(5) {
     display: none; }
-
-  nav#main ul li.home {
+  nav#main ul.home {
     width: 20%; }
-
   nav#main ul ul li:nth-child(5) {
     display: block; } }
 @media screen and (max-width: 440px) {
   nav#main ul li {
     width: 25%; }
-
-  nav#main ul li:nth-child(4) {
-    display: none; }
-
-  nav#main ul li.home {
-    width: 25%; }
-
-  nav#main ul ul li:nth-child(4) {
-    display: block; } }
+    nav#main ul li:nth-child(4) {
+      display: none; }
+    nav#main ul li.home {
+      width: 25%; }
+    nav#main ul li ul li:nth-child(4) {
+      display: block; } }
 @media screen and (max-width: 414px) {
   /* Mobile L Portrait */ }
 /* /Mobile L Portrait */
 @media screen and (max-width: 360px) {
   nav#main ul li {
     width: 28%; }
-
-  nav#main ul li.home {
-    width: 16%; } }
+    nav#main ul li.home {
+      width: 16%; } }
 /***********************************
  end of Responsive Setup
 ***********************************/
