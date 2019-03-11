@@ -46,7 +46,7 @@ Google Chrome 等のブラウザの開発ツール（検証）を利用してタ
 
 ただし、jQueryライブラリ「Fullcarender」とGoogleカレンダーのライセンスにつきましては、それぞれの制作者に帰属します。
 
-「Fullcarender」をイチから色々と試してみたい場合は、公式サイト（ https://fullcalendar.io/ ）のからダウンロードしてどうぞ。
+「Fullcarender」をイチから試してみたい方は、公式サイト（ https://fullcalendar.io/ ）のからダウンロードしてどうぞ。
 
 「Fullcarender」のカスタマイズ方法、Google APIキーの取得・Googleカレンダーの作成・設定やカレンダーIDの取得などについては、いろいろググってみてください。
 
