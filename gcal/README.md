@@ -2,6 +2,8 @@
 
 jQueryライブラリ「Fullcarender」とGoogleカレンダーを連携させたサンプルです。 
 
+デモはこちら https://leo-loki.github.io/base/gcal/
+
 ## 設定方法
 
 ### Googleアカウントの取得
