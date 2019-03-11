@@ -4,7 +4,7 @@ jQueryライブラリ「Fullcarender」とGoogleカレンダーを連携させ�
 
 デモはこちら https://leo-loki.github.io/base/gcal/
 
-## 設定方法
+## ◆設定方法
 
 ### １）Googleアカウントの取得
 
@@ -42,7 +42,7 @@ jQueryライブラリ「Fullcarender」とGoogleカレンダーを連携させ�
 
 Google Chrome 等のブラウザの開発ツール（検証）を利用してタグ・ID・クラス名などを調べてプロパティを上書きしていくと便利です。
 
-## その他の事項
+## ◆その他の事項
 
 このサンプルはご自由にお使いください。
 
