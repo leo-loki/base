@@ -53,6 +53,11 @@ main .container {
     display: none;
     visibility: hidden; }
 
+  #common-header #logo {
+    margin: 0 auto;
+    padding: 1em 0;
+    display: table; }
+
   #common-footer {
     text-align: center; }
     #common-footer small, #common-footer nav {

@@ -56,6 +56,7 @@ main {
 /* portrait view */
 @media screen and (orientation: portrait) {
  .pc { display: none; visibility: hidden; }
+ #common-header #logo { margin: 0 auto; padding: 1em 0; display: table; }
  #common-footer{
   text-align: center;
   small { margin: 0 auto .75em; padding: 0; display: block; }

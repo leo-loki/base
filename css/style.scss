@@ -17,6 +17,7 @@ body {
  color: #333;
  background-color: #FFF;
  word-wrap: break-word;
+ text-shadow: 0 1px 1px #FFF;
  @include prefix_set(hyphens, none);
 }
 h1, h2, h3 {
@@ -27,13 +28,27 @@ dl { line-height: 1.6em; }
 ul, ol { @extend dl; list-style: none; }
 a { color: $acnt-color; text-decoration:none; outline:none; }
 a:hover { color: $sub2-color; }
+blockquote {
+ position: relative;
+ padding: 0 2em;
+ display: table;
+ &::before, &::after {
+  position: absolute;
+  font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+  font-size: 2em;
+  color: #999;
+ }
+ &::before { top: 0; left: 0.4em; content: "“"; }
+ &::after { bottom: -0.2em; right: 0.4em; content: "”"; }
+}
 section {
- padding:2em; border-left:6px solid $sub1-color;
+ padding: 2em; border-left:6px solid $sub1-color;
  h3,h4,h5,h6 { margin: 1em 0 0.5em; }
- p { padding: 0 1em 1em; }
+ p { padding: 0 1em .5em; }
+ blockquote p { padding: 0; }
 }
 aside {
- padding:1em;
+ margin: 1em 2em 2em;
  font-weight: bold; line-height:2em;
 }
 
@@ -75,6 +90,7 @@ aside {
 	color: $footer-color;
 	a { color: $footer-a-color; }
 	small {
+  text-shadow: 0 1px 1px #000;
   display: inline-block;
 	}
 	nav {
@@ -99,6 +115,7 @@ aside {
 
 main {
 	display: block;
+ dl, ul, ol { padding: 0.5em 1em; }
 	.container {
 		position: relative;
 		margin:0 auto;

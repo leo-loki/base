@@ -45,6 +45,7 @@ nav {
       &:hover {
        @include pro_prefix_set(background, linear-gradient(0deg, #633, #000));
        color: #FFF;
+       text-shadow: 0 1px 1px #000;
       }
      }
      &:hover { background-color: #999; }
@@ -156,13 +157,12 @@ nav#main ul li.more:hover > .toggle-icon span:last-child {
   /* Mobile Landscape */
 } /* /Mobile Landscape */
 @media screen and (max-width: 560px) {
- nav#main {
-  ul {
-   li { width: 20%; }
+ nav#main ul {
+  li { width: 20%;
    &:nth-child(5) { display: none; }
    &.home { width: 20%; }
-   ul li:nth-child(5) { display: block; }
   }
+  ul li:nth-child(5) { display: block; }
  }
 }
 @media screen and (max-width: 440px) {
@@ -171,8 +171,8 @@ nav#main ul li.more:hover > .toggle-icon span:last-child {
    width: 25%;
    &:nth-child(4) { display: none; }
    &.home { width: 25%; }
-   ul li:nth-child(4) { display: block; }
   }
+  ul li:nth-child(4) { display: block; }
  }
 }
 @media screen and (max-width: 414px) {

@@ -11,6 +11,7 @@ body {
   color: #333;
   background-color: #FFF;
   word-wrap: break-word;
+  text-shadow: 0 1px 1px #FFF;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
@@ -37,16 +38,36 @@ a {
 a:hover {
   color: #B170A2; }
 
+blockquote {
+  position: relative;
+  padding: 0 2em;
+  display: table; }
+  blockquote::before, blockquote::after {
+    position: absolute;
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+    font-size: 2em;
+    color: #999; }
+  blockquote::before {
+    top: 0;
+    left: 0.4em;
+    content: "“"; }
+  blockquote::after {
+    bottom: -0.2em;
+    right: 0.4em;
+    content: "”"; }
+
 section {
   padding: 2em;
   border-left: 6px solid #B47388; }
   section h3, section h4, section h5, section h6 {
     margin: 1em 0 0.5em; }
   section p {
-    padding: 0 1em 1em; }
+    padding: 0 1em .5em; }
+  section blockquote p {
+    padding: 0; }
 
 aside {
-  padding: 1em;
+  margin: 1em 2em 2em;
   font-weight: bold;
   line-height: 2em; }
 
@@ -99,6 +120,7 @@ aside {
   #common-footer a {
     color: #FFF; }
   #common-footer small {
+    text-shadow: 0 1px 1px #000;
     display: inline-block; }
   #common-footer nav {
     margin-left: 1em;
@@ -118,6 +140,8 @@ aside {
 /* contents */
 main {
   display: block; }
+  main dl, main ul, main ol, main ul, main ol {
+    padding: 0.5em 1em; }
   main .container {
     position: relative;
     margin: 0 auto;

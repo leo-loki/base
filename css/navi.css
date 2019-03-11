@@ -60,7 +60,8 @@ nav#main {
             background: -moz-linear-gradient(0deg, #633, #000);
             background: -ms-linear-gradient(0deg, #633, #000);
             background: linear-gradient(0deg, #633, #000);
-            color: #FFF; }
+            color: #FFF;
+            text-shadow: 0 1px 1px #000; }
         nav#main ul li.home:hover {
           background-color: #999; }
       nav#main ul li.more {
@@ -185,10 +186,10 @@ nav#main ul li.more:hover > .toggle-icon span:last-child {
 @media screen and (max-width: 560px) {
   nav#main ul li {
     width: 20%; }
-  nav#main ul:nth-child(5) {
-    display: none; }
-  nav#main ul.home {
-    width: 20%; }
+    nav#main ul li:nth-child(5) {
+      display: none; }
+    nav#main ul li.home {
+      width: 20%; }
   nav#main ul ul li:nth-child(5) {
     display: block; } }
 @media screen and (max-width: 440px) {
@@ -198,8 +199,8 @@ nav#main ul li.more:hover > .toggle-icon span:last-child {
       display: none; }
     nav#main ul li.home {
       width: 25%; }
-    nav#main ul li ul li:nth-child(4) {
-      display: block; } }
+  nav#main ul ul li:nth-child(4) {
+    display: block; } }
 @media screen and (max-width: 414px) {
   /* Mobile L Portrait */ }
 /* /Mobile L Portrait */
