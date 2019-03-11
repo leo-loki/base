@@ -6,29 +6,29 @@ jQueryライブラリ「Fullcarender」とGoogleカレンダーを連携させ�
 
 ## 設定方法
 
-### Googleアカウントの取得
+### １）Googleアカウントの取得
 
 ここで使用するGoogleカレンダー用に新しいGoogleアカウントを取得します。
 
 他のサイトやプライベートで使用しているGoogleアカウントは使用しないようにしましょう。
 
-### Google APIキーの取得
+### ２）Google APIキーの取得
 
 「Google API Console - Google Cloud Console」
  https://console.cloud.google.com/
 で、カレンダー用のAPIキーを取得しておきます。
 
-### Googleカレンダーの作成・設定
+### ３）Googleカレンダーの作成・設定
 
 連携させるGoogleカレンダーを作成し、設定から一般公開にしておきます。
 
 ※一般公開されていないカレンダーは連携させることができません。
 
-### GoogleカレンダーIDを取得
+### ４）GoogleカレンダーIDを取得
 
 連携させるGoogleカレンダーの設定からカレンダーのIDを取得しておきます。
 
-### スクリプトにAPIキーとカレンダーIDを設定
+### ５）スクリプトにAPIキーとカレンダーIDを設定
 
 「js」ディレクトリ内の「script.js」ファイルへ先に取得したAPIキーとカレンダーIDを設定します。
 
@@ -36,7 +36,7 @@ jQueryライブラリ「Fullcarender」とGoogleカレンダーを連携させ�
 連携させるGoogleカレンダーが一つだけで良い場合は、「script.js」ファイルの
 ソースコード21行目〜39行目までを削除して使用します。
 
-### CSSでデザインをカスタマイズ
+### ６）CSSでデザインをカスタマイズ
 
 「css」ディレクトリ内の「style.scss」または「style.css」ファイルでデザインをカスタマイズします。
 
