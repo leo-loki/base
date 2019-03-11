@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* Fullcslender + Google Calender CSS */
+
+@import url("https://fonts.googleapis.com/css?family=Cormorant+SC|Didact+Gothic|Prata");
+
+body {
+ margin: 2em 1em; padding: 0;
+ font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+ font-size: 1em;
+}
+.cal-wrap {
+ position: relative;
+}
+#loading {
+ position: absolute;
+ top: 50%; left: auto; right: auto;
+ margin-top: -1em;
+ width: 100%;
+ color: #C55;
+ text-align: center;
+ display: none;
+}
+#calendar {
+ max-width: 900px;
+ margin: 0 auto;
+}
+.fc-toolbar h2 {
+ font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+}
+.fc th {
+ color: #766;
+ &.fc-sun { color: #C55; }
+}
+.fc-day-number {
+ font-family: 'Cormorant SC', serif;
+ font-size: 2em; font-size: 2vw;
+}
+.fc-unthemed td.fc-today {
+ background: #EFD;
+}
