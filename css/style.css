@@ -93,29 +93,23 @@ aside {
     #common-header #logo a {
       display: inline-block; }
     #common-header #logo svg {
-      min-width: 64px;
-      width: 10vw;
-      max-width: 128px;
+      min-width: 240px;
+      width: auto;
+      width: calc(100vw / 3);
+      max-width: 640px;
       height: auto; }
-      #common-header #logo svg path#ar {
-        fill: #B170A2; }
-      #common-header #logo svg path#a1, #common-header #logo svg path#a2, #common-header #logo svg path#a3, #common-header #logo svg path#a4 {
-        fill: #000;
+      #common-header #logo svg path {
+        fill: #B77E75;
+        stroke: none;
+        opacity: 0.8; }
+      #common-header #logo svg path#p1, #common-header #logo svg path#p2 {
+        fill: #B47388;
+        opacity: 1;
         -webkit-transition: all 1s;
         -moz-transition: all 1s;
         -ms-transition: all 1s;
         -o-transition: all 1s;
         transition: all 1s; }
-      #common-header #logo svg path#a1 {
-        opacity: 0.8; }
-      #common-header #logo svg path#a2 {
-        opacity: 0.6; }
-      #common-header #logo svg path#a3 {
-        opacity: 1; }
-      #common-header #logo svg path#a4 {
-        opacity: 0.6; }
-      #common-header #logo svg path#ar {
-        opacity: 1; }
 
 #common-footer {
   padding: 3.5vw 6.25%;

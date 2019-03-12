@@ -27,12 +27,10 @@ body { font-size: calc(112.5% + 4 * (100vw - 600px) / 400); }
  @include prefix_set(transition, all 1s);
 	#logo {
 		svg {
-			path#ar, path#a1, path#a2, path#a3, path#a4 {
-				fill:#FFF;
+			path, path#p1, path#p2 {
+				fill: #FFF; opacity: 1;
     @include prefix_set(transition, all 1s);
 			}
-			path#a1, path#a2, path#a3, path#a4 { opacity: 0.5; }
-			path#ar { opacity: 1; }
 		}
 	}
  nav { display: none; }

@@ -16,17 +16,14 @@ body {
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s; }
-  #common-header #logo svg path#ar, #common-header #logo svg path#a1, #common-header #logo svg path#a2, #common-header #logo svg path#a3, #common-header #logo svg path#a4 {
+  #common-header #logo svg path, #common-header #logo svg path#p1, #common-header #logo svg path#p2 {
     fill: #FFF;
+    opacity: 1;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s; }
-  #common-header #logo svg path#a1, #common-header #logo svg path#a2, #common-header #logo svg path#a3, #common-header #logo svg path#a4 {
-    opacity: 0.5; }
-  #common-header #logo svg path#ar {
-    opacity: 1; }
   #common-header nav {
     display: none; }
 
