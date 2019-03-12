@@ -4,6 +4,9 @@ html, body {
   width: 100%;
   overflow-x: hidden; }
 
+body {
+  font-size: calc(112.5% + 4 * (100vw - 600px) / 400); }
+
 #common-header {
   background: -webkit-linear-gradient(bottom, transparent, #FFF 100%, #FFF 0%, transparent);
   background-image: linear-gradient(to top, transparent, #FFF 100%, #FFF 0%, transparent);
@@ -49,6 +52,9 @@ main .container {
 
 /* portrait view */
 @media screen and (orientation: portrait) {
+  body {
+    font-size: 100%; }
+
   .pc {
     display: none;
     visibility: hidden; }

@@ -14,6 +14,7 @@
 html, body { margin: 0; padding: 0; }
 body {
  font-family: Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial, sans-serif;
+ font-size: calc(125% + 5 * (100vw - 1920px) / 1920);
  color: #333;
  background-color: #FFF;
  word-wrap: break-word;
@@ -23,32 +24,35 @@ body {
 h1, h2, h3 {
  color: $main-color;
 }
-p { line-height:1.8em; @extend .just; }
-dl { line-height: 1.6em; }
+p { margin: 0 1em; line-height:1.8em; @extend .just, .padding-tb; }
+dl { @extend .padding-tb; line-height: 1.6em; }
 ul, ol { @extend dl; list-style: none; }
 a { color: $acnt-color; text-decoration:none; outline:none; }
 a:hover { color: $sub2-color; }
 blockquote {
  position: relative;
- padding: 0 2em;
+ margin: 0 2em; padding: 0 1em;
+ font-size: 0.9em;
  display: table;
+ p { line-height: 1.4em; }
  &::before, &::after {
   position: absolute;
   font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
-  font-size: 2em;
+  font-size: 3.2em;
   color: #999;
  }
- &::before { top: 0; left: 0.4em; content: "“"; }
- &::after { bottom: -0.2em; right: 0.4em; content: "”"; }
+ &::before { top: 0; left: 0; margin-top: 0.15em; content: "“"; }
+ &::after { bottom: 0; right: 0; margin-bottom: -0.4em; content: "”"; }
 }
 section {
- padding: 2em; border-left:6px solid $sub1-color;
+ padding: 2em;
  h3,h4,h5,h6 { margin: 1em 0 0.5em; }
- p { padding: 0 1em .5em; }
- blockquote p { padding: 0; }
+ p { padding: inherit 1em; }
+ blockquote p {}
 }
 aside {
  margin: 1em 2em 2em;
+ font-size: 0.9em;
  font-weight: bold; line-height:2em;
 }
 
@@ -69,7 +73,7 @@ aside {
 		svg {
 			min-width: 64px; width: 10vw; max-width: 128px;
 			height: auto;
-			path#ar { fill:#bf607f; }
+			path#ar { fill: $sub2-color; }
 			path#a1, path#a2, path#a3, path#a4 {
 				fill:#000;
     @include prefix_set(transition, all 1s);
@@ -119,8 +123,9 @@ main {
 	.container {
 		position: relative;
 		margin:0 auto;
-  min-width: 950px; width: 74.2%;
+  min-width: 960px; width: 75%;
   background-color: rgba(255,255,255,.9); color:#333;
+  border-left:6px solid $sub1-color;
 		.contents { width:70%; }
 		.side {
 			width:30%; color:#333; background-color: rgba($sub1-color,.25);
@@ -139,6 +144,7 @@ main {
   position: sticky;
   top:0;
 }
+.padding-tb { padding: .5em 0; }
 .center {
  align-items: center;
  justify-content: center;
@@ -150,4 +156,6 @@ main {
  justify-items: left;
  flex-direction: column;
  text-align: justify;
+ word-break: break-all;
+ @include prefix_set(hyphens, auto);
 }

@@ -8,6 +8,7 @@ html, body {
 
 body {
   font-family: Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial, sans-serif;
+  font-size: calc(125% + 5 * (100vw - 1920px) / 1920);
   color: #333;
   background-color: #FFF;
   word-wrap: break-word;
@@ -22,6 +23,7 @@ h1, h2, h3 {
   color: #B77E75; }
 
 p {
+  margin: 0 1em;
   line-height: 1.8em; }
 
 dl, ul, ol {
@@ -40,34 +42,38 @@ a:hover {
 
 blockquote {
   position: relative;
-  padding: 0 2em;
+  margin: 0 2em;
+  padding: 0 1em;
+  font-size: 0.9em;
   display: table; }
+  blockquote p {
+    line-height: 1.4em; }
   blockquote::before, blockquote::after {
     position: absolute;
     font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
-    font-size: 2em;
+    font-size: 3.2em;
     color: #999; }
   blockquote::before {
     top: 0;
-    left: 0.4em;
+    left: 0;
+    margin-top: 0.15em;
     content: "“"; }
   blockquote::after {
-    bottom: -0.2em;
-    right: 0.4em;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -0.4em;
     content: "”"; }
 
 section {
-  padding: 2em;
-  border-left: 6px solid #B47388; }
+  padding: 2em; }
   section h3, section h4, section h5, section h6 {
     margin: 1em 0 0.5em; }
   section p {
-    padding: 0 1em .5em; }
-  section blockquote p {
-    padding: 0; }
+    padding: inherit 1em; }
 
 aside {
   margin: 1em 2em 2em;
+  font-size: 0.9em;
   font-weight: bold;
   line-height: 2em; }
 
@@ -92,7 +98,7 @@ aside {
       max-width: 128px;
       height: auto; }
       #common-header #logo svg path#ar {
-        fill: #bf607f; }
+        fill: #B170A2; }
       #common-header #logo svg path#a1, #common-header #logo svg path#a2, #common-header #logo svg path#a3, #common-header #logo svg path#a4 {
         fill: #000;
         -webkit-transition: all 1s;
@@ -145,10 +151,11 @@ main {
   main .container {
     position: relative;
     margin: 0 auto;
-    min-width: 950px;
-    width: 74.2%;
+    min-width: 960px;
+    width: 75%;
     background-color: rgba(255, 255, 255, 0.9);
-    color: #333; }
+    color: #333;
+    border-left: 6px solid #B47388; }
     main .container .contents {
       width: 70%; }
     main .container .side {
@@ -169,6 +176,9 @@ main {
   position: sticky;
   top: 0; }
 
+.padding-tb, p, dl, ul, ol {
+  padding: .5em 0; }
+
 .center {
   align-items: center;
   justify-content: center;
@@ -179,4 +189,10 @@ main {
   align-items: start;
   justify-items: left;
   flex-direction: column;
-  text-align: justify; }
+  text-align: justify;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto; }

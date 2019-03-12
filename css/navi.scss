@@ -14,7 +14,7 @@ nav {
  }
  &#main {
   width: 100%; height: auto; min-height: 5em;
-  @include pro_prefix_set(background, linear-gradient(#EEE, #B47388));
+  background-color: $sub1-color;
   color:#755; font-size: 1vw; text-align:center;
   z-index: 999;
   * {
@@ -24,26 +24,28 @@ nav {
    position: absolute;
    top: 0;
    width: 100%;
+   padding: 0;
    text-align: center;
    list-style: none;
    display: flex;
    li {
     flex: 1;
     background-color: #333; color: #FFF;
+    border-bottom: 1px solid $sub1-color;
     a {
-     @include pro_prefix_set(background, linear-gradient(-170deg, #EEE, #CDB1A3));
+     @include pro_prefix_set(background, linear-gradient(-170deg, #FFF, $main-color));
      padding:1em;
      &:hover {
-      @include pro_prefix_set(background, linear-gradient(10deg, #EEE, #CDB1A3));
+      @include pro_prefix_set(background, linear-gradient(10deg, #FFF, $main-color));
       color:#B55;
      }
     }
     &.home {
      flex: 0.5; background-color: #FFF;
      a {
-      @include pro_prefix_set(background, linear-gradient(10deg, #FFF, #CDB1A3));
+      @include pro_prefix_set(background, linear-gradient(10deg, #FFF, $main-color));
       &:hover {
-       @include pro_prefix_set(background, linear-gradient(0deg, #633, #000));
+       @include pro_prefix_set(background, linear-gradient(0deg, $sub1-color, #000));
        color: #FFF;
        text-shadow: 0 1px 1px #000;
       }
@@ -54,20 +56,23 @@ nav {
      position: relative;
      padding: 1em 0;
      background-color: #555;
+     text-shadow: 0 1px 1px #000;
      display: none;
     }
-    &:hover > ul { height: auto; opacity: 1; }
+    &:hover > ul { width: 100vw; height: auto; opacity: 1; }
    }
    ul {
-    padding-top: 6em;
-    height: 0;
+    position: absolute;
+    right: 0; top: 100%;
+    padding-top: 1em;
+    width: 0; height: 0;
+    text-shadow: 0 1px 1px #FFF;
     overflow: hidden;
     opacity: 0;
     display: none;
     &::before {
      position: absolute;
-     left: 50%; top: 5.25em;
-     margin-left: -0.6em;
+     right: 8%; top: 0.25em;
      width: 1.4em; height: 1.4em;
      background-color: #999;
      content: "";
@@ -79,15 +84,19 @@ nav {
      display: none;
      background-color: #999;
      a {
-      &::before { background-image: url("../img/logo.svg"); height: 24px; }
-      &:hover { background-color: #333; }
+      font-size: 1rem;
+      background: #FFF;
+      &:hover { background: $sub1-color; color: #FFF; text-shadow: 0 1px 1px #000; }
      }
      &:nth-child(1) {
       height: 4px;
       font-size: 0; line-height: 0;
       display: block;
      }
-     &:nth-child(even) { background-color: #888; }
+     &:nth-child(even) a {
+      background-color: #EEE;
+      &:hover { background: $sub2-color; }
+     }
     }
    }
   }
@@ -100,7 +109,7 @@ header {
   margin-top:-0.5em;
   font-size:0.8em;
   ul li {
-   padding:0 1em; border-left:1px solid #CDB1A3;
+   padding:0 1em; border-left:1px solid $sub1-color;
   } // header nav ul li
  } // header nav
 } // header
@@ -158,10 +167,11 @@ nav#main ul li.more:hover > .toggle-icon span:last-child {
 } /* /Mobile Landscape */
 @media screen and (max-width: 560px) {
  nav#main ul {
-  li { width: 20%;
+  li { width: 22vw;
    &:nth-child(5) { display: none; }
-   &.home { width: 20%; }
+   &.home { width: 12vw; }
   }
+  ul::before { right: 10vw; }
   ul li:nth-child(5) { display: block; }
  }
 }
@@ -170,8 +180,9 @@ nav#main ul li.more:hover > .toggle-icon span:last-child {
   li {
    width: 25%;
    &:nth-child(4) { display: none; }
-   &.home { width: 25%; }
+   &.home { width: 12.5%; }
   }
+  ul::before { right: 12.5%; }
   ul li:nth-child(4) { display: block; }
  }
 }
@@ -182,6 +193,9 @@ nav#main ul li.more:hover > .toggle-icon span:last-child {
  nav#main ul li {
   width: 28%;
   &.home { width: 16%; }
+  ul {
+   &::before { right: 14%; }
+  }
  }
 }
 
