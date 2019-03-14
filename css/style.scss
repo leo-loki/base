@@ -14,6 +14,7 @@
 html, body { margin: 0; padding: 0; }
 body {
  font-family: Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial, sans-serif;
+ font-size: calc(137.5% + 5 * (100vw - 1080px) / 1080);
  color: #333;
  background-color: #FFF;
  word-wrap: break-word;
@@ -23,14 +24,17 @@ body {
 h1, h2, h3 {
  color: $main-color;
 }
-p { line-height:1.8em; @extend .just; }
+p { line-height: 1.4em; @extend .just; word-break: break-all; }
 dl { line-height: 1.6em; }
 ul, ol { @extend dl; list-style: none; }
 a { color: $acnt-color; text-decoration:none; outline:none; }
 a:hover { color: $sub2-color; }
 blockquote {
  position: relative;
- padding: 0 2em;
+ margin: 0.5em 1em; padding: 1em 0 0.4em;
+ font-size: 90%;
+ border-top: 1px solid #999;
+ border-bottom: 1px solid #999;
  display: table;
  &::before, &::after {
   position: absolute;
@@ -38,18 +42,25 @@ blockquote {
   font-size: 2em;
   color: #999;
  }
- &::before { top: 0; left: 0.4em; content: "“"; }
- &::after { bottom: -0.2em; right: 0.4em; content: "”"; }
+ &::before { top: 0.25em; left: 0; content: "“"; }
+ &::after { bottom: -0.25em; right: 0; content: "”"; }
 }
 section {
  padding: 2em; border-left:6px solid $sub1-color;
  h3,h4,h5,h6 { margin: 1em 0 0.5em; }
- p { padding: 0 1em .5em; }
- blockquote p { padding: 0; }
+ h2 { font-size: 1.4em; }
+ h3 { font-size: 1.2em; }
+ h4 { font-size: 1em; }
+ h5 { font-size: .9em; }
+ h6 { font-size: .8em; }
+ p { padding: 0 1em .5em; line-height: 1.6em; }
+ blockquote p { line-height: 1.4em; }
 }
 aside {
- margin: 1em 2em 2em;
+ padding: 2em 1em;
+ font-size: 80%;
  font-weight: bold; line-height:2em;
+ p { padding: 0 1em .5em; }
 }
 
 /* Common ID & Class */
@@ -83,10 +94,10 @@ aside {
 	}
 }
 #common-footer {
-	padding: 3.5vw 6.25%;
+	padding: 3.5vh 6.25%;
 	background-color:rgba(0,0,0,0.75);
 	width:87.5%;
-	font-size: 0.8em;
+	font-size: 0.6em;
 	color: $footer-color;
 	a { color: $footer-a-color; }
 	small {

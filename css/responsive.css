@@ -4,6 +4,9 @@ html, body {
   width: 100%;
   overflow-x: hidden; }
 
+body {
+  font-size: calc(112.5% + 4 * (100vw - 600px) / 400); }
+
 #common-header {
   background: -webkit-linear-gradient(bottom, transparent, #FFF 100%, #FFF 0%, transparent);
   background-image: linear-gradient(to top, transparent, #FFF 100%, #FFF 0%, transparent);
@@ -35,6 +38,9 @@ main .container {
   main .container .side {
     width: 100%; }
 
+aside {
+  font-size: 100%; }
+
 /* other class */
 .mc-wrap {
   opacity: 0;
@@ -49,6 +55,9 @@ main .container {
 
 /* portrait view */
 @media screen and (orientation: portrait) {
+  body {
+    font-size: 100%; }
+
   .pc {
     display: none;
     visibility: hidden; }
@@ -61,13 +70,15 @@ main .container {
   #common-footer {
     text-align: center; }
     #common-footer small, #common-footer nav {
-      margin: 0 auto .75em;
+      margin: 0 auto;
       padding: 0;
       display: block; }
     #common-footer small.pc, #common-footer nav.pc {
       display: none; }
     #common-footer nav {
       border: none; }
+      #common-footer nav ul li {
+        margin-top: 1em; }
 
   .mc-wrap {
     opacity: 0;

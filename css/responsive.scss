@@ -7,7 +7,9 @@ html, body {
  width: 100%;
  overflow-x: hidden;
 }
-
+body {
+ font-size: calc(112.5% + 4 * (100vw - 600px) / 400);
+}
 #common-header {
 	background: -webkit-linear-gradient(
 		bottom,
@@ -44,6 +46,7 @@ main {
 		.side { width: 100%; }
 	}
 }
+aside { font-size: 100%; }
 
 /* other class */
 
@@ -55,13 +58,19 @@ main {
 
 /* portrait view */
 @media screen and (orientation: portrait) {
+ body {
+  font-size: 100%;
+ }
  .pc { display: none; visibility: hidden; }
  #common-header #logo { margin: 0 auto; padding: 1em 0; display: table; }
  #common-footer{
   text-align: center;
-  small { margin: 0 auto .75em; padding: 0; display: block; }
+  small { margin: 0 auto; padding: 0; display: block; }
   small.pc { display: none; }
-  nav { @extend small; border: none; }
+  nav {
+   @extend small; border: none;
+   ul li { margin-top: 1em; }
+  }
  }
 	.mc-wrap {
 	opacity: 0; display: none; visibility: hidden;

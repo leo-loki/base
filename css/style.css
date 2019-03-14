@@ -8,6 +8,7 @@ html, body {
 
 body {
   font-family: Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Arial, sans-serif;
+  font-size: calc(137.5% + 5 * (100vw - 1080px) / 1080);
   color: #333;
   background-color: #FFF;
   word-wrap: break-word;
@@ -22,7 +23,8 @@ h1, h2, h3 {
   color: #B77E75; }
 
 p {
-  line-height: 1.8em; }
+  line-height: 1.4em;
+  word-break: break-all; }
 
 dl, ul, ol {
   line-height: 1.6em; }
@@ -40,7 +42,11 @@ a:hover {
 
 blockquote {
   position: relative;
-  padding: 0 2em;
+  margin: 0.5em 1em;
+  padding: 1em 0 0.4em;
+  font-size: 90%;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
   display: table; }
   blockquote::before, blockquote::after {
     position: absolute;
@@ -48,12 +54,12 @@ blockquote {
     font-size: 2em;
     color: #999; }
   blockquote::before {
-    top: 0;
-    left: 0.4em;
+    top: 0.25em;
+    left: 0;
     content: "“"; }
   blockquote::after {
-    bottom: -0.2em;
-    right: 0.4em;
+    bottom: -0.25em;
+    right: 0;
     content: "”"; }
 
 section {
@@ -61,15 +67,29 @@ section {
   border-left: 6px solid #B47388; }
   section h3, section h4, section h5, section h6 {
     margin: 1em 0 0.5em; }
+  section h2 {
+    font-size: 1.4em; }
+  section h3 {
+    font-size: 1.2em; }
+  section h4 {
+    font-size: 1em; }
+  section h5 {
+    font-size: .9em; }
+  section h6 {
+    font-size: .8em; }
   section p {
-    padding: 0 1em .5em; }
+    padding: 0 1em .5em;
+    line-height: 1.6em; }
   section blockquote p {
-    padding: 0; }
+    line-height: 1.4em; }
 
 aside {
-  margin: 1em 2em 2em;
+  padding: 2em 1em;
+  font-size: 80%;
   font-weight: bold;
   line-height: 2em; }
+  aside p {
+    padding: 0 1em .5em; }
 
 /* Common ID & Class */
 #common-header {
@@ -112,10 +132,10 @@ aside {
         opacity: 1; }
 
 #common-footer {
-  padding: 3.5vw 6.25%;
+  padding: 3.5vh 6.25%;
   background-color: rgba(0, 0, 0, 0.75);
   width: 87.5%;
-  font-size: 0.8em;
+  font-size: 0.6em;
   color: #999; }
   #common-footer a {
     color: #FFF; }
