@@ -7,9 +7,13 @@ html, body {
  width: 100%;
  overflow-x: hidden;
 }
+<<<<<<< HEAD
 body {
  font-size: calc(112.5% + 4 * (100vw - 600px) / 400);
 }
+=======
+body { font-size: calc(112.5% + 4 * (100vw - 600px) / 400); }
+>>>>>>> origin/master
 #common-header {
 	background: -webkit-linear-gradient(
 		bottom,
@@ -29,12 +33,10 @@ body {
  @include prefix_set(transition, all 1s);
 	#logo {
 		svg {
-			path#ar, path#a1, path#a2, path#a3, path#a4 {
-				fill:#FFF;
+			path, path#p1, path#p2 {
+				fill: #FFF; opacity: 1;
     @include prefix_set(transition, all 1s);
 			}
-			path#a1, path#a2, path#a3, path#a4 { opacity: 0.5; }
-			path#ar { opacity: 1; }
 		}
 	}
  nav { display: none; }
@@ -58,9 +60,13 @@ aside { font-size: 100%; }
 
 /* portrait view */
 @media screen and (orientation: portrait) {
+<<<<<<< HEAD
  body {
   font-size: 100%;
  }
+=======
+ body { font-size: 100%; }
+>>>>>>> origin/master
  .pc { display: none; visibility: hidden; }
  #common-header #logo { margin: 0 auto; padding: 1em 0; display: table; }
  #common-footer{
