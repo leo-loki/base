@@ -46,17 +46,16 @@
 　　　「form.php」ファイルの３０〜３４行目の中から同じNAME属性の行を削除します。  
 　　　その際、最後の行末に「,（カンマ）」があれば削除してください。  
    
- <dl>
- <dt>（例）</dt>
- <dd> radio: "radio",</dd>
- <dd> texts: "required",</dd>
- <dd>}</dd>
- <dd>  ↓</dd>
- <dd> radio: "radio",</dd>
- <dd> texts: "required"</dd>
- <dd>}</dd>
- </dl>
- 
+   （例）  
+       radio: "radio",  
+       texts: "required",  
+      }  
+              ↓  
+       radio: "radio",  
+       texts: "required"  
+      }  
+   
+   
 《※フォームの入力チェック（exValidation）について》  
 　このフォームでは入力チェックに「exValidation」を利用しています。  
 　この「exValidation」につきましては、制作者のサイトがすでに閉鎖されていますので、  
