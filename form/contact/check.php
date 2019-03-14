@@ -5,7 +5,6 @@
 //
 // author :  Design ofiice IRUYA.
 // website : https://iruya.jp/
-// contact : info@iruya.jp
 //
 /* ++++++++++++++++++++++++++++++++++++++++++ */
 

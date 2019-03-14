@@ -1,11 +1,10 @@
 <?php
 /* ++++++++++ PHP mail form system ++++++++++ */
 //
-// Original PHP entry form system Ver.2.3.1
+// Original PHP form system Ver.1.8.1
 //
 // author :  Design ofiice IRUYA.
 // website : https://iruya.jp/
-// contact : info@iruya.jp
 //
 /* ++++++++++++++++++++++++++++++++++++++++++ */
 
