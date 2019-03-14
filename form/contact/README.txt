@@ -4,7 +4,7 @@
 
 // author :  Design ofiice IRUYA.
 
-// website : https://iruya.jp/
+// website : https://github.com/leo-loki/base
 
 ***
 
