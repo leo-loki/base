@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/* Entry form CSS */
+
+/* =========================================
+*  COMMON
+* ========================================= */
+
+p.note {
+	padding: 0 0 .5em;
+	text-align: right;
+} p.attention {
+	font-size: 93%;
+	color: #f60;
+}
+
+.pagebody {}
+
+/* =========================================
+*  FORM
+* ========================================= */
+
+
+#form { padding: 2em 0; }
+#form h2 {}
+#form h2.send {
+	width:auto;
+	margin-top: 1em;
+	padding:100px 50px;
+	background-color:#FFF;
+	font-size:2em; font-weight:bold;
+	color:#777; text-align:center;
+	display:block;
+	border:8px solid #E4E4E4;
+}
+#form h3 { text-align: center; padding: 1em 0; color: #777; }
+#form p { margin: 1em 2em; font-size: 0.9em; }
+#form #course h5, #form #course p { margin: 0.5em 1em; }
+#form label { margin-left: 2em; }
+#form input { margin:2px 0; }
+#form #course { margin: 0 2em; }
+#form .submit { margin: 1em 0; }
+#form .button {
+ -moz-border-radius: 0.5em 0.5em 0.5em 0.5em;
+ -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+ background: #000;
+ background: -webkit-gradient(linear, left top, left bottom, from(#036EB8), to(#000));
+ background: -moz-linear-gradient(center top , #036EB8, #000) repeat scroll 0 0 transparent;
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#036EB8', endColorstr='#000000');
+ border: 1px solid #333333;
+ color: #D7D7D7;
+ cursor: pointer;
+ display: inline-block;
+ font: 14px/100% "Lucida Sans Unicode","Lucida Grande",Arial,Helvetica,"ヒラギノ丸ゴ Pro W4",HiraMaruPro-W4,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,Osaka,sans-serif;
+ outline: medium none;
+ padding: 0.5em 2em 0.55em;
+ text-align: center;
+ text-decoration: none;
+ text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+} #form	.button:hover {
+ text-decoration: none;
+ background: #009;
+ background: -webkit-gradient(linear, left top, left bottom, from(#009), to(#036EB8));
+ background: -moz-linear-gradient(top, #009, #036EB8);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#036EB8');
+} #form .button:active, #form .buttonRed:active, #form .buttonSlv:active {
+ position: relative;
+ top: 1px;
+ color: #FFF;
+	background:#036EB8;
+ background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#036EB8));
+ background: -moz-linear-gradient(top, #000, #036EB8);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#036EB8');
+}
+#form .buttonRed {
+ -moz-border-radius: 0.5em 0.5em 0.5em 0.5em;
+ -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+ background:#E07;
+ background: -webkit-gradient(linear, left top, left bottom, from(#E07), to(#000));
+ background: -moz-linear-gradient(top, #E07, #000);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#EE0077', endColorstr='#000000');
+ border: 1px solid #E07;
+ color: #FFF;
+ cursor: pointer;
+ display: inline-block;
+ font: 14px/100% "Lucida Sans Unicode","Lucida Grande",Arial,Helvetica,"ヒラギノ丸ゴ Pro W4",HiraMaruPro-W4,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,Osaka,sans-serif;
+ outline: medium none;
+ padding: 0.5em 2em 0.55em;
+ text-align: center;
+ text-decoration: none;
+ text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+} #form	.buttonRed:hover {
+ text-decoration: none;
+ background: #E07;
+ background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#E07));
+ background: -moz-linear-gradient(top, #000, #E07);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#EE0077');
+}
+#form .buttonSlv {
+ -moz-border-radius: 0.5em 0.5em 0.5em 0.5em;
+ -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	background:#CCC;
+ background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));
+ background: -moz-linear-gradient(center top , #FFF, #CCC) repeat scroll 0 0 transparent;
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CCCCCC');
+ border: 1px solid #999;
+ color: #555;
+ cursor: pointer;
+ display: inline-block;
+ font: 14px/100% "Lucida Sans Unicode","Lucida Grande",Arial,Helvetica,"ヒラギノ丸ゴ Pro W4",HiraMaruPro-W4,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,Osaka,sans-serif;
+ outline: medium none;
+ padding: 0.5em 2em 0.55em;
+ text-align: center;
+ text-decoration: none;
+ text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+} #form	.buttonSlv:hover {
+ text-decoration: none;
+ background: #CCC;
+ background: -webkit-gradient(linear, left top, left bottom, from(#CCC), to(#FFF));
+ background: -moz-linear-gradient(top, #CCC, #FFF);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCCCC', endColorstr='#FFFFFF');
+}
+
+/* #form table */
+#form table {
+	margin: 0 auto;
+} #form table th, #form table  td {
+	margin:1px; padding:10px 14px;
+ border: 5px solid #EEE;
+} #form table th {
+	background-color:#CCE;
+ font-size: 0.9em;
+	color:#000;	text-align:right;
+} #form table th span {
+ margin-left: .25em;
+ color: #F00;
+ font-weight: bold;
+} #form table td {
+	text-align:left;
+}
+input[type="text"], #form textarea {
+ border: solid #EEE 3px;
+ padding: 4px 7px;
+ max-width: 80%;
+} #form .err { background: #FEE; } #form .err input { background: #FEE; } #form .after.err {
+ border-color: #F60;
+ background: #FFF !important;
+} #form .after.err input {
+ border-color: #F60;
+ background: #FFF !important;
+} #form label { margin-right: 1em; } #form label input { margin-right: .3em; } #form caption {
+	font-size:11px; color:#555;	text-align:right;
+}
+
+/* #form class */
+#form .caption {
+	width:100%;
+	font-family:"Trebuchet MS", sans-serif; font-size:0.9em;
+	color:#555; text-align:left; letter-spacing:1px;
+	display:block;	overflow:hidden;
+}
+#form .back { margin:20px 0; text-align:center; }
+#form .submit {
+	width: 100%;
+ text-align: center;
+}
+#form .copy {
+	border-top: solid #ccc 1px;
+	padding: 0 0 3em;
+	text-align: center;
+}
+
+/* other form */
+form {}
+form legend { display: none; }
+form h4 {
+	margin: 1em;
+	padding-bottom: 0.25em;
+	color: #036EB8;
+	border-bottom: 2px solid #036EB8;
+}
+form h5 {
+	margin: 0 2em;
+	padding-bottom: 0.25em;
+	color: #13AE67;
+	border-bottom: 2px solid #13AE67;
+}
