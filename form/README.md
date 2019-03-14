@@ -44,19 +44,19 @@
 
 （４）（３）で入力必須項目を削除した場合は、  
 　　　「form.php」ファイルの３０〜３４行目の中から同じNAME属性の行を削除します。  
-　　　その際、最後の行末に「,（カンマ）」があれば削除してください。
+　　　その際、最後の行末に「,（カンマ）」があれば削除してください。  
+   
  <dl>
-　<dt>（例）</dt>
-  <dd>
-    radio: "radio",  
-     texts: "required",  
-    }  
-      ↓  
-     radio: "radio",  
-     texts: "required"  
-    }  
- </dd>
+ <dt>（例）</dt>
+ <dd> radio: "radio",</dd>
+ <dd> texts: "required",</dd>
+ <dd>}</dd>
+ <dd>  ↓</dd>
+ <dd> radio: "radio",</dd>
+ <dd> texts: "required"</dd>
+ <dd>}</dd>
  </dl>
+ 
 《※フォームの入力チェック（exValidation）について》  
 　このフォームでは入力チェックに「exValidation」を利用しています。  
 　この「exValidation」につきましては、制作者のサイトがすでに閉鎖されていますので、  
