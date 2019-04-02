@@ -68,14 +68,25 @@ section {
   padding: 2em; }
   section h3, section h4, section h5, section h6 {
     margin: 1em 0 0.5em; }
+  section h2 {
+    font-size: 1.4em; }
+  section h3 {
+    font-size: 1.2em; }
+  section h4 {
+    font-size: 1em; }
+  section h5 {
+    font-size: .9em; }
+  section h6 {
+    font-size: .8em; }
   section p {
-    padding: inherit 1em; }
+    padding: 0 1em .5em;
+    line-height: 1.6em; }
+  section blockquote p {
+    line-height: 1.4em; }
 
 aside {
   margin: 1em 2em 2em;
-  font-size: 0.9em;
-  font-weight: bold;
-  line-height: 2em; }
+  font-size: 0.9em; }
 
 /* Common ID & Class */
 #common-header {
@@ -112,10 +123,10 @@ aside {
         transition: all 1s; }
 
 #common-footer {
-  padding: 3.5vw 6.25%;
+  padding: 3.5vh 6.25%;
   background-color: rgba(0, 0, 0, 0.75);
   width: 87.5%;
-  font-size: 0.8em;
+  font-size: 0.6em;
   color: #999; }
   #common-footer a {
     color: #FFF; }

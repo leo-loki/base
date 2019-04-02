@@ -26,6 +26,7 @@ h1, h2, h3 {
 }
 p { margin: 0 1em; line-height:1.8em; @extend .just, .padding-tb; }
 dl { @extend .padding-tb; line-height: 1.6em; }
+
 ul, ol { @extend dl; list-style: none; }
 a { color: $acnt-color; text-decoration:none; outline:none; }
 a:hover { color: $sub2-color; }
@@ -47,13 +48,17 @@ blockquote {
 section {
  padding: 2em;
  h3,h4,h5,h6 { margin: 1em 0 0.5em; }
- p { padding: inherit 1em; }
- blockquote p {}
+ h2 { font-size: 1.4em; }
+ h3 { font-size: 1.2em; }
+ h4 { font-size: 1em; }
+ h5 { font-size: .9em; }
+ h6 { font-size: .8em; }
+ p { padding: 0 1em .5em; line-height: 1.6em; }
+ blockquote p { line-height: 1.4em; }
 }
 aside {
  margin: 1em 2em 2em;
  font-size: 0.9em;
- font-weight: bold; line-height:2em;
 }
 
 /* Common ID & Class */
@@ -89,10 +94,10 @@ aside {
 	}
 }
 #common-footer {
-	padding: 3.5vw 6.25%;
+	padding: 3.5vh 6.25%;
 	background-color:rgba(0,0,0,0.75);
 	width:87.5%;
-	font-size: 0.8em;
+	font-size: 0.6em;
 	color: $footer-color;
 	a { color: $footer-a-color; }
 	small {

@@ -42,6 +42,7 @@ main {
 		.side { width: 100%; }
 	}
 }
+aside { font-size: 100%; }
 
 /* other class */
 
@@ -58,9 +59,12 @@ main {
  #common-header #logo { margin: 0 auto; padding: 1em 0; display: table; }
  #common-footer{
   text-align: center;
-  small { margin: 0 auto .75em; padding: 0; display: block; }
+  small { margin: 0 auto; padding: 0; display: block; }
   small.pc { display: none; }
-  nav { @extend small; border: none; }
+  nav {
+   @extend small; border: none;
+   ul li { margin-top: 1em; }
+  }
  }
 	.mc-wrap {
 	opacity: 0; display: none; visibility: hidden;

@@ -35,6 +35,9 @@ main .container {
   main .container .side {
     width: 100%; }
 
+aside {
+  font-size: 100%; }
+
 /* other class */
 .mc-wrap {
   opacity: 0;
@@ -64,13 +67,15 @@ main .container {
   #common-footer {
     text-align: center; }
     #common-footer small, #common-footer nav {
-      margin: 0 auto .75em;
+      margin: 0 auto;
       padding: 0;
       display: block; }
     #common-footer small.pc, #common-footer nav.pc {
       display: none; }
     #common-footer nav {
       border: none; }
+      #common-footer nav ul li {
+        margin-top: 1em; }
 
   .mc-wrap {
     opacity: 0;

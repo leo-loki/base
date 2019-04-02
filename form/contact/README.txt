@@ -4,11 +4,11 @@
 
 // author :  Design ofiice IRUYA.
 
-// website : https://iruya.jp/
+// website : https://github.com/leo-loki/base
 
 ***
-　 
-  
+
+
 このプログラムはPHPを利用した簡易メール送信フォームです。  
 入力項目を修正することで、「お問合せ」や「お申込み」フォームとしてご利用いただけます。  
 　 
