@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="ja"><![endif]-->
+<!--[if IE 7 ]> <html class="ie7" lang="ja"><![endif]-->
+<!--[if IE 8 ]> <html class="ie8" lang="ja"><![endif]-->
+<!--[if IE 9 ]> <html class="ie9" lang="ja"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="other" lang="ja" style="zoom: 1;"><!--<![endif]-->
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1694458-9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1694458-9');
+</script>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/lib/html5resetter.css">
+
+<title>サイトテンプレート（ビジュアル系）</title>
+
+<!-- IE set HTML 5 tag -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+<script type="text/javascript" src="./js/html5shiv.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="//webfonts.sakura.ne.jp/js/sakura.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="../css/general.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/lib/morisawa.css">
+<link rel="stylesheet" type="text/css" href="../css/lib/toggle.css">
+<link rel="stylesheet" type="text/css" href="../css/lib/genericons/genericons.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/android-chrome192.png">
+
+</head>
+
+<body>
+
+<div id="wrap"><!-- #wrap -->
+
+<header id="common-header">
+<h1><a href="https://www.i-studio.jp/"><img src="../img/logo.svg" alt="i Creative Studio."></a></h1>
+
+<nav id="nav-main" class="toggle">
+<input type="checkbox" id="mainMenu" class="switch">
+<ul class="menu1 fade">
+<li><a href="#">HOME</a></li>
+<li><a href="#sec02">SECTION 2</a></li>
+<li><a href="#sec03">SECTION 3</a></li>
+<li><a href="#sec04">SECTION 4</a></li>
+<li><a href="#sec05">SECTION 5</a></li>
+</ul>
+<label for="mainMenu"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></label>
+</nav>
+</header>
+
+<div id="contents" class="fontface1"><!-- #contents -->
+
+<section class="parallax-section" id="sec01">
+<div class="layer base"><article>
+	<div class="text-wrap">
+	<hgroup>
+	<h1>CSSだけで作れなかったパララックス効果</h1>
+	<h3>Section 1 - Layer base.</h3>
+	<p>最初のセクション。BASEレイヤーのみ</p>
+	</hgroup>
+	</div>
+</article></div>
+</section>
+
+<section class="parallax-section" id="sec02">
+<div class="layer base"><article>
+	<div class="text-wrap">
+	<h3>Section 2 - Layer base. </h3>
+	<p>２番目のセクション。BASEレイヤー</p>
+	<p>結論から言うと、CSSだけでパララックス効果のあるページを完璧に制作することはまだ無理。</p>
+	<p>このページは、現在（2017年）Webデザインで主流？のパララックス効果をCSSだけで表現することを目的として制作してみましたが…</p>
+	</div>
+</article></div>
+<div class="layer rear"><article>
+	<div class="text-wrap">
+	<h3>Section 2 - Layer rear. </h3>
+	<p>２番目のセクション。背面レイヤー</p>
+	</div>
+</article></div>
+</section>
+
+<section class="parallax-section" id="sec03">
+<div class="layer front"><article>
+	<div class="text-wrap">
+	<h3>Section 3 - Layer front. </h3>
+	<p>３番目のセクション。前面レイヤー</p>
+	</div>
+</article></div>
+<div class="layer base"><article>
+	<div class="text-wrap">
+	<h3>Section 3 - Layer base. </h3>
+	<p>３番目のセクション。BASEレイヤー</p>
+	</div>
+</article></div>
+</section>
+
+<section class="parallax-section" id="sec04">
+<div class="layer base"><article>
+	<div class="text-wrap">
+	<h3>Section 4 - Layer base. </h3>
+	<p>４番目のセクション。BASEレイヤー</p>
+	<p>ブラウザの対応状況が整っていないため、CSSでのスムールスクロールが実現せず…<br>百歩譲ってjQueryでスムールスクロールを組み込んでみたものの…</p>
+	</div>
+</article></div>
+<div class="layer rear">
+  <article>
+	<div class="text-wrap">
+	<h3>Section 4 - Layer rear. </h3>
+	<p>４番目のセクション。背面レイヤー</p>
+	</div>
+  </article></div>
+<div class="layer deep">
+  <article>
+	<div class="text-wrap">
+	<h3>Section 4 - Layer deep. </h3>
+	<p>４番目のセクション。最背面レイヤー</p>
+	</div>
+</article></div>
+</section>
+
+<section class="parallax-section" id="sec05">
+<div class="layer front">
+  <article>
+	<div class="text-wrap">
+	<h3>Section 5 - Layer front. </h3>
+	<p>５番目のセクション。前面レイヤー</p>
+	</div>
+  </article></div>
+<div class="layer base">
+  <article>
+	<div class="text-wrap">
+	<h3>Section 5 - Layer base.</h3>
+	<p>５番目のセクション。BASEレイヤー</p>
+	<p>中途半端じゃないですか。<br>jQueryなしで自由に制作できる日はいつ来るんでしょ…。</p>
+	</div>
+  </article></div>
+</section>
+
+</div><!-- /#contents -->
+
+<footer id="common-footer" class="flexbox">
+
+<small id="copy">&copy; i Creative studio. produced by Design office IRUYA.</small>
+
+<nav class="flexbox">
+<ul class="flexbox">
+<li><a href="#"><span class="genericon icon-home"></span></a></li>
+<li><a href="#sec01">SECTION 1</a></li>
+<li><a href="#sec02">SECTION 2</a></li>
+<li><a href="#sec03">SECTION 3</a></li>
+<li><a href="#sec04">SECTION 4</a></li>
+<li><a href="#sec05">SECTION 5</a></li>
+<li class="pc pagetop"><a href="#sec01"><span class="genericon genericon-top"></span></a></li>
+<li class="mobile pagetop"><a href="#sec01"><span class="genericon genericon-top"></span></a></li>
+</ul>
+<ul id="sns" class="flexbox">
+<li><a href="https://twitter.com/" target="_blank"><span class="genericon genericon-twitter"></span></a></li>
+<li><a href="https://ja-jp.facebook.com/" target="_blank"><span class="genericon genericon-facebook"></span></a></li>
+<li><a href="https://plus.google.com/" target="_blank"><span class="genericon genericon-googleplus"></span></a></li>
+<li><a href="https://jp.pinterest.com/" target="_blank"><span class="genericon genericon-pinterest-alt"></span></a></li>
+<li><a href="https://www.flickr.com/" target="_blank"><span class="genericon genericon-flickr"></span></a></li>
+<li><a href="https://www.youtube.com/channel/UC8CzTihW5u0eY8tO1FTvmtQ" target="_blank"><span class="genericon genericon-youtube"></span></a></li>
+<li><a href="https://www.instagram.com/" target="_blank"><span class="genericon genericon-instagram"></span></a></li>
+<li><a href="#"><span class="genericon icon-uparrow">PAGE TOP</span></a></li>
+</ul>
+</nav>
+
+</footer>
+
+</div><!-- /#wrap -->
+
+</body>
+</html>
