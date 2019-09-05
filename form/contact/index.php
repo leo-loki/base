@@ -39,6 +39,17 @@ $page_back = "javascript:history.back();"; // 戻るボタンの設定
  $pass = "";
 $texts = "";
 /* ----- /入力データ変数初期化 ----- */
+/* reCAPTCHA setting. */
+/*
+Google reCAPTCHA（https://www.google.com/recaptcha/intro/v3.html）ページの
+[Admin console]リンクから「新しいサイトを登録する」ページに進み、
+新たに利用するサイトを登録してキーを取得する。
+- reCAPTCHA タイプは「v3」推奨
+- 「reCAPTCHA 利用条件に同意する」に必ずチェックを
+*/
+$rec_site_key = "6Ld_wbYUAAAAAAHxGdcpeQcjem9uAHfmDPBuQg3M"; // reCAPTCHA サイトキーを設定
+$rec_secret_key = "6Ld_wbYUAAAAAEGFRK2zVYcv6VHlFT92vPQmb-MH"; // reCAPTCHA シークレットキーを設定
+/* / reCAPTCHA setting. */
 /* ===== send check ===== */
 if((isset($_POST['send']))&&($_POST['send']!="")){	$sendFlag = true; } else {	$sendFlag = false; }
 /* ===== /send check ===== */
@@ -73,11 +84,11 @@ if((isset($_POST['send']))&&($_POST['send']!="")){	$sendFlag = true; } else {	$s
 	<script type="text/javascript" src="./js/form/exchecker-ja.js"></script>
 	<script type="text/javascript" src="./js/form/jquery-ui-1.8.4.custom.min.js"></script>
 	<script type="text/javascript" src="./js/form/jquery.ui.datepicker-ja.js"></script>
- <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+ <script src="https://www.google.com/recaptcha/api.js?render=<?=$rec_site_key?>"></script>
  <script>
   grecaptcha.ready(function() {
-   grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'}).then(function(token) {
-    // reCAPTCHA setting.
+   grecaptcha.execute('<?=$rec_site_key?>', {action: 'homepage'}).then(function(token) {
+    /* reCAPTCHA script. */
    });
   });
  </script>
