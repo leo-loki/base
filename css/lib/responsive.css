@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/***********************************
+ Responsive Setup
+	*** Break Point (ｗ) ***
+	2,560px - 4k +
+	1,440px - PC +
+	1,024px - Laptop & iPad Landscape +
+	( 773px - Nexus 6S Landscape + )
+	  768px - Tablet & Mobile Landscape +
+	( 736px	- iPhone 6 Plus Landscape + )
+	( 667px - iPhone 6 Landscape + )
+	  435px - Mobile L +
+	  375px - Mobile M +
+	  320px - Mobile S +
+***********************************/
+/*------------------------------
+- TOP DOWN - ( PC -> Mobile )
+------------------------------*/
+@media screen and (max-width: 1440px) {	/* - PC */ } /* /- PC */
+
+@media screen and (max-width: 1024px) {	/* - Tablet Landscape & Laptop PC */
+	#side { display:none; }
+} /* /- Tablet Landscape & Laptop PC */
+
+@media screen and (max-width: 768px) {	/* Mobile Landscape - Tablet */
+	html, body { background: #000; overflow: visible;}
+	#player, #player_cover, #loader, #overlay { display:none; }
+	#wrap { overflow-x: hidden; }
+	header#common-header { position:relative; }
+	#contents {
+		position: static;
+		width: auto; height: auto;
+		left:0; top:0;
+		margin:0; margin-top:2em;
+	}
+	#contents .flexbox {
+		flex-direction: column-reverse;
+	}
+	#topics #feedText {
+		min-height:160px; height:auto; max-height:245px;
+		overflow-y:auto;
+	} #topics #feedText li { margin-bottom:2em; }
+	footer#common-footer {
+		position: static;
+		flex-direction:column-reverse;
+	} footer#common-footer ul li { margin-bottom: 1.8em; }
+} /* /Mobile Landscape - Tablet */
+
+@media screen and (max-width: 435px) {	/* - Mobile */ } /* /- Mobile */
+
+/*------------------------------
++ BOTTOM UP +（ Mobile -> PC ）
+------------------------------*/
+@media screen and (min-width: 436px) {	/* Mobile + */ }
+
+@media screen and (min-width: 769px) {	/* Mobile Landscape & Tablet + */
+	.mobile { display:none; } .pc { display:block; }
+	#copy .pc { display:inline; }
+} /* /Mobile Landscape & Tablet + */
+
+@media screen and (min-width: 1025px) {	/* Tablet Landscape & Laptop PC + */
+	#contents .flexbox section { padding:2em; }
+} /* / Tablet Landscape & Laptop PC + */
+
+@media screen and (min-width: 1441px) {	/* PC & others */ } /* /PC & others */
+
+/***********************************
+ end of Responsive Setup
+***********************************/

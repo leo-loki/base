@@ -73,6 +73,14 @@ if((isset($_POST['send']))&&($_POST['send']!="")){	$sendFlag = true; } else {	$s
 	<script type="text/javascript" src="./js/form/exchecker-ja.js"></script>
 	<script type="text/javascript" src="./js/form/jquery-ui-1.8.4.custom.min.js"></script>
 	<script type="text/javascript" src="./js/form/jquery.ui.datepicker-ja.js"></script>
+ <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+ <script>
+  grecaptcha.ready(function() {
+   grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'}).then(function(token) {
+    // reCAPTCHA setting.
+   });
+  });
+ </script>
 <!-- /form Javascript file Loading //-->
 </head>
 

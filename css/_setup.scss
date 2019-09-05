@@ -1,25 +1,61 @@
-// Setup SCSS
-/* Setup SCSS */
-// theme color : #B77E75
+@charset "utf-8";
 
-// 配色指定
-$main-color: #B77E75;
-$sub1-color: #B47388;
-$sub2-color: #B170A2;
-$acnt-color: #79865E;
-$footer-color: #999;
-$footer-a-color: #FFF;
+// Set up SCSS Document
 
-// プレフィックス指定
-$PREFIX_TYPES: -webkit-, -moz-, -ms-, -o-, '';
-@mixin prefix_set($type, $val) {
+// 配色を変数に設定
+// theme color : #4b3d37  
+$light: #cebcb3;
+$dark:  #4b3d37;
+$accent:#b24814;
+$black: #251a14;
+$gray:  #CCC;
+$white: #FFF;
+$fade:  .4s;
+
+// ベンダープレフィックス自動設定関数
+$PREFIX_TYPES: -webkit-, -moz-, -ms-, -o-, ''; // 接頭辞を配列で指定
+$WMZ_PREFIX: -webkit-, -moz-, ''; // webkit系, mozilla系 のみ
+$WKT_PREFIX: -webkit-, ''; // webkit系 のみ
+@mixin prefix_set($type, $val) { // プロパティにプレフィックスを追加する関数
  @each $prefix in $PREFIX_TYPES {
   #{$prefix}#{$type}: $val;
  }
 }
-$PRO_PREFIX: -webkit-, -moz-, -ms-, '';
-@mixin pro_prefix_set($type, $val) {
- @each $prefix in $PRO_PREFIX {
+@mixin prefix_w_set($type, $val) { // プロパティと値の両方に追加する関数
+ @each $prefix in $PREFIX_TYPES {
+  #{$prefix}#{$type}: #{$prefix}$val;
+ }
+}
+@mixin prefix_n_set($type, $val) { // 値にのみプレフィックスを追加する関数
+ @each $prefix in $PREFIX_TYPES {
   #{$type}: #{$prefix}$val;
  }
 }
+@mixin wmz_prefix($type, $val) { // webkit系, mozilla系 のみ追加する関数
+ @each $prefix in $WMZ_PREFIX {
+  #{$prefix}#{$type}: $val;
+ }
+}
+@mixin wkt_prefix($type, $val) { // webkit系 のみ追加する関数
+ @each $prefix in $WKT_PREFIX {
+  #{$prefix}#{$type}: $val;
+ }
+}
+@mixin keyframes($handle) {
+ @-webkit-keyframes #{$handle} {
+  @content;
+ }
+ @-moz-keyframes #{$handle} {
+  @content;
+ }
+ @-ms-keyframes #{$handle} {
+  @content;
+ }
+ @-o-keyframes #{$handle} {
+  @content;
+ }
+ @keyframes #{$handle} {
+  @content;
+ }
+}
+// ベンダープレフィックス自動設定関数　ここまで

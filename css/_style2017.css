@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* Contents CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant+SC|Didact+Gothic|Prata');
+/* check this */
+/* tag */
+html, body {
+	margin: 0; padding: 0;
+	background-color: #000; color: #FFF;
+} body {
+	font-family: 'Didact Gothic',"新ゴ R","Shin Go Regular", sans-serif;
+}
+a {} a:hover {}
+img {}
+main {}
+article {}
+section {}
+aside {}
+h1,h2,h3 {
+	font-weight: normal;
+	margin-bottom: 0.5em; padding-bottom: 0.25em;
+} h1 {
+	font-size: 1.6em;
+	letter-spacing: 0.1em; white-space: nowrap;
+	border: none;
+} h2 {
+	font-size: 1.4em;
+} h3 {
+	font-size: 1.2em;
+	border-bottom: 1px solid;
+} h4 {} h5 {} h6 {}
+p {}
+ul, ol { list-style: none; }
+ul {} ul li{}
+ol {} ol li {}
+dl {} dl dt {} dl dd {}
+/* /tag */
+
+/* body wrapper */
+#wrap { background-color: #FFF; color: #110800; }
+/* /body wrapper */
+
+/* parallax setting */
+#contents {
+	position: relative;
+	min-height: 100%; height: auto; max-height: 100vh;
+	overflow-x: hidden; overflow-y: scroll; /* これが必要なためjQueryスムーズスクロールが上手く効かない */
+	-webkit-perspective: 600px; -moz-perspective: 600px;
+	    -ms-perspective: 600px;   -o-perspective: 600px;  
+	        perspective: 600px;
+} #contents section {
+	position: relative;
+    min-height: 100%; height: 100vh;
+    -webkit-transition: -webkit-transform 0.5s; -moz-transition: -moz-transform 0.5s;
+        -ms-transition: -ms-transform 0.5s;       -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;   -o-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+} .layer {
+	position: absolute;
+	left: 0; top: 0; right: 0; bottom: 0;
+	width: 100%; height: 100%;
+} .front {
+	-webkit-transform:translateZ(150px) scale(.75); -moz-transform:translateZ(150px) scale(.75);
+	    -ms-transform:translateZ(150px) scale(.75);   -o-transform:translateZ(150px) scale(.75);
+	        transform:translateZ(150px) scale(.75);
+	z-index:4;
+} .base {
+	-webkit-transform:translateZ(0); -moz-transform:translateZ(0);
+	    -ms-transform:translateZ(0);   -o-transform:translateZ(0);
+	        transform:translateZ(0);
+	z-index:3;
+} .rear {
+	-webkit-transform:translateZ(-300px) scale(1.5); -moz-transform:translateZ(-300px) scale(1.5);
+	    -ms-transform:translateZ(-300px) scale(1.5);   -o-transform:translateZ(-300px) scale(1.5);
+	        transform:translateZ(-300px) scale(1.5);
+	z-index:2;
+} .deep {
+	-webkit-transform:translateZ(-600px) scale(2); -moz-transform:translateZ(-600px) scale(2);
+	    -ms-transform:translateZ(-600px) scale(2);   -o-transform:translateZ(-600px) scale(2);
+	        transform:translateZ(-600px) scale(2);
+	z-index:1;
+}
+#sec01 {   z-index: 2;
+} #sec02 { z-index: 1;
+} #sec03 { z-index: 2;
+} #sec04 { z-index: 1;
+} #sec05 { z-index: 2; }
+/* /parallax setting */
+
+/* Parallax #contents section settings */
+#contents {
+	background-image: url(https://www.i-studio.jp/img/illust/illust1701.jpg);
+	background-position: center top;
+	background-repeat: repeat-y;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+.layer article {
+	position: relative;
+	margin: auto;
+	height: 100%;
+	display: table;
+} article .text-wrap {
+	margin: auto;
+	text-align: center;	vertical-align:middle;
+	display: table-cell;
+}
+#sec01 {
+	background-image: url(https://www.i-studio.jp/img/sample/img17102103.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFF; text-shadow: 0 1px 1px #000;
+	border-color: #FFF;
+} #contents #sec01 p, #contents #sec02 p { text-align: center;
+}
+#sec02 {
+	color: #FFF; text-shadow: 0 1px 1px #000;
+	border-color: #FFF;
+} #sec02 .layer {
+} #sec02 .base {
+} #sec02 .rear { background-color: rgba(0,0,0,0.50);
+} #sec02 .deep {
+	background-image: url(https://www.i-studio.jp/img/sample/img17102102.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+} #sec02 .text-wrap {
+} #sec02 .base .text-wrap { padding-bottom: 2.5em;
+} #sec02 .rear .text-wrap { padding-top: 2em;
+}
+#sec03 {
+	background-image: url(https://www.i-studio.jp/img/sample/img17102101.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-shadow: 0 1px 1px #FFF; border-color: #210;
+} #sec03 .layer {
+} #sec03 .front .text-wrap { padding-bottom: 18em;
+} #sec03 .base {
+	background-color: rgba(255,255,255,0.75);
+} #sec03 article {
+} #sec03 .base article, #sec04 .rear article {
+	width: 72.5%;
+} #sec03 .text-wrap, #sec04 .text-wrap {
+} #sec03 .base .text-wrap, #sec04 .rear .text-wrap {
+} #contents #sec03 h3, #contents #sec04 h3 { margin-bottom: 1em;
+}
+#sec04 {
+	color: #FFF; text-shadow: 0 1px 1px #000;
+	border-color: #FFF;
+} #sec04 .layer {
+} #sec04 .base .text-wrap { padding-bottom: 35em;
+} #sec04 .rear {
+} #sec04 .deep {
+	background-color: rgba(0,0,0,0.40);
+} #sec04 .deep article { margin-right: 24%;
+} #sec04 .deep .text-wrap {
+}
+#sec05 {
+	background-image: url(https://www.i-studio.jp/img/sample/img17102105.jpg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-shadow: 0 1px 1px #FFF; border-color: #210;
+} #sec05 .layer {
+} #sec05 .base {
+	background-color: rgba(255,255,255,0.75);
+} #sec05 .front article {
+	margin-left: 50%; margin-right: auto;
+} #sec05 .base article {
+	margin-left: auto; margin-right: 52%;
+} #sec05 article {
+} #sec05 .text-wrap {
+}
+#contents h1,	#contents h2, #contents h3,
+#contents h4,	#contents h5, #contents h6,
+#contents p,	#contents ul li, #contents dl {
+ margin-bottom: 1em;
+} #contents p {
+	text-align: justify;
+	line-height: 1.6em;
+} #contents ul {
+} #contents ul li {
+	line-height: 1.2em;
+	margin-bottom: 1em;
+} #contents .flexbox {
+	-webkit-align-items: stretch; align-items: stretch;
+} #contents .flexbox * {
+	flex: 1; margin: 0 auto;
+} #contents .flexbox ul li {
+	margin-bottom: 1em;
+}
+#contents .sns ::before, #contents .sns ::after { font-size: 1.1em;
+}
+.list { font-size: 0.9em; text-transform: uppercase;
+} #contents .list dl {
+	margin-bottom: 1em; padding-bottom: 1em;
+	border-bottom: 1px dotted #FFF;
+	width: 90%;
+} .list dt {
+	margin-bottom: 0.25em;
+	font-size: 1.1em; text-transform: none;
+} .list dd { font-size: 0.8em; text-transform:  none; }
+/* /Parallax #contents section settings */
+
+/* other local class */
+.list dt,
+.fontface1 { font-family: 'Cormorant SC', serif; }
+/*.fontface1 { font-family: 'A1 Mincho', serif; }*/
+.copy { font-size: 0.9em; letter-spacing: 0.05em; }
+.grade-linear-tb,
+.grade-linear-tb-wt {}
+footer .pagetop { color: #FFF; }
+
+/* /other local class */

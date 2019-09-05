@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.inner {
+  display: table-cell;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  /* 色相ローテーション：グラデーションの設定 */
+  background: -webkit-gradient(
+      radial,
+      center center,
+      32,
+      center center,
+      960,
+      from(rgba(255, 255, 255, 0)),
+      to(#F99)
+    );
+  background-image: radial-gradient(rgba(255, 255, 255, 0), #F99);
+  opacity: 1;
+  /* 色相ローテーション：アニメーションの設定 */
+  animation: huerotate 6s infinite alternate;
+}
+/* 色相ローテーション：アニメーションのキーフレーム定義 */
+@keyframes huerotate {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}

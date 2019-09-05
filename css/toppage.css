@@ -1,0 +1,16 @@
+/* ********************** */
+/*  Top page CSS Document */
+/* ********************** */
+/* -------------------- */
+/* news topics */
+#topics h3 a .genericon-feed {
+  color: #b24814; }
+
+#topics #feedText {
+  font-size: 0.9em; }
+
+#topics #feedText li:before {
+  font-size: 0.7em; }
+
+/* /news topics */
+/* -------------------- */

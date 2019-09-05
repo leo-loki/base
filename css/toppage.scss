@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* ********************** */
+/*  Top page CSS Document */
+/* ********************** */
+// ------------------------
+// Last update : 2019.03.31
+// ------------------------
+
+// include Setup SCSS file.
+@import 'setup';
+/* -------------------- */
+/* news topics */
+#topics {}
+#topics h3 {}
+#topics h3 a {}
+#topics h3 a .genericon-feed { color: $accent; }
+#topics #feedText { font-size:0.9em; }
+#topics #feedText li:before { font-size:0.7em; }
+/* /news topics */
+/* -------------------- */

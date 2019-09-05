@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html body {
+	padding-top:20%;
+	background-color:#FFF;
+	font-size:100%;	line-height:1.6em; color:#999; text-align:center;
+}
+
+h1, h2, h3, h4, h5, h6 { margin:10px 0; color:#777; }
+h1 {
+	color:#C96;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:16px;	font-weight:normal;
+	letter-spacing:0.8em;
+	text-shadow: 1px 1px 0px #EEE, 2px 2px 2px #777;
+}
+h1 span {	color:#999; }
+
+section p { text-align:center; }
+
+footer { font-size:80%; padding:20px 0; color:#CCC; }
+
+a {	color:#999; text-decoration:none; }
+a:hover {	color: #C66; }
+
+ul, ol { margin:0; padding:0; list-style:none; }

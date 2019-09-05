@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* ********************** */
+/*  General CSS Document  */
+/* ********************** */
+// ------------------------
+// Last update : 2019.03.31
+// ------------------------
+
+// include Setup SCSS file.
+@import 'setup';
+
+/* tag */
+html, body { font-size: 1em; font-size: 1rem;
+} body {
+	color: $black;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	   -moz-hyphens: auto;
+	        hyphens: auto;
+	font-family: Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+a, img { outline: none; }
+a { color: $dark;
+	text-decoration: none;
+	&:hover {	color: $accent; }
+}
+img { width: 100%; height: auto; }
+p { line-height: 1.4em; }
+::before, ::after {
+	position: relative; top: -0.05em;
+	line-height: 1em;
+	display: inline-block;
+	vertical-align: middle;
+	alignment-baseline: baseline;
+} /* /tag */
+/* -------------------- */
+/* header block */
+header#common-header {
+	position: fixed;
+	left: 0; top: 0;
+	width: 100%;
+	z-index: 1;
+	h1 {
+		margin: 0; padding: 1em;
+		a { display: inline-block; }
+		img { width: 80%; height: auto; }
+	}
+	nav {
+		right: 0; top: 0;
+		margin-top: 0.5em; margin-right: 0.5em;
+	}
+} /* /header block */
+/* -------------------- */
+/* footer block */
+footer#common-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 2em 0;
+	background-color: rgba($black,0.6); color:$white;
+	font-size: 0.8em; line-height: 1em;
+	vertical-align: middle;
+	small, ul { padding: 0.5em 1em; }
+	ul {
+		li {
+			line-height: 1em;
+			margin: 0; padding:0 0.5em;
+			border-right:1px solid $gray;
+			a { color: $gray; }
+		} li:last-child { border-right:none; }
+	} ul:first-child {
+		flex:2;
+	}
+	.sns ul {
+		li {
+			border:none;
+			margin-left:auto;
+		} li:first-child { margin-left:0; }
+	}
+	.icon:before { font-size: 1.4em; color: $white; }
+} /* /footer block */
+/* -------------------- */
+/* other class */
+.flexbox {
+	display: -webkit-box; display: -ms-flexbox;
+	display: -webkit-flex; display: flex;
+	-ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; flex-wrap: wrap;
+	-webkit-flex-flow:row wrap; flex-flow:row wrap;
+	-webkit-justify-content:center; justify-content:center;
+	-webkit-align-items: center; align-items: center;
+}
+.fade {
+	-moz-transition:all $fade;
+	-webkit-transition:all $fade;
+	-o-transition:all $fade;
+	-ms-transition:all $fade;
+	transition:all $fade;
+}
+.overflow {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mobile { display:block; } .pc { display:none; }
+.sample-head { font-size:0.6em; margin-bottom:0.5em; }
+.font-sample { font-size:36px; }
+.font-caption {
+	font-size:0.8em; margin-top:0.5em;
+	&:before {
+		padding-left:1em;
+		content:"\f501";
+		font-family:"Genericons"; font-size:0.8em;
+	}
+}
+.pagetop {
+    position: absolute;
+    bottom: 0; left: 50%;
+    margin-left: -1em;
+    text-align: center;
+	a, &::before { font-size: 4em; padding-bottom: 0.2em; }
+}
+.grade-line {
+	position: relative;
+	margin: 0 auto;	padding: 0 6em; padding-right: 5.9em;
+	text-align: center;
+	display: table;
+	&::before, &::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		width: 5.5em; height: 2px;
+    margin: 0; margin-top: -1px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+	} &::before { left: 0;
+    background-image: -webkit-linear-gradient(left, transparent, $black 100%, $black 0%, transparent);
+    background-image: linear-gradient(to right, transparent, $black 100%, $black 0%, transparent);
+	} &::after { right: 0;
+    background-image: -webkit-linear-gradient(left, transparent, $black 0%, $black 0%, transparent);
+    background-image: linear-gradient(to right, transparent, $black 0%, $black 0%, transparent);
+	} &.wt::before {
+    background-image: -webkit-linear-gradient(left, transparent, $white 100%, $white 0%, transparent);
+    background-image: linear-gradient(to right, transparent, $white 100%, $white 0%, transparent);
+	} &.wt::after {
+    background-image: -webkit-linear-gradient(left, transparent, $white 0%, $white 0%, transparent);
+    background-image: linear-gradient(to right, transparent, $white 0%, $white 0%, transparent);
+	}
+}
+.grade-linear-tb, .grade-linear-bt {
+	background-color: transparent;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+} .grade-linear-tb {
+	background: -webkit-linear-gradient(top, rgba($black, 1), rgba($black, 0));
+	background: linear-gradient(to bottom, rgba($black, 1), rgba($black, 0));
+    /*background-image: -webkit-linear-gradient(bottom, transparent, $black 100%, $black 0%, transparent);
+    background-image: linear-gradient(to top, transparent, $black 100%, $black 0%, transparent);*/
+} .grade-linear-bt {
+	background: -webkit-linear-gradient(bottom, rgba($black, 1), rgba($black, 0));
+	background: linear-gradient(to top, rgba($black, 1), rgba($black, 0));
+} /* /other class */
+/* ------------------------ */

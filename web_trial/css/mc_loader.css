@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  background: #000;
+  overflow: hidden;
+}
+#wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+
+#player {
+  width: 100%;
+  height: auto;
+}
+#loader {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  background-color: #fff;
+  background-image: url(https://i-studio.jp/img/bg/loading-wt.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  display: none;
+}
+#overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(https://i-studio.jp/img/bg/border-screen.png);
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  display: block;
+}
+#overlay.dot {
+  background-image: url(https://i-studio.jp/img/bg/dot-screen.png);
+}
+
+#container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  display: table;
+}
+#contents {
+ text-align: left;
+ vertical-align: middle;
+ display: table-cell;
+}
+h1, h2, h3, p { color: #FFF; text-align: left; text-shadow: 0 0 2px #000;}

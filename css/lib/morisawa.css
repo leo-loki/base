@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/***********************************
+ MORISAWA FONTS Setup
+
+Set to HTML head block.
+<script type="text/javascript" src="//webfonts.sakura.ne.jp/js/sakura.js"></script> 
+
+***********************************/
+
+.ryumin-R {	font-family:"リュウミン R-KL","Ryumin Regular KL", serif; }
+.ryumin-M {	font-family:"リュウミン M-KL","Ryumin Medium KL", serif; }
+.mm-MA31 {	font-family:"見出ミンMA31","Midashi Min MA31", serif; }
+.shinGo-R {	font-family:"新ゴ R","Shin Go Regular", sans-serif; }
+.shinGo-M {	font-family:"新ゴ M","Shin Go Medium", sans-serif; }
+.mg-MB31 {	font-family:"見出ゴMB31","Midashi Go MB31", sans-serif; }
+.mb101-B {	font-family:"ゴシックMB101 B","Gothic MB101 Bold", sans-serif; }
+.ud-shinGo-R {	font-family:"UD新ゴ R","UD Shin Go Regular", sans-serif; }
+.ud-shinGo-M {	font-family:"UD新ゴ M","UD Shin Go Medium", sans-serif; }
+.ud-sg-con90L {	font-family:"UD新ゴ コンデンス90 L","UD Shin Go Conde90 L", sans-serif; }
+.ud-sg-con90M {	font-family:"UD新ゴ コンデンス90 M","UD Shin Go Conde90 M", sans-serif; }
+.jun201 {	font-family:"じゅん 201","Jun 201", sans-serif; }
+.jun501 {	font-family:"じゅん 501","Jun 501", sans-serif; }
+.shinMG-R {	font-family:"新丸ゴ R","Shin Maru Go Regular", sans-serif; }
+.shinMG-F {	font-family:"新丸ゴ 太ライン","Shin Maru Go Futoline", sans-serif; }
+.folk-R {	font-family:"フォーク R","Folk Regular", sans-serif; }
+.folk-M {	font-family:"フォーク M","Folk Medium", sans-serif; }
+.maruFolk-R {	font-family:"丸フォーク R","Maru Folk Regular", sans-serif; }
+.maruFolk-M {	font-family:"丸フォーク M","Maru Folk Medium", sans-serif; }
+.kaiCB1 {	font-family:"正楷書CB1","Sei Kaisho CB1", serif; }
+.rei101 {	font-family:"隷書101","Reisho 101", serif; }
+
+/***********************************
+ end of MORISAWA FONTS Setup
+***********************************/
