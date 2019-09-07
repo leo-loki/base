@@ -84,15 +84,31 @@ if((isset($_POST['send']))&&($_POST['send']!="")){	$sendFlag = true; } else {	$s
 	<script type="text/javascript" src="./js/form/exchecker-ja.js"></script>
 	<script type="text/javascript" src="./js/form/jquery-ui-1.8.4.custom.min.js"></script>
 	<script type="text/javascript" src="./js/form/jquery.ui.datepicker-ja.js"></script>
+<!-- /form Javascript file Loading //-->
+<!-- reCAPTCHA script. -->
  <script src="https://www.google.com/recaptcha/api.js?render=<?=$rec_site_key?>"></script>
  <script>
-  grecaptcha.ready(function() {
+  grecaptcha.ready(function () {
    grecaptcha.execute('<?=$rec_site_key?>', {action: 'homepage'}).then(function(token) {
-    /* reCAPTCHA script. */
+    var recaptchaResponse = document.getElementById('recaptchaResponse');
+    recaptchaResponse.value = token;
    });
   });
  </script>
-<!-- /form Javascript file Loading //-->
+<?php
+if (isset($_POST['recaptchaResponse']) && !empty($_POST['recaptchaResponse'])){
+ $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$rec_secret_key.'&response='.$_POST['recaptchaResponse']);
+ $reCAPTCHA = json_decode($verifyResponse);
+ if ($reCAPTCHA->success){
+  // OK
+ } else {
+  // NG
+ }
+} else {
+ // ERROR
+}
+?>
+<!-- / reCAPTCHA script. -->
 </head>
 
 <body id="cont">

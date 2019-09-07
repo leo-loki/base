@@ -86,7 +86,7 @@ $msg .= "連絡事項：\r\n".$texts."\r\n";
 
 </fieldset>
 <p class="submit">
-<input type="hidden" name="g-recaptcha-response" value="<?=$rec_secret_key?>" />
+<input type="hidden" name="recaptchaResponse" id="recaptchaResponse">
 <input type="submit" value="送　信" class="buttonRed" /> <input type="button" value="<?php if($langFlag){ ?>BACK<?php } else { ?>戻　る<?php } ?>" onclick="<?=$page_back?>" class="buttonSlv" />
 </p>
 <input type="hidden" name="send" value="send" />
