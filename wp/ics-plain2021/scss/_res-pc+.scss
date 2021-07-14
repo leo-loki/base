@@ -1,0 +1,36 @@
+/* PC and TV */
+// PC 1025px +
+@media only screen and (min-width: #{$maxWidth + 1}) {
+ #site-header {
+  .site_branding { display: block; max-width: 40%; }
+  .site_description { margin-bottom: 0.5em; }
+  .header_navi_menu_wrap { padding: 1em 0; max-width: 60%;
+   .main_navi_menu {}
+  }
+ }
+ #comments-section { padding: 1em 0; }
+ #bottom-section {
+  display: flex; flex-wrap: wrap;
+  align-items: stretch; justify-content: space-evenly;
+  .navi_menu { max-width: 30%; }
+ }
+ .max_width { margin-left: auto; margin-right: auto; width: auto; max-width: var(--max_width); }
+ .alignleft { @extend .max_width; img { margin: 0 1em 0 auto;} }
+ .aligncenter { @extend .max_width; img { margin: 0 auto; } }
+ .alignright { @extend .max_width; img { margin: 0 0 0 1em; } }
+ .alignwide { @extend .max_width; }
+}
+@media only screen and (max-width: $widthPlus) {
+	.site_main {
+		.page_content, .entry_content {
+			h1, h2, h3, h4, h5, h6, p, dd, ul, ol, figcaption, blockquote,
+			.more_link { padding-left: 1em; padding-right: 1em; }
+		}
+	} //.site_main
+}
+/* other 16 : 9 */
+@media only screen and (min-width: $maxWidth) and (min-height: #{round($maxWidth * 0.75)}) {
+ .page_content .alignfull img, .entry_content .alignfull img,
+ .ratio16x9 { width: 100%; min-height: #{$maxWidth * 0.5625}; }
+}
+// eof

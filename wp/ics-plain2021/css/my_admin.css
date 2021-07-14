@@ -1,0 +1,3 @@
+@charset "UTF-8";
+/* ダッシュボード用 */
+#wpadminbar #wp-admin-bar-root-default #wp-admin-bar-wp-logo { display: none; visibility: hidden; }

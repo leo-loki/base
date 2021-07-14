@@ -1,0 +1,26 @@
+/* CSS root variables */
+:root {
+	--main_text_color: #{ lighten($txt-color, 10%) };
+	--text_rgb_color: #{ $txt-rgb-color };
+	--main_bg_color: #{ $bg-color };
+	--main_rgb_color: #{ $bg-rgb-color };
+	--link_color: #{ $link-color };
+	--border_color: var(--main_text_color);
+	--border_rgb_color: var(--text_rgb_color);
+	--field_frame_color: #{ lighten($txt-color, 60%) };
+	--attention_color: #{ $attention-color };
+	--max_width: 100%;
+	--global--admin-bar--height: 46px;
+}
+@media only screen and (min-width: 783px) {
+	:root {
+		--global--admin-bar--height: 32px;
+	}
+}
+@media only screen and (min-width: $maxWidth) {
+	:root {
+		--max_width: #{ $maxWidth };
+	}
+}
+//
+// eof

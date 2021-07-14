@@ -1,0 +1,36 @@
+/* Smartphone only */
+// ※旧 iPad / iPad Proも含む
+// - w480px
+@media only screen and (max-width: 480px) {
+	.logo_mark,
+	.site_description { display: none; visibility: hidden; }
+ @media only screen and (max-height: 980px) {
+  // SP - Portrait.
+ }
+}
+// - w599px 
+@media only screen and (max-width: 599px) {
+	.logged-in.admin-bar {
+		#site-header.admin_bar_relation.related,
+		.main_navi_wrap.admin_bar_relation.related { padding-top: 0; }
+		#checkarea.admin_bar_relation.related { margin-top: $toggle-margin; }
+	}
+}
+// SP - Landscape.
+@media only screen and (max-width: 980px) {
+ @media only screen and (max-height: 480px) {
+  #wp-custom-header { display: none; }
+  .sticky { position: relative; }
+  .logged-in.admin-bar {
+   #site-header.admin_bar_relation { padding-top: 0; }
+  }
+ }
+ @media only screen and (max-height: 320px) {
+  // iPhone SE - Landscape.
+ }
+}
+// - max-width and Landscape.
+@media screen and (max-width: 782px) and (orientation: landscape) {
+ html body #wpadminbar { margin-top: 0; }
+}
+// eof

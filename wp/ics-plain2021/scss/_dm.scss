@@ -1,0 +1,47 @@
+/*//////////////////////////////////*/
+/* Dark mode style. */
+/*//////////////////////////////////
+*/
+#mode-change-label { display: none; }
+//
+// Dark mode on the system side.
+.is_dark_theme {
+ // Default.
+  .site_logo .custom-logo-link img {
+   filter: brightness(1.6) contrast(1) drop-shadow(1px 1px 0.5px white);
+  }
+ #wp-custom-header { img { opacity: 0.5; } }
+ &.darkmode {
+  // Dark mode.
+ }
+} // /Default.
+//
+// Dark mode on the device side.
+@media screen and (prefers-color-scheme: dark) {
+ #mode-change-label { display: flex; }
+ // Dark mode on the system and device side.
+ .is_dark_theme {
+  // Default.
+  .site_logo .custom-logo-link img {
+   filter: brightness(1.6) contrast(1) drop-shadow(1px 1px 0.5px white);
+  }
+ #wp-custom-header { img { opacity: 0.5; } }
+  &.darkmode {
+   // Dark mode.
+   --main_text_color: #{ darken($bg-color, 16%) };
+   --text_rgb_color: #{ $bg-rgb-color };
+   --main_bg_color: #{ $txt-color };
+   --main_rgb_color: #{ $txt-rgb-color };
+   --link_color: #{ lighten($link-color, 25%) };
+   --border_color: var(--main_text_color);
+   --border_rgb_color: var(--text_rgb_color);
+   --field_frame_color: #{ darken($bg-color, 60%) };
+   --attention_color: #{ lighten($attention-color, 25%) };
+   .site_logo img, .logo_mark img, .has-inline-color {
+    filter: drop-shadow(1px 1px 0 #000) drop-shadow(1px 1px 4px #CCF) drop-shadow(-1px -1px 4px #CCF);
+   }
+  } // /Dark mode.
+ } // /Default.
+}
+//
+// end of

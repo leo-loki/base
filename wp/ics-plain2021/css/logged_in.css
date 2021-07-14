@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* ログイン時の調整用 */
+#wp-admin-bar-wp-logo { display: none; visibility: hidden; }
+
+body #header { margin-top: 32px; }
+body .toggle-label { top: 32px; }
+body .container section { height: calc(100vh - 32px); padding-top: 32px; }
+body .container section#top { padding: 0; }
+body .container section article { height: calc(100vh - 32px); margin-top: -32px; }
+
+@media screen and (max-width: 782px) {
+	html body #header { margin-top: 46px; }
+	html body .toggle-label { top: 46px; }
+	html body .container section { height: calc(100vh - 46px); padding-top: 46px; }
+	html body .container section#top { padding: 0; }
+	html body .container section article { height: calc(100vh - 46px); margin-top: -46px; }
+}
+@media screen and (min-width: 640px) { html body #wpadminbar { margin-top: 0; } }

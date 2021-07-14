@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* ログイン画面用 */
+.login { background: url("../img/login-bg.jpg") no-repeat center bottom; background-size: cover; background-attachment: fixed; background-position: center center; background-repeat: repeat; }
+.login #login { padding: 3vh 0; text-align: center; }
+.login #login #backtoblog, .login #login #nav { font-size: 1.2em; font-weight: bold; padding: 0 1vw; }
+.login #login #backtoblog a, .login #login #nav a { color: #000; }
+.login #login a { -webkit-filter: drop-shadow(0 0 2px white) drop-shadow(0 0 4px rgba(255, 255, 255, 0.9)); filter: drop-shadow(0 0 1px white) drop-shadow(0 0 4px rgba(255, 255, 255, 0.9)); }
+.login #login h1 a { width: auto; height: 120px; background: url("../img/logo.png") no-repeat center center; background-size: contain; }

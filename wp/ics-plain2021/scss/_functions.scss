@@ -1,0 +1,73 @@
+// //////////////////////////////////
+// SCSS variables //
+// /////////////////////////////////
+// 変数（色など）の定義
+// theme color : #55C
+$maxWidth: 1024px;
+$widthPlus: $maxWidth + 16;
+$topMargin: 160px;
+$txt-color: #1F1F20;
+$txt-rgb-color: 31, 31, 32;
+$bg-color: #FFF;
+$bg-rgb-color: 255,255,255;
+$foot-bg-color: #CCC;
+$link-color: #55C;
+$accent-color: #F90;
+$attention-color: #C33;
+$attention-rgb-color: 200, 50, 50;
+$transition-time: 0.5s;
+// Navi SCSS variables
+$toggle-size: 68px;
+$toggle-line: 2px;
+$toggle-icon-width: 40px;
+$toggle-margin: 10px;
+$toggle-padding: 12px;
+$toggle-padding-bottom: $toggle-padding - ($toggle-line * 2);
+$toggle-space: $toggle-size + ($toggle-margin * 2);
+$toggle-icon-height: $toggle-icon-width - ($toggle-line * 3);
+$toggle-line-center: 0;
+$toggle-btm-line: round(($toggle-icon-height / 2) - $toggle-line);
+$toggle-top-line: 0 - $toggle-btm-line;
+$drawer-width: 300px;
+//
+$font-goc: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',YuGothic,'Yu Gothic','Yu Gothic UI','メイリオ', Meiryo,'Meiryo UI','ＭＳ Ｐゴシック','MS PGothic','Helvetica Neue','Lucida Console',sans-serif;
+$font-min: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ＭＳ Ｐ明朝','MS PMincho','Times New Roman',serif;
+$font-family: $font-goc;
+//
+// プレフィックス設定
+$PREFIX_TYPES: -webkit-, -moz-, -ms-, '';
+$WMZ_PREFIX: -webkit-, -moz-, '';
+$WKT_PREFIX: -webkit-, '';
+@mixin prefix_set($type, $val) {
+ @each $prefix in $PREFIX_TYPES {
+  #{$prefix}#{$type}: #{$val};
+ }
+}
+@mixin prefix_w_set($type, $val) {
+ @each $prefix in $PREFIX_TYPES {
+  #{$prefix}#{$type}: #{$prefix}$val;
+ }
+}
+@mixin prefix_n_set($type, $val) {
+ @each $prefix in $PREFIX_TYPES {
+  #{$type}: #{$prefix}$val;
+ }
+}
+@mixin wmz_prefix($type, $val) {
+ @each $prefix in $WMZ_PREFIX {
+  #{$prefix}#{$type}: #{$val};
+ }
+}
+@mixin wkt_prefix($type, $val) {
+ @each $prefix in $WKT_PREFIX {
+  #{$prefix}#{$type}: #{$val};
+ }
+}
+//
+// アニメーションキーフレーム設定
+@keyframes fadeIn {
+ 0% { opacity: 0; }
+ 100% { opacity: 1; }
+}
+//
+// EOF

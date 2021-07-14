@@ -1,0 +1,263 @@
+/*//////////////////////////////////*/
+/* Form style. */
+/*//////////////////////////////////
+*/
+/* ========
+*  COMMON
+* ========= */
+.contents {
+	ul {
+		li { margin-bottom: 0.5em; padding-left: 1em; }
+	}
+	dl { margin: 0; margin-left: 1em; padding: 0; 
+		dt, dd { margin: 0; padding: 0; }
+		dt { margin-bottom: 0.5em; text-indent: -1em; }
+		dd { margin-bottom: 1em; }
+	}
+	#terms {
+		ul { padding: 0.5em 1em; font-size: 0.9em;
+			li { line-height: 1.4em; text-indent: -1em;
+				&::before { content: "●"; color: #999; }
+			}
+		}
+	}
+	table td { text-align: left; line-height: 1.6em; }
+}
+.note {
+	padding: 0 0 .5em;
+	text-align: right;
+}
+//
+/* ======
+*  FORM
+* ======= */
+$main-color: #801080;
+$sub-color: #008040;
+$check-color: #77F;
+$accent-color: #EE0077;
+.input_field { margin: 0; padding: 0.75em 0.5em; border: 4px solid var(--field_frame_color); }
+.label_def {
+ position: relative; margin-right: 1em; margin-bottom: 0.5em; display: inline-flex; flex-wrap: nowrap; align-items: center; justify-content: flex-start;
+}
+.field_set { margin: 0; margin-bottom: 2em; padding: 1em; border: 2px solid var(--field_frame_color); }
+.legend_set { padding: 0 0.5em; width: auto; }
+.button_set { // extend button set.
+ background: none; border: none;
+ &:not(:disabled):hover { opacity: 0.8; }
+}
+form {
+	* , *::before, *::after { transition: ease 0.4s; box-sizing: border-box; }
+	*:disabled { opacity: 0.5; }
+
+	.check_label, .consent_label { @extend .label_def;
+		&::before, &::after { content: ""; }
+		&::before { margin-right: 0.25em; width: 1.6em; height: 1.6em; border: 2px solid var(--field_frame_color); }
+		&::after { position: absolute; width: 1.6em; height: 1em; border-left: 2px solid $check-color; border-bottom: 2px solid $check-color; transform: scaleX(0) translate(5%, -33%) rotate(-45deg); opacity: 0; }
+	}
+	fieldset { @extend .field_set;
+		legend { @extend .legend_set; }
+		&.required { border-color: lighten($accent-color, 36%);
+			legend { color: $accent-color; &::after { content: "*"; padding-left: 0.5em; } }
+			input[type=checkbox]:checked + label { &::before, &::after { border-color: $accent-color; } }
+			input[type=radio]:checked + label { &::before, &::after { border-color: $accent-color; } &::after { background-color: $accent-color; } }
+		}
+		&.not_required {
+			legend, dl dt { color: #999; }
+			legend { &::after { content: none; display: none; } }
+			input[type=checkbox]:checked {
+				+ label, + span label { &::before, &::after { border-color: $check-color; } }
+			}
+			input[type=radio]:checked {
+				+ label, + span label { &::before, &::after { border-color: $check-color; } &::after { background-color: $check-color; } }
+			}
+		}
+		fieldset { margin-bottom: 0; }
+	}
+	input {
+		&:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]){ @extend .input_field;
+   background-color: var(--main_bg_color); color: var(--main_text_color);
+  }
+		&[type=checkbox], &[type=radio] { display: none; }
+		&[type=checkbox] {
+			+ label { @extend .check_label }
+			&:checked {
+				+ label, + span label {
+					&::before { border-color: $check-color; }
+					&::after { transform: scaleX(1) translate(5%, -33%) rotate(-45deg); opacity: 1; }
+				}
+			}
+		}
+		&[type=radio] {
+			+ label, + span label { @extend .label_def;
+				&::before, &::after { content: ""; border: 2px solid var(--field_frame_color); border-radius: 50%; }
+				&::before { margin-right: 0.25em; width: 1.6em; height: 1.6em; border: 2px solid var(--field_frame_color); }
+				&::after { position: absolute; left: 4px; width: calc(1.6em - 8px); height: calc(1.6em - 8px); background-color: $check-color; border-color: $check-color; transform: scale(0, 0); opacity: 0; }
+			}
+			&:checked {
+				+ label {
+					&::before { border-color: $check-color; }
+					&::after { transform: scale(1, 1); opacity: 1; }
+				}
+			}
+		}
+	}
+	textarea { @extend .input_field; padding: 0.5em; background-color: var(--main_bg_color); color: var(--main_text_color); line-height: 1.6em; }
+ //
+ /* ID and Class */
+	.agree_label, .tos_label { @extend .check_label }
+	#agree-check {
+		~ .submit {  pointer-events: none; opacity: 0.5; }
+		&:checked {
+			~ fieldset .agree_label {
+				&::before, &::after { border-color: $accent-color; }
+				&::after { transform: scaleX(1) translate(5%, -33%) rotate(-45deg); opacity: 1; }
+			}
+			~ .submit { pointer-events: auto; opacity: 1; }
+		}
+	}
+ #tos {
+  &:checked {
+			~ .tos_label {
+				&::before, &::after { border-color: $accent-color; }
+				&::after { transform: scaleX(1) translate(5%, -33%) rotate(-45deg); opacity: 1; }
+			}
+			~ .submit { pointer-events: auto; opacity: 1; }
+		}
+ }
+ #terms { margin: 0; padding: 1em 1em 0; max-width: 100%; height: 180px; font-size: 0.9em; border: 1px solid var(--field_frame_color); overflow-y: auto; }
+	.headline { text-align: center; padding: 1em 0; color: $main-color; }
+	.fieldtitle {
+		margin: 1em 0; padding: 0; padding-bottom: 0.25em;
+		color: #999; border-bottom: 2px solid #999;
+	}
+	.subtitle { @extend .fieldtitle; }
+	.required {
+		.fieldtitle { color: $accent-color; border-color: $accent-color; }
+		.subtitle { color: $sub-color; border-color: $sub-color; }
+	}
+	/* button */
+	[type="submit"], [type="button"], button, .submit {
+		$base-color: #CCC; $light-color: #FFF;
+		margin: 1em auto;	padding: 1em 2em;
+		background-color: #000;
+		background: -webkit-gradient(linear, left top, left bottom, from($light-color), to($base-color));
+		background: -moz-linear-gradient(center top , $light-color, $base-color) repeat scroll 0 0 transparent;
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$light-color}', endColorstr='#{$base-color}');
+		border: 1px solid $base-color; color: #555;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+		font-size: 1.1em; line-height: 1em;
+		text-align: center;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+		text-decoration: none; outline: none;
+		cursor: pointer;
+		display: inline-block;
+		&:not(:disabled):hover {
+			background: $base-color;
+			background: -webkit-gradient(linear, left top, left bottom, from($base-color), to($light-color));
+			background: -moz-linear-gradient(top, $base-color, $light-color);
+			filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$base-color}', endColorstr='#{$light-color}');
+		}
+		&.red {
+			$base-color: #000; $light-color: $accent-color;
+			background: $light-color;
+			background: -webkit-gradient(linear, left top, left bottom, from($light-color), to($base-color));
+			background: -moz-linear-gradient(center top , $light-color, $base-color) repeat scroll 0 0 transparent;
+			filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$light-color}', endColorstr='#{$base-color}');
+			border: 1px solid $base-color; color: #FFF;
+			&:not(:disabled):hover {
+				background: $base-color;
+				background: -webkit-gradient(linear, left top, left bottom, from($base-color), to($light-color));
+				background: -moz-linear-gradient(top, $base-color, $light-color);
+				filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$base-color}', endColorstr='#{$light-color}');
+			}
+		}
+		&.blu {
+			$base-color: #000000; $light-color: #5555CC;
+			background: $light-color;
+			background: -webkit-gradient(linear, left top, left bottom, from($light-color), to($base-color));
+			background: -moz-linear-gradient(center top , $light-color, $base-color) repeat scroll 0 0 transparent;
+			filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$light-color}', endColorstr='#{$base-color}');
+			border: 1px solid $base-color; color: #FFF;
+			&:not(:disabled):hover {
+				background: $base-color;
+				background: -webkit-gradient(linear, left top, left bottom, from($base-color), to($light-color));
+				background: -moz-linear-gradient(top, $base-color, $light-color);
+				filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$base-color}', endColorstr='#{$light-color}');
+			}
+		}
+	}
+	&.search-form { display: inline-flex; align-items: center; justify-content: center;
+		label { font-size: 0; line-height: 0; display: inline-flex; align-items: center;
+			&::before { content: "\e986"; font-family: 'icomoon'; font-size: 2.4rem; line-height: 1em; }
+		}
+		.search-submit { margin: 0; padding: 0.5em; padding-left: 1em; letter-spacing: 0.5em; }
+	}
+	.send {
+		width:auto;
+		margin-top: 1em;
+		padding:100px 50px;
+		background-color:#FFF;
+		font-size:2em; font-weight:bold;
+		color:#777; text-align:center;
+		display:block;
+		border:8px solid #E4E4E4;
+	}
+	.back { margin: 2em 0; text-align:center; }
+	/* #form class */
+	.caption { width:100%;
+		font-family:"Trebuchet MS", sans-serif; font-size:0.9em;
+		color:#555; text-align:left; letter-spacing:1px;
+		display:block;	overflow:hidden;
+	}
+	.copy {
+		border-top: solid var(--field_frame_color) 1px;
+		padding: 0;
+		text-align: center;
+	}
+	/* other tags */
+	// table
+	table { margin: 0 auto;
+		th, td {
+			margin:1px; padding:10px 14px;
+			border: 5px solid #EEE;
+		}
+		th {
+			background-color:#ECE;
+			font-size: 0.9em;
+			color:#000;	text-align:right;
+			span {
+				margin-left: .25em;
+				color: #F00;
+				font-weight: bold;
+			}
+		}
+		td { text-align:left; }
+		caption { font-size:11px; color:#555;	text-align:right; }
+	}
+}
+//
+/* bottom section */
+#bottom-section {
+	.search-form {
+		label { flex-direction: row-reverse; }
+		.search-field { transform: translateX(50%) scaleX(0); &:focus, &:hover { transform: translateX(0) scaleX(1); } }
+		.search-submit { display: none; }
+	}
+}
+//
+/* WP Members */
+.entry_content {
+ #wpmem_login, #wpmem_reg {
+  fieldset { @extend .field_set; }
+  legend { @extend .legend_set; }
+  label {
+   &[for="rememberme"],
+   &.tos_label { display: inline-flex; }
+  }
+ }
+}
+/* WP contact7 */
+.wpcf7-not-valid-tip { color: var(--attention_color); }
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output { border-color: var(--attention_color); }
+/**/
+// eof

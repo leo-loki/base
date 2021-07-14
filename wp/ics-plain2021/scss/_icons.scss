@@ -1,0 +1,263 @@
+/*//////////////////////////////////*/
+/* icon fonts setting. */
+/*//////////////////////////////////
+*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./css/fonts/icomoon.eot?jumjrn');
+  src:  url('./css/fonts/icomoon.eot?jumjrn#iefix') format('embedded-opentype'),
+    url('./css/fonts/icomoon.ttf?jumjrn') format('truetype'),
+    url('./css/fonts/icomoon.woff?jumjrn') format('woff'),
+    url('./css/fonts/icomoon.svg?jumjrn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"], [class*=" icon-"], [class^="icon"] a, [class*=" icon"] a {
+	/* use !important to prevent issues with browser extensions that change fonts */
+ font-family: 'icomoon' !important;
+ speak: none;
+ font-style: normal;
+ font-weight: normal;
+ font-variant: normal;
+ text-transform: none;
+ line-height: 1;
+	display: inline-flex;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-home:before {
+  content: "\e900";
+}
+.icon-office:before {
+  content: "\e903";
+}
+.icon-newspaper:before {
+  content: "\e904";
+}
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-image:before {
+  content: "\e90d";
+}
+.icon-images:before {
+  content: "\e90e";
+}
+.icon-books:before {
+  content: "\e920";
+}
+.icon-profile:before {
+  content: "\e923";
+}
+.icon-stack:before {
+  content: "\e92e";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-pushpin:before {
+  content: "\e946";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-map:before {
+  content: "\e94b";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-calendar:before {
+  content: "\e953";
+}
+.icon-printer:before {
+  content: "\e954";
+}
+.icon-download:before {
+  content: "\e960";
+}
+.icon-upload:before {
+  content: "\e961";
+}
+.icon-database:before {
+  content: "\e964";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-spinner6:before {
+  content: "\e97f";
+}
+.icon-enlarge:before {
+  content: "\e989";
+}
+.icon-shrink:before {
+  content: "\e98a";
+}
+.icon-wrench:before {
+  content: "\e991";
+}
+.icon-equalizer:before {
+  content: "\e992";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-cogs:before {
+  content: "\e995";
+}
+.icon-stats-bars2:before {
+  content: "\e99d";
+}
+.icon-meter:before {
+  content: "\e9a6";
+}
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-switch:before {
+  content: "\e9b6";
+}
+.icon-tree:before {
+  content: "\e9bc";
+}
+.icon-sphere:before {
+  content: "\e9c9";
+}
+.icon-warning:before {
+  content: "\ea07";
+}
+.icon-notification:before {
+  content: "\ea08";
+}
+.icon-cancel-circle:before {
+  content: "\ea0d";
+}
+.icon-enter:before {
+  content: "\ea13";
+}
+.icon-exit:before {
+  content: "\ea14";
+}
+.icon-circle-up:before {
+  content: "\ea41";
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+.icon-circle-down:before {
+  content: "\ea43";
+}
+.icon-circle-left:before {
+  content: "\ea44";
+}
+.icon-command:before {
+  content: "\ea4e";
+}
+.icon-checkbox-checked:before {
+  content: "\ea52";
+}
+.icon-checkbox-unchecked:before {
+  content: "\ea53";
+}
+.icon-radio-checked2:before {
+  content: "\ea55";
+}
+.icon-radio-unchecked:before {
+  content: "\ea56";
+}
+.icon-crop:before {
+  content: "\ea57";
+}
+.icon-scissors:before {
+  content: "\ea5a";
+}
+.icon-new-tab:before {
+  content: "\ea7e";
+}
+.icon-share2:before {
+  content: "\ea82";
+}
+.amazon a::before, .icon-amazon:before {
+  content: "\ea87";
+}
+.google a::before, .icon-google3:before {
+  content: "\ea8a";
+}
+.facebook a::before, .icon-facebook2:before {
+  content: "\ea91";
+}
+.instagram a::before, .icon-instagram:before {
+  content: "\ea92";
+}
+.twitter a::before, .icon-twitter:before {
+  content: "\ea96";
+}
+.rss2 a::before, .icon-rss2:before {
+  content: "\ea9c";
+}
+.youtube a::before, .icon-youtube:before {
+  content: "\ea9d";
+}
+.flickr a::before, .icon-flickr3:before {
+  content: "\eaa5";
+}
+.github a::before, .icon-github:before {
+  content: "\eab0";
+}
+.apple a::before, .icon-appleinc:before {
+  content: "\eabe";
+}
+.android a::before, .icon-android:before {
+  content: "\eac0";
+}
+.pinterest a::before, .icon-pinterest:before {
+  content: "\ead1";
+}
+.chrome a::before, .icon-chrome:before {
+  content: "\ead9";
+}
+.edge a::before, .icon-edge:before {
+  content: "\eadc";
+}
+.pdf a::before, .icon-file-pdf:before {
+  content: "\eadf";
+}
+.git a::before, .icon-git:before {
+  content: "\eae7";
+}
+.codepen a::before, .icon-codepen:before {
+  content: "\eae8";
+}
+// 2020.09追記
+.icon-insert-template:before {
+	content: "\ea72";
+}
+.icon-libreoffice:before {
+	content: "\eae3";
+}
+// 2020.10追記
+.icon-search:before {
+	content: "\e986";
+}
+.icon-user-plus:before {
+	content: "\e973";
+}
+// 2021.03追記
+.icon-film:before {
+	content: "\e913";
+}
+.icon, .icons a {}
+.icon::before, .icons a::before { margin-right: 0.25em; font-size: 2.4rem; }
+.icon::after, .icons a::after { margin-left: 0.25em; }
+/**/
+// eof
