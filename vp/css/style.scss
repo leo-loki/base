@@ -1,0 +1,113 @@
+@charset "UTF-8";
+// Global SCSS
+/* Global CSS */
+// theme color : #CDB1A3
+/* Viewpoint テスト用SCSS */
+
+@import 'var';
+
+* { margin:0; padding:0; }
+
+/* TAG */
+body { width:100%; }
+h1, h2, h3 { color: $font-color1; }
+p { line-height:1.8em; padding:0.5em 1em; }
+ul, ol { list-style:none; }
+a { color: $font-color1; }
+a:hover { color: $fc1-hover; }
+
+/* header */
+header { position:relative; padding:1em;
+ h1 {}
+ nav {
+  position:absolute;
+  top:50%; right:0;
+  margin-top:-0.5em;
+  font-size:0.8em;
+  ul li {
+   padding:0 1em; border-left:1px solid $border-color1;
+  }
+ }
+}
+
+/* nav */
+nav {
+ li { display:inline-block; }
+ &#main {
+  background: linear-gradient(#EEE, $bg-color1);
+  color: $font-color3;
+  text-align:center;
+  li a {
+   padding:1em;
+   background: linear-gradient(-170deg, #EEE, $bg-color1);
+   color: $font-color3;
+   text-decoration:none;
+   display:block;
+   &:hover {
+    background: linear-gradient(10deg, #EEE, $bg-color1);
+    color: $fc1-hover;
+   }
+  }
+ }
+}
+
+/* (main area) .container */
+.container {
+  margin:0 auto;
+  width:72.4%;
+  background-color: rgba(255,255,255,.75); color:#333;
+ // .container contents
+ .contents { width:70%;
+  // .container contents section
+  section { padding:2em; border-left:6px solid $border-color1; }
+ }
+ .side { width:30%; color:#EEE; background-color: $font-color1;
+  // .container .side aside
+  aside {
+   padding: 1em;
+   font-size: 1em; font-weight: bold; line-height: 1.6em;
+  }
+  a { color: $font-color2;
+   &:hover { color: $fc2-hover; }
+  }
+  li { margin-bottom: 1em; }
+ }
+}
+
+/* footer */
+footer {
+ padding:2em 1em 10em 1em;
+ background-color: #333; color:#999;
+  font-size:0.75em;
+ text-align: center;
+ small { font-size:1.2em; }
+ nav ul { margin-bottom:1.6em;
+  li { padding:0 1em; border-right:1px solid;
+   a { color:#E4E4E4; }
+   &:first-child { padding-left:0; }
+   &:last-child { padding-right:0; border:none; }
+  }
+ }
+}
+
+/* other ID, class */
+.flex { display: flex; }
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+}
+.center {
+  align-item: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* break point */
+@media screen and (max-width:949px) {
+ .container { width:100%;
+  .flex { display: block; }
+  .side { display: none; }
+ }
+}

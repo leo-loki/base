@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* Global CSS */
+/* Viewpoint テスト用SCSS */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* TAG */
+body {
+  width: 100%; }
+
+h1, h2, h3 {
+  color: #806F66; }
+
+p {
+  line-height: 1.8em;
+  padding: 0.5em 1em; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  color: #806F66; }
+
+a:hover {
+  color: #B55; }
+
+/* header */
+header {
+  position: relative;
+  padding: 1em; }
+  header nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -0.5em;
+    font-size: 0.8em; }
+    header nav ul li {
+      padding: 0 1em;
+      border-left: 1px solid #CDB1A3; }
+
+/* nav */
+nav li {
+  display: inline-block; }
+nav#main {
+  background: linear-gradient(#EEE, #CDB1A3);
+  color: #755;
+  text-align: center; }
+  nav#main li a {
+    padding: 1em;
+    background: linear-gradient(-170deg, #EEE, #CDB1A3);
+    color: #755;
+    text-decoration: none;
+    display: block; }
+    nav#main li a:hover {
+      background: linear-gradient(10deg, #EEE, #CDB1A3);
+      color: #B55; }
+
+/* (main area) .container */
+.container {
+  margin: 0 auto;
+  width: 72.4%;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #333; }
+  .container .contents {
+    width: 70%; }
+    .container .contents section {
+      padding: 2em;
+      border-left: 6px solid #CDB1A3; }
+  .container .side {
+    width: 30%;
+    color: #EEE;
+    background-color: #806F66; }
+    .container .side aside {
+      padding: 1em;
+      font-size: 1em;
+      font-weight: bold;
+      line-height: 1.6em; }
+    .container .side a {
+      color: #CBA; }
+      .container .side a:hover {
+        color: #C99; }
+    .container .side li {
+      margin-bottom: 1em; }
+
+/* footer */
+footer {
+  padding: 2em 1em 10em 1em;
+  background-color: #333;
+  color: #999;
+  font-size: 0.75em;
+  text-align: center; }
+  footer small {
+    font-size: 1.2em; }
+  footer nav ul {
+    margin-bottom: 1.6em; }
+    footer nav ul li {
+      padding: 0 1em;
+      border-right: 1px solid; }
+      footer nav ul li a {
+        color: #E4E4E4; }
+      footer nav ul li:first-child {
+        padding-left: 0; }
+      footer nav ul li:last-child {
+        padding-right: 0;
+        border: none; }
+
+/* other ID, class */
+.flex {
+  display: flex; }
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
+
+.center {
+  align-item: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+
+/* break point */
+@media screen and (max-width: 949px) {
+  .container {
+    width: 100%; }
+    .container .flex {
+      display: block; }
+    .container .side {
+      display: none; } }
