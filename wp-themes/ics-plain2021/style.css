@@ -1528,8 +1528,8 @@ form {
 */
 @font-face {
   font-family: 'icomoon';
-  src: url("./css/fonts/icomoon.eot?jumjrn");
-  src: url("./css/fonts/icomoon.eot?jumjrn#iefix") format("embedded-opentype"), url("./css/fonts/icomoon.ttf?jumjrn") format("truetype"), url("./css/fonts/icomoon.woff?jumjrn") format("woff"), url("./css/fonts/icomoon.svg?jumjrn#icomoon") format("svg");
+  src: url("../../wp/ics-plain2021/css/fonts/icomoon.eot?jumjrn");
+  src: url("../../wp/ics-plain2021/css/fonts/icomoon.eot?jumjrn#iefix") format("embedded-opentype"), url("../../wp/ics-plain2021/css/fonts/icomoon.ttf?jumjrn") format("truetype"), url("../../wp/ics-plain2021/css/fonts/icomoon.woff?jumjrn") format("woff"), url("../../wp/ics-plain2021/css/fonts/icomoon.svg?jumjrn#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
