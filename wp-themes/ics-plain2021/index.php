@@ -118,7 +118,9 @@ if ( have_posts() ) { ?>
 					<?php $alt = the_title('','',false); echo ''.get_thumb_img('full', $alt).''; ?>
 				</figure>
 				<?php	} else { ?>
-    <?php the_custom_header_markup(); ?>
+     <?php if ( is_singular() ) : ?>
+      <?php the_custom_header_markup(); ?>
+				 <?php endif; ?>
 				<header class="entry_header">
 				<?php	} ?>
 				<?php if ( is_singular() ) : ?>
